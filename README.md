@@ -233,3 +233,83 @@ playwright install chromium
 - playwright
 - cloudscraper
 - lxml
+- openai (SOTASearch)
+
+---
+
+## SOTASearch - AI 增强搜索
+
+SOTASearch 是 WebSearchMCP 的增强版本，结合了 AI 深度搜索和普通搜索功能。
+
+### 功能
+
+- **AI 搜索**: 使用 OpenAI API 进行智能搜索，返回搜索链接和总结内容
+- **普通搜索**: 保留原有的 Brave Search 功能（走 CF Worker）
+- 两种搜索结果会同时返回
+
+### 使用方法
+
+#### 直接运行
+
+```bash
+python SOTASearch.py \
+  --openai-api-key "your-api-key" \
+  --openai-base-url "https://api.openai.com/v1" \
+  --openai-model "gpt-4o"
+```
+
+#### 配合代理和 CF Worker
+
+```bash
+python SOTASearch.py \
+  --proxy http://127.0.0.1:7890 \
+  --cf-worker https://your-worker.workers.dev \
+  --openai-api-key "your-api-key" \
+  --openai-base-url "https://api.openai.com/v1" \
+  --openai-model "gpt-4o"
+```
+
+### 配置 CherryStudio
+
+```json
+{
+  "mcpServers": {
+    "sota-search": {
+      "command": "python",
+      "args": [
+        "/完整路径/SOTASearch.py",
+        "--proxy", "http://127.0.0.1:7890",
+        "--cf-worker", "https://your-worker.workers.dev",
+        "--openai-api-key", "your-api-key",
+        "--openai-base-url", "https://api.openai.com/v1",
+        "--openai-model", "gpt-4o"
+      ]
+    }
+  }
+}
+```
+
+### 命令行参数
+
+| 参数 | 说明 | 示例 |
+|------|------|------|
+| `--proxy` | 本地代理地址 | `--proxy http://127.0.0.1:7890` |
+| `--cf-worker` | Cloudflare Worker 地址 | `--cf-worker https://xxx.workers.dev` |
+| `--openai-api-key` | OpenAI API Key | `--openai-api-key sk-xxx` |
+| `--openai-base-url` | OpenAI API Base URL | `--openai-base-url https://api.openai.com/v1` |
+| `--openai-model` | OpenAI 模型名称（默认 gpt-4o） | `--openai-model gpt-4o` |
+
+### 返回格式
+
+`web_search` 工具返回包含两部分：
+
+```json
+{
+  "success": true,
+  "query": "搜索关键词",
+  "ai_search": "AI 搜索返回的总结内容和链接",
+  "basic_search": [
+    {"title": "标题", "url": "链接", "description": "描述"}
+  ]
+}
+```
