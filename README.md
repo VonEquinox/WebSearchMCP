@@ -31,7 +31,6 @@ uv sync
 
 ```bash
 uv run WebSearchMCP.py
-uv run WebSearchMCP_test.py
 uv run SOTASearch.py --openai-api-key "your-api-key" --openai-base-url "https://api.openai.com/v1"
 ```
 
@@ -54,28 +53,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 5. 安装 Playwright 浏览器（项目本地）
-
-浏览器会安装到项目目录下的 `.playwright-browsers`，不会污染系统目录。
-
-```bash
-# 设置浏览器安装路径为项目本地
-export PLAYWRIGHT_BROWSERS_PATH="$(pwd)/.playwright-browsers"
-
-# 安装 Chromium
-python -m playwright install chromium
-# 或（uv）
-uv run python -m playwright install chromium
-```
-
-Windows PowerShell：
-
-```powershell
-$env:PLAYWRIGHT_BROWSERS_PATH = "$PWD\.playwright-browsers"
-python -m playwright install chromium
-```
-
-### 6. 验证安装
+### 5. 验证安装
 
 ```bash
 python WebSearchMCP.py
@@ -229,23 +207,13 @@ python WebSearchMCP.py --proxy http://127.0.0.1:7890 --cf-worker https://your-wo
 
 ## 特性
 
-- 持久化浏览器实例，提升搜索性能
 - 支持本地代理配置 (`--proxy`)
 - 支持 Cloudflare Worker 代理 (`--cf-worker`)，隐藏真实 IP
 - 自动内容截断，防止响应过大
-- 使用 cloudscraper 绕过基础反爬
 - 兼容 CherryStudio 等 MCP 客户端的参数传递方式
+- 默认 SSE 便于 CherryStudio 连接
 
 ## 常见问题
-
-### Playwright 浏览器未安装
-
-错误信息：`Playwright 未正确安装或启动失败`
-
-解决方法：
-```bash
-playwright install chromium
-```
 
 ### 代理连接失败
 
@@ -260,8 +228,6 @@ playwright install chromium
 - Python 3.10+
 - fastmcp
 - beautifulsoup4
-- playwright
-- cloudscraper
 - curl_cffi
 - uvicorn（SSE）
 - lxml

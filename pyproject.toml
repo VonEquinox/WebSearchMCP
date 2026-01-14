@@ -6,12 +6,9 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
   "beautifulsoup4",
-  "cloudscraper",
   "curl_cffi",
   "fastmcp",
   "lxml",
   "openai",
-  "playwright",
   "uvicorn",
 ]
-
