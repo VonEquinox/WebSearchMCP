@@ -20,7 +20,22 @@ git clone https://github.com/yourusername/WebSearchMCP.git
 cd WebSearchMCP
 ```
 
-### 2. 创建虚拟环境（推荐）
+### 2. 使用 uv（推荐）
+
+```bash
+# 安装依赖（自动创建 .venv）
+uv sync
+```
+
+运行示例：
+
+```bash
+uv run WebSearchMCP.py
+uv run WebSearchMCP_test.py
+uv run SOTASearch.py --openai-api-key "your-api-key" --openai-base-url "https://api.openai.com/v1"
+```
+
+### 3. 创建虚拟环境（pip 方式，可选）
 
 ```bash
 # 创建虚拟环境
@@ -33,13 +48,13 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-### 3. 安装 Python 依赖
+### 4. 安装 Python 依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. 安装 Playwright 浏览器（项目本地）
+### 5. 安装 Playwright 浏览器（项目本地）
 
 浏览器会安装到项目目录下的 `.playwright-browsers`，不会污染系统目录。
 
@@ -49,6 +64,8 @@ export PLAYWRIGHT_BROWSERS_PATH="$(pwd)/.playwright-browsers"
 
 # 安装 Chromium
 python -m playwright install chromium
+# 或（uv）
+uv run python -m playwright install chromium
 ```
 
 Windows PowerShell：
@@ -58,7 +75,7 @@ $env:PLAYWRIGHT_BROWSERS_PATH = "$PWD\.playwright-browsers"
 python -m playwright install chromium
 ```
 
-### 5. 验证安装
+### 6. 验证安装
 
 ```bash
 python WebSearchMCP.py
@@ -104,6 +121,19 @@ python WebSearchMCP.py --proxy http://127.0.0.1:7890 --cf-worker https://your-wo
     "web-search": {
       "command": "python",
       "args": ["/完整路径/WebSearchMCP.py"]
+    }
+  }
+}
+```
+
+如果你用 uv 管理依赖，推荐这样配（更稳定，不依赖系统 python 环境）：
+
+```json
+{
+  "mcpServers": {
+    "web-search": {
+      "command": "uv",
+      "args": ["run", "--project", "/完整路径/WebSearchMCP", "WebSearchMCP.py"]
     }
   }
 }
@@ -227,11 +257,13 @@ playwright install chromium
 
 ## 依赖
 
-- Python 3.8+
+- Python 3.10+
 - fastmcp
 - beautifulsoup4
 - playwright
 - cloudscraper
+- curl_cffi
+- uvicorn（SSE）
 - lxml
 - openai (SOTASearch)
 

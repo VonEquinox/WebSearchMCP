@@ -1,8 +1,5 @@
 fastmcp
 beautifulsoup4
-playwright
-cloudscraper
 lxml
-openai
 curl_cffi
 uvicorn

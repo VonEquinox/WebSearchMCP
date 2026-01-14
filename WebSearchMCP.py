@@ -1,9 +1,7 @@
 """
 Web Search MCP Server for CherryStudio (Async版 - Cloudflare Worker 支持)
 
-变更：
-- 新增 --cf-worker 参数，支持通过 Cloudflare Worker 代理流量
-- 保持原有的 Playwright 和 cloudscraper 逻辑
+Playwright + cloudscraper 版本（原始实现）
 """
 
 import argparse

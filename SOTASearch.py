@@ -5,29 +5,25 @@ SOTA Search MCP Server - AI 增强搜索
 - 原有 web_search: 使用 Brave Search 进行普通搜索
 - 新增 ai_search: 使用 OpenAI API 进行 AI 深度搜索，返回搜索链接和总结
 - 支持 --cf-worker 参数，通过 Cloudflare Worker 代理流量
+
+变更（curl_cffi 版）：
+- 移除 Playwright / cloudscraper
+- 统一使用 curl_cffi 发起 HTTP 请求并解析 HTML
 """
 
 import argparse
 import asyncio
 import json
 import logging
-import os
 import re
 import sys
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import quote_plus, quote
 
-# 设置 Playwright 浏览器路径为项目本地目录
-_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(_SCRIPT_DIR, ".playwright-browsers")
-
-import cloudscraper
 from bs4 import BeautifulSoup
+from curl_cffi import requests as curl_requests
 from mcp.server.fastmcp import FastMCP
 from openai import OpenAI
-from playwright.async_api import Error as PlaywrightError
-from playwright.async_api import TimeoutError as PlaywrightTimeoutError
-from playwright.async_api import async_playwright
 
 # ============================================================================
 # Logging
@@ -102,12 +98,6 @@ logger.info(f"[DEBUG] OPENAI_API_KEY: {'***' if OPENAI_API_KEY else None}")
 logger.info(f"[DEBUG] OPENAI_BASE_URL: {OPENAI_BASE_URL}")
 logger.info(f"[DEBUG] OPENAI_MODEL: {OPENAI_MODEL}")
 
-# 全局 scraper 实例
-_scraper: Optional[cloudscraper.CloudScraper] = None
-
-# Playwright配置
-HEADLESS = True
-TIMEOUT_MS = 20_000
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -115,6 +105,10 @@ USER_AGENT = (
 )
 
 MAX_TOKEN_LIMIT = 10000
+CURL_IMPERSONATE = "chrome110"
+HTTP_VERSION = "v1"
+FETCH_TIMEOUT_S = 15
+SEARCH_TIMEOUT_S = 60
 
 
 # ============================================================================
@@ -132,13 +126,6 @@ def _get_target_url(original_url: str) -> str:
         encoded_target = quote(original_url) # 使用 quote 而不是 quote_plus 以保持 :// 的完整性兼容性
         return f"{worker_base}?url={encoded_target}"
     return original_url
-
-
-def _get_scraper() -> cloudscraper.CloudScraper:
-    global _scraper
-    if _scraper is None:
-        _scraper = cloudscraper.create_scraper()
-    return _scraper
 
 
 def _get_proxies() -> Optional[Dict[str, str]]:
@@ -234,74 +221,6 @@ def _parse_markdown_links(content: str) -> Tuple[List[Dict[str, str]], str]:
     return links, summary
 
 
-# ============================================================================
-# 全局浏览器管理器
-# ============================================================================
-class BrowserManager:
-    def __init__(self):
-        self._playwright = None
-        self._browser = None
-        self._lock: Optional[asyncio.Lock] = None
-
-    def _get_lock(self) -> asyncio.Lock:
-        if self._lock is None:
-            self._lock = asyncio.Lock()
-        return self._lock
-
-    async def get_browser(self):
-        async with self._get_lock():
-            if self._browser is None or not self._browser.is_connected():
-                await self._start_browser()
-            return self._browser
-
-    async def _start_browser(self):
-        try:
-            await self._cleanup()
-            self._playwright = await async_playwright().start()
-
-            launch_kwargs = {"headless": HEADLESS}
-            # 如果配置了本地代理，Playwright 依然使用它
-            # 注意：如果使用了 CF Worker，浏览器访问的是 Worker 地址
-            if PROXY_CONFIG:
-                launch_kwargs["proxy"] = {"server": PROXY_CONFIG}
-                logger.info(f"浏览器使用本地代理: {PROXY_CONFIG}")
-
-            self._browser = await self._playwright.chromium.launch(**launch_kwargs)
-            logger.info("持久化浏览器已启动")
-
-        except Exception as e:
-            logger.error(f"启动浏览器失败: {e}")
-            raise
-
-    async def new_page(self):
-        browser = await self.get_browser()
-        context = await browser.new_context(user_agent=USER_AGENT, java_script_enabled=False)
-        page = await context.new_page()
-        page.set_default_timeout(TIMEOUT_MS)
-        return page, context
-
-    async def _cleanup(self):
-        if self._browser:
-            try:
-                await self._browser.close()
-            except Exception:
-                pass
-            self._browser = None
-
-        if self._playwright:
-            try:
-                await self._playwright.stop()
-            except Exception:
-                pass
-            self._playwright = None
-
-    async def close(self):
-        async with self._get_lock():
-            await self._cleanup()
-            logger.info("持久化浏览器已关闭")
-
-
-_browser_manager = BrowserManager()
 mcp = FastMCP("sota-search")
 
 
@@ -312,91 +231,155 @@ async def _search_brave_core(
     query: str,
     max_results: int = 20,
 ) -> List[Dict[str, str]]:
-    results: List[Dict[str, str]] = []
-    context = None
-
     try:
-        page, context = await _browser_manager.new_page()
+        def _fetch_and_parse() -> List[Dict[str, str]]:
+            # 构造原始 Brave 搜索 URL
+            target_url = f"https://search.brave.com/search?q={quote_plus(query)}"
+            visit_url = _get_target_url(target_url)
 
-        # 构造原始 Brave 搜索 URL
-        target_url = f"https://search.brave.com/search?q={quote_plus(query)}"
-        
-        # 转换为实际访问的 URL (直连 或 经 CF Worker)
-        visit_url = _get_target_url(target_url)
+            logger.info(f"正在搜索: {query}")
+            if CF_WORKER_URL:
+                logger.info(f"Via Cloudflare Worker: {visit_url}")
 
-        logger.info(f"正在搜索: {query}")
-        if CF_WORKER_URL:
-            logger.info(f"Via Cloudflare Worker: {visit_url}")
+            request_headers = {
+                "User-Agent": USER_AGENT,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Connection": "close",
+            }
 
-        # 【修改点1】使用 'commit' 策略
-        # 只要服务器发回了 HTML 响应头就算成功，不再等待 DOM 加载完成
-        # 配合禁用 JS，速度极快
-        await page.goto(visit_url, wait_until="commit", timeout=60000)
-
-        # 【修改点2】移除 wait_for_selector，改用简单的缓冲
-        # 因为没有 JS，DOM 事件可能不完整，直接等 1 秒让 HTML 接收完毕即可
-        await asyncio.sleep(1.5)
-
-        html = await page.content()
-        soup = BeautifulSoup(html, "html.parser")
-        
-        # 【修改点3】Brave 静态 HTML 的选择器优化
-        # 你的 curl 结果显示 content 都在 #results 里面
-        items = soup.select('[data-type="web"]') # 保持原样，通常有效
-        
-        # 如果标准选择器没找到，尝试备用方案 (针对无 JS 版页面结构)
-        if not items:
-            items = soup.select('.snippet') 
-
-        if max_results and max_results > 0:
-            items = items[:max_results]
-
-        for item in items:
-            link = item.select_one("a[href]")
-            if not link:
-                continue
-            href = link.get("href", "")
-            
-            # 过滤
-            if not href.startswith("http"):
-                continue
-            if CF_WORKER_URL and CF_WORKER_URL in href:
-                continue
-
-            # 提取标题和描述
-            title_elem = item.select_one(".snippet-title, .title")
-            desc_elem = item.select_one(".snippet-description, .snippet-content, .description")
-
-            title = (title_elem.get_text(strip=True) if title_elem else "No Title")
-            body = (desc_elem.get_text(strip=True) if desc_elem else "")
-
-            results.append(
-                {
-                    "title": title,
-                    "url": href,
-                    "description": body,
-                }
+            response = curl_requests.get(
+                visit_url,
+                headers=request_headers,
+                proxies=_get_proxies(),
+                timeout=SEARCH_TIMEOUT_S,
+                allow_redirects=True,
+                impersonate=CURL_IMPERSONATE,
+                http_version=HTTP_VERSION,
+                stream=True,
             )
+            try:
+                response.raise_for_status()
 
-        logger.info(f"搜索完成，找到 {len(results)} 个结果")
+                buf = bytearray()
+                for chunk in response.iter_content():
+                    if not chunk:
+                        continue
+                    buf.extend(chunk)
 
-    except PlaywrightError as e:
-        logger.error(f"Playwright 错误: {e}")
-        # 返回部分结果而不是直接报错
-        if results:
-            return results
-        return [{"title": "搜索失败", "url": "", "description": f"Playwright错误: {str(e)}"}]
+                    # 收到一部分 HTML 后就尝试解析；如果已经能提取到足够结果就提前结束，避免卡在响应尾部
+                    if len(buf) < 16_000:
+                        continue
+                    if b"data-type" not in buf and b"snippet" not in buf:
+                        continue
+
+                    html = bytes(buf).decode("utf-8", errors="replace")
+                    parsed = _extract_brave_results(html, max_results)
+                    if len(parsed) >= max(1, min(max_results, 3)):
+                        break
+
+                html = bytes(buf).decode("utf-8", errors="replace")
+                results = _extract_brave_results(html, max_results)
+                logger.info(f"搜索完成，找到 {len(results)} 个结果")
+                return results
+            finally:
+                try:
+                    response.close()
+                except Exception:
+                    pass
+
+        def _extract_brave_results(html: str, limit: int) -> List[Dict[str, str]]:
+            soup = BeautifulSoup(html, "lxml")
+            items = soup.select('[data-type="web"]')
+            if not items:
+                items = soup.select(".snippet")
+
+            if limit and limit > 0:
+                items = items[:limit]
+
+            extracted: List[Dict[str, str]] = []
+            for item in items:
+                link = item.select_one("a[href]")
+                if not link:
+                    continue
+                href = link.get("href", "")
+                if not href.startswith("http"):
+                    continue
+                if CF_WORKER_URL and CF_WORKER_URL in href:
+                    continue
+
+                title_elem = item.select_one(".snippet-title, .title")
+                desc_elem = item.select_one(".snippet-description, .snippet-content, .description")
+
+                extracted.append(
+                    {
+                        "title": title_elem.get_text(strip=True) if title_elem else "No Title",
+                        "url": href,
+                        "description": desc_elem.get_text(strip=True) if desc_elem else "",
+                    }
+                )
+            return extracted
+
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, _fetch_and_parse)
     except Exception as e:
         logger.error(f"搜索过程发生错误: {e}")
         return [{"title": "搜索失败", "url": "", "description": f"错误: {str(e)}"}]
-    finally:
-        if context:
-            try:
-                await context.close()
-            except Exception:
-                pass
 
-    return results
+
+def _curl_get_with_retries(
+    url: str,
+    *,
+    headers: Optional[Dict[str, str]] = None,
+    timeout_s: int = FETCH_TIMEOUT_S,
+    retries: int = 2,
+) -> curl_requests.Response:
+    request_headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "close",
+        **(headers or {}),
+    }
+
+    last_error: Optional[Exception] = None
+    for attempt in range(1, max(1, retries) + 1):
+        try:
+            response = curl_requests.get(
+                url,
+                headers=request_headers,
+                proxies=_get_proxies(),
+                timeout=timeout_s,
+                allow_redirects=True,
+                impersonate=CURL_IMPERSONATE,
+                http_version=HTTP_VERSION,
+            )
+            response.raise_for_status()
+            return response
+        except Exception as e:
+            last_error = e
+            message = str(e)
+            is_timeout = ("curl: (28)" in message) or ("Operation timed out" in message)
+            logger.warning(
+                "HTTP ERROR attempt=%s/%s url=%s timeout_s=%s is_timeout=%s err=%s",
+                attempt,
+                retries,
+                url,
+                timeout_s,
+                is_timeout,
+                message,
+            )
+            if attempt >= retries or not is_timeout:
+                raise
+            timeout_s = max(timeout_s * 2, timeout_s + 10)
+            # 简单退避
+            import time as _time
+
+            _time.sleep(0.3 * attempt)
+    assert last_error is not None
+    raise last_error
 
 # ============================================================================
 # Fetch 工具 (支持 CF Worker)
@@ -405,20 +388,14 @@ async def _search_brave_core(
 async def fetch_html(url: str, *, headers: Optional[Dict[str, str]] = None) -> Dict[str, Any]:
     try:
         def _fetch():
-            scraper = _get_scraper()
-            proxies = _get_proxies()
-            
-            # 使用 Worker 包装 URL
             target_url = _get_target_url(url)
-            
-            # 如果用了 Worker，headers 中的 Host 可能需要调整，通常 cloudscraper 会自动处理
-            # 但我们要确保传给 Worker 的请求头是合理的。
-            # 这里简单起见，直接请求 Worker，Headers 由 cloudscraper 默认处理
-            
-            response = scraper.get(
-                target_url, headers=headers or {}, proxies=proxies, timeout=15
+
+            response = _curl_get_with_retries(
+                target_url,
+                headers=headers,
+                timeout_s=FETCH_TIMEOUT_S,
+                retries=2,
             )
-            response.raise_for_status()
 
             html_content, was_truncated = _limit_content_length(response.text)
             return {
@@ -442,14 +419,13 @@ async def fetch_html(url: str, *, headers: Optional[Dict[str, str]] = None) -> D
 async def fetch_text(url: str, *, headers: Optional[Dict[str, str]] = None) -> Dict[str, Any]:
     try:
         def _fetch():
-            scraper = _get_scraper()
-            proxies = _get_proxies()
             target_url = _get_target_url(url)
-
-            response = scraper.get(
-                target_url, headers=headers or {}, proxies=proxies, timeout=15
+            response = _curl_get_with_retries(
+                target_url,
+                headers=headers,
+                timeout_s=FETCH_TIMEOUT_S,
+                retries=2,
             )
-            response.raise_for_status()
 
             soup = BeautifulSoup(response.text, "lxml")
             for tag in soup(["script", "style", "header", "footer", "nav"]):
@@ -478,14 +454,13 @@ async def fetch_text(url: str, *, headers: Optional[Dict[str, str]] = None) -> D
 async def fetch_metadata(url: str, *, headers: Optional[Dict[str, str]] = None) -> Dict[str, Any]:
     try:
         def _fetch():
-            scraper = _get_scraper()
-            proxies = _get_proxies()
             target_url = _get_target_url(url)
-
-            response = scraper.get(
-                target_url, headers=headers or {}, proxies=proxies, timeout=15
+            response = _curl_get_with_retries(
+                target_url,
+                headers=headers,
+                timeout_s=FETCH_TIMEOUT_S,
+                retries=2,
             )
-            response.raise_for_status()
 
             soup = BeautifulSoup(response.text, "lxml")
             title = ""
