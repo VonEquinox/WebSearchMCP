@@ -129,6 +129,10 @@ def _get_openai_client() -> Optional[OpenAI]:
     return _openai_client
 
 
+def _llm_configured() -> bool:
+    return bool(OPENAI_API_KEY and OPENAI_BASE_URL)
+
+
 # ============================================================================
 # 辅助函数：处理 URL 路由
 # ============================================================================
@@ -180,7 +184,7 @@ def _clean_ai_tags(text: str) -> str:
     return text.strip()
 
 
-def _parse_markdown_links(content: str) -> Tuple[List[Dict[str, str]], str]:
+def _parse_markdown_links(content: str, extra_text: str = "") -> Tuple[List[Dict[str, str]], str]:
     """
     从 AI 返回的内容中解析链接
     支持格式：
@@ -189,12 +193,15 @@ def _parse_markdown_links(content: str) -> Tuple[List[Dict[str, str]], str]:
     3. 带括号的链接 (https://...)
     返回：(链接列表, 清理后的分析内容)
     """
+    content = content or ""
+    extra_text = extra_text or ""
+    link_source = f"{content}\n{extra_text}" if extra_text else content
     links = []
     seen_urls = set()
 
     # 1. 匹配 markdown 链接格式 [title](url)
     md_pattern = r'\[([^\]]+)\]\((https?://[^)]+)\)'
-    for match in re.finditer(md_pattern, content):
+    for match in re.finditer(md_pattern, link_source):
         title = match.group(1).strip()
         url = match.group(2).strip()
         if url not in seen_urls:
@@ -203,7 +210,7 @@ def _parse_markdown_links(content: str) -> Tuple[List[Dict[str, str]], str]:
 
     # 2. 匹配纯 URL（不在 markdown 格式中的）
     # 先移除已匹配的 markdown 链接，再提取剩余 URL
-    content_without_md = re.sub(md_pattern, '', content)
+    content_without_md = re.sub(md_pattern, '', link_source)
     url_pattern = r'https?://[^\s<>\"\'\)\]，。、；：）】}]+'
     for match in re.finditer(url_pattern, content_without_md):
         url = match.group(0).strip()
@@ -224,14 +231,15 @@ def _parse_markdown_links(content: str) -> Tuple[List[Dict[str, str]], str]:
     ]
 
     summary = ""
+    summary_source = content.strip() or link_source
     for pattern in summary_patterns:
-        match = re.search(pattern, content)
+        match = re.search(pattern, summary_source)
         if match:
             summary = match.group(0).strip()
             break
 
     if not summary:
-        summary = content
+        summary = summary_source
 
     # 清理特殊标签
     summary = _clean_ai_tags(summary)
@@ -528,42 +536,59 @@ async def web_search(query: str, max_results: int = 10) -> Dict[str, Any]:
 
     all_links = []
     ai_summary = ""
+    ai_content = ""
+    ai_links_only: List[Dict[str, str]] = []
 
     # 定义 AI 搜索的异步包装函数
-    async def _ai_search_async() -> Tuple[List[Dict[str, str]], str]:
-        if not (OPENAI_API_KEY and OPENAI_BASE_URL):
-            return [], ""
+    async def _ai_search_async() -> Tuple[List[Dict[str, str]], str, str]:
+        if not _llm_configured():
+            return [], "", ""
 
         def _ai_search():
             client = _get_openai_client()
+            if client is None:
+                raise RuntimeError("OpenAI client not configured")
 
-            prompt = f"""你是一个专业的搜索助手。请针对用户的问题进行深度搜索和分析。
+            prompt = f"""你是一个研究型搜索助手。目标是给出可信来源支撑下的“非常详细总结”，避免编造。严格按输出格式。
 
 要求：
-1. 尽可能多地搜索相关信息，从多个角度和来源获取数据
-2. 搜索时使用多种关键词组合，包括中文和英文
-3. 优先搜索最新的信息和权威来源
-4. 对搜索结果进行整理和总结
+1. 覆盖多个角度：原理/实现/最佳实践/对比/限制/最新进展
+2. 使用中英文关键词做同义扩展
+3. 尽可能广泛搜索，覆盖尽量多的来源与观点；搜索越多越好
+4. 只给出你确信真实存在的链接，宁可少而准
+5. 优先官方文档、标准、学术论文、项目主页、权威媒体；尽量近3年
+6. 去重，同域名最多 2 条
+7. 总结中不要出现裸链接；用 [标题](URL) 作为来源标注，放在相关句子后
+8. 不要输出 HTML/XML 标签或引用卡片标记
+9. 只输出下面一个部分，不要额外标题或说明
 
-输出格式要求：
-1. 首先列出所有搜索到的相关链接（格式：[标题](URL)）
-2. 然后提供详细的总结分析，可以包含表格、要点总结、结论等
+输出格式：
+### 详细总结分析
+（内容尽量详尽，可分小节；每条关键结论后标注来源链接）
+- 风险/不确定性：...
+- 进一步检索方向：...
 
-用户问题：{query}
-
-请开始搜索并提供详细回答。"""
+用户问题：{query}"""
 
             response = client.chat.completions.create(
                 model=OPENAI_MODEL,
                 messages=[{"role": "user", "content": prompt}],
             )
-            return response.choices[0].message.content
+            message = response.choices[0].message
+            content = getattr(message, "content", "") or ""
+            reasoning = getattr(message, "reasoning_content", "") or ""
+            return content, reasoning
 
         loop = asyncio.get_running_loop()
-        ai_content = await loop.run_in_executor(None, _ai_search)
-        ai_links, summary = _parse_markdown_links(ai_content)
+        try:
+            ai_content, ai_reasoning = await loop.run_in_executor(None, _ai_search)
+        except Exception as e:
+            logger.warning("AI 搜索不可用，已降级: %s", e)
+            return [], "", ""
+        ai_links, summary = _parse_markdown_links(ai_content, extra_text=ai_reasoning)
+        cleaned_content = _clean_ai_tags(ai_content)
         logger.info(f"AI 搜索完成，提取到 {len(ai_links)} 个链接")
-        return ai_links, summary
+        return ai_links, summary, cleaned_content
 
     # 定义普通搜索的异步包装函数
     async def _brave_search_async() -> List[Dict[str, str]]:
@@ -572,23 +597,27 @@ async def web_search(query: str, max_results: int = 10) -> Dict[str, Any]:
         return results
 
     # 并行执行两个搜索
-    ai_task = asyncio.create_task(_ai_search_async())
+    use_ai = _llm_configured()
     brave_task = asyncio.create_task(_brave_search_async())
-    results = await asyncio.gather(ai_task, brave_task, return_exceptions=True)
+    if use_ai:
+        ai_task = asyncio.create_task(_ai_search_async())
+        results = await asyncio.gather(ai_task, brave_task, return_exceptions=True)
+        ai_result = results[0]
+        brave_result = results[1]
 
-    # 处理 AI 搜索结果
-    if isinstance(results[0], Exception):
-        logger.error(f"AI 搜索失败: {results[0]}")
-        ai_summary = f"AI 搜索失败: {str(results[0])}"
-    else:
-        ai_links, ai_summary = results[0]
-        all_links.extend(ai_links)
+        if isinstance(ai_result, Exception):
+            logger.warning("AI 搜索失败，已降级为普通搜索: %s", ai_result)
+        else:
+            ai_links_only, ai_summary, ai_content = ai_result
+            all_links.extend(ai_links_only)
 
-    # 处理普通搜索结果
-    if isinstance(results[1], Exception):
-        logger.error(f"普通搜索失败: {results[1]}")
+        if isinstance(brave_result, Exception):
+            logger.error("普通搜索失败: %s", brave_result)
+        else:
+            all_links.extend(brave_result)
     else:
-        all_links.extend(results[1])
+        brave_result = await brave_task
+        all_links.extend(brave_result)
 
     # 去重（按 URL）
     seen_urls = set()
@@ -603,6 +632,8 @@ async def web_search(query: str, max_results: int = 10) -> Dict[str, Any]:
         "success": True,
         "query": query,
         "links": unique_links,
+        "ai_links": ai_links_only,
+        "ai_content": ai_content,
         "ai_summary": ai_summary,
     }
 
