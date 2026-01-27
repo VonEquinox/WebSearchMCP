@@ -1,14 +1,14 @@
 """
-SOTA Search MCP Server - AI 增强搜索
+SOTA Search MCP Server - AI Only
 
 功能：
-- 原有 web_search: 使用 Brave Search 进行普通搜索
-- 新增 ai_search: 使用 OpenAI API 进行 AI 深度搜索，返回搜索链接和总结
+- web_search: 使用 OpenAI 兼容 API 进行 AI 深度搜索（仅 AI）
+- 保留 fetch_html / fetch_text / fetch_metadata：网页抓取与解析
 - 支持 --cf-worker 参数，通过 Cloudflare Worker 代理流量
 
 变更(curl_cffi 版）：
 - 统一使用 curl_cffi 发起 HTTP 请求并解析 HTML
-- Pro 版在被 Cloudflare 挑战时回退 Playwright + stealth
+- 遇到 Cloudflare 挑战可回退 Playwright + stealth（可选）
 """
 
 import argparse
@@ -19,7 +19,7 @@ import re
 import sys
 import time
 from typing import Any, Dict, List, Optional, Tuple
-from urllib.parse import quote_plus, quote
+from urllib.parse import quote
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -112,7 +112,6 @@ MAX_TOKEN_LIMIT = 10000
 CURL_IMPERSONATE = "chrome110"
 HTTP_VERSION = "v1"
 FETCH_TIMEOUT_S = 15
-SEARCH_TIMEOUT_S = 60
 PLAYWRIGHT_FALLBACK = os.getenv("PLAYWRIGHT_FALLBACK", "1").lower() not in ("0", "false", "no")
 PLAYWRIGHT_TIMEOUT_MS = int(os.getenv("PLAYWRIGHT_TIMEOUT_MS", "60000"))
 PLAYWRIGHT_CHALLENGE_WAIT = int(os.getenv("PLAYWRIGHT_CHALLENGE_WAIT", "20"))
@@ -351,110 +350,6 @@ def _parse_markdown_links(content: str, extra_text: str = "") -> Tuple[List[Dict
 
 
 mcp = FastMCP("sota-search")
-
-
-# ============================================================================
-# Brave Search 核心
-# ============================================================================
-async def _search_brave_core(
-    query: str,
-    max_results: int = 20,
-) -> List[Dict[str, str]]:
-    try:
-        def _fetch_and_parse() -> List[Dict[str, str]]:
-            # 构造原始 Brave 搜索 URL
-            target_url = f"https://search.brave.com/search?q={quote_plus(query)}"
-            visit_url = _get_target_url(target_url)
-
-            logger.info(f"正在搜索: {query}")
-            if CF_WORKER_URL:
-                logger.info(f"Via Cloudflare Worker: {visit_url}")
-
-            request_headers = {
-                "User-Agent": USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                "Accept-Encoding": "gzip, deflate, br",
-                "Connection": "close",
-            }
-
-            response = curl_requests.get(
-                visit_url,
-                headers=request_headers,
-                proxies=_get_proxies(),
-                timeout=SEARCH_TIMEOUT_S,
-                allow_redirects=True,
-                impersonate=CURL_IMPERSONATE,
-                http_version=HTTP_VERSION,
-                stream=True,
-            )
-            try:
-                response.raise_for_status()
-
-                buf = bytearray()
-                for chunk in response.iter_content():
-                    if not chunk:
-                        continue
-                    buf.extend(chunk)
-
-                    # 收到一部分 HTML 后就尝试解析；如果已经能提取到足够结果就提前结束，避免卡在响应尾部
-                    if len(buf) < 16_000:
-                        continue
-                    if b"data-type" not in buf and b"snippet" not in buf:
-                        continue
-
-                    html = bytes(buf).decode("utf-8", errors="replace")
-                    parsed = _extract_brave_results(html, max_results)
-                    if len(parsed) >= max(1, min(max_results, 3)):
-                        break
-
-                html = bytes(buf).decode("utf-8", errors="replace")
-                results = _extract_brave_results(html, max_results)
-                logger.info(f"搜索完成，找到 {len(results)} 个结果")
-                return results
-            finally:
-                try:
-                    response.close()
-                except Exception:
-                    pass
-
-        def _extract_brave_results(html: str, limit: int) -> List[Dict[str, str]]:
-            soup = BeautifulSoup(html, "lxml")
-            items = soup.select('[data-type="web"]')
-            if not items:
-                items = soup.select(".snippet")
-
-            if limit and limit > 0:
-                items = items[:limit]
-
-            extracted: List[Dict[str, str]] = []
-            for item in items:
-                link = item.select_one("a[href]")
-                if not link:
-                    continue
-                href = link.get("href", "")
-                if not href.startswith("http"):
-                    continue
-                if CF_WORKER_URL and CF_WORKER_URL in href:
-                    continue
-
-                title_elem = item.select_one(".snippet-title, .title")
-                desc_elem = item.select_one(".snippet-description, .snippet-content, .description")
-
-                extracted.append(
-                    {
-                        "title": title_elem.get_text(strip=True) if title_elem else "No Title",
-                        "url": href,
-                        "description": desc_elem.get_text(strip=True) if desc_elem else "",
-                    }
-                )
-            return extracted
-
-        loop = asyncio.get_running_loop()
-        return await loop.run_in_executor(None, _fetch_and_parse)
-    except Exception as e:
-        logger.error(f"搜索过程发生错误: {e}")
-        return [{"title": "搜索失败", "url": "", "description": f"错误: {str(e)}"}]
 
 
 def _curl_get_with_retries(
@@ -752,21 +647,24 @@ async def fetch_metadata(url: str, *, headers: Optional[Dict[str, str]] = None) 
 @mcp.tool()
 async def web_search(query: str, max_results: int = 10) -> Dict[str, Any]:
     """
-    搜索工具：结合 AI 深度搜索和普通搜索
-    返回合并的链接列表和 AI 分析总结
+    搜索工具：仅 AI 深度搜索
+    返回链接列表和 AI 分析总结
     """
     logger.info(f"收到搜索请求: query='{query}'")
 
-    all_links = []
-    ai_summary = ""
-    ai_content = ""
-    ai_links_only: List[Dict[str, str]] = []
+    if not _llm_configured():
+        return {
+            "success": False,
+            "query": query,
+            "error": "AI 搜索未配置：缺少 OPENAI_API_KEY 或 OPENAI_BASE_URL",
+            "links": [],
+            "ai_links": [],
+            "ai_content": "",
+            "ai_summary": "",
+        }
 
     # 定义 AI 搜索的异步包装函数
     async def _ai_search_async() -> Tuple[List[Dict[str, str]], str, str]:
-        if not _llm_configured():
-            return [], "", ""
-
         def _ai_search():
             client = _get_openai_client()
             if client is None:
@@ -801,49 +699,15 @@ async def web_search(query: str, max_results: int = 10) -> Dict[str, Any]:
         logger.info(f"AI 搜索完成，提取到 {len(ai_links)} 个链接")
         return ai_links, summary, cleaned_content
 
-    # 定义普通搜索的异步包装函数
-    async def _brave_search_async() -> List[Dict[str, str]]:
-        results = await _search_brave_core(query=query, max_results=max_results)
-        logger.info(f"普通搜索完成，获取到 {len(results)} 个结果")
-        return results
-
-    # 并行执行两个搜索
-    use_ai = _llm_configured()
-    brave_task = asyncio.create_task(_brave_search_async())
-    if use_ai:
-        ai_task = asyncio.create_task(_ai_search_async())
-        results = await asyncio.gather(ai_task, brave_task, return_exceptions=True)
-        ai_result = results[0]
-        brave_result = results[1]
-
-        if isinstance(ai_result, Exception):
-            logger.warning("AI 搜索失败，已降级为普通搜索: %s", ai_result)
-        else:
-            ai_links_only, ai_summary, ai_content = ai_result
-            all_links.extend(ai_links_only)
-
-        if isinstance(brave_result, Exception):
-            logger.error("普通搜索失败: %s", brave_result)
-        else:
-            all_links.extend(brave_result)
-    else:
-        brave_result = await brave_task
-        all_links.extend(brave_result)
-
-    # 去重（按 URL）
-    seen_urls = set()
-    unique_links = []
-    for link in all_links:
-        url = link.get("url", "")
-        if url and url not in seen_urls:
-            seen_urls.add(url)
-            unique_links.append(link)
+    ai_links, ai_summary, ai_content = await _ai_search_async()
+    if max_results and max_results > 0:
+        ai_links = ai_links[:max_results]
 
     return {
         "success": True,
         "query": query,
-        "links": unique_links,
-        "ai_links": ai_links_only,
+        "links": ai_links,
+        "ai_links": ai_links,
         "ai_content": ai_content,
         "ai_summary": ai_summary,
     }

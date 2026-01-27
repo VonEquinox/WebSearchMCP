@@ -25,6 +25,48 @@ def _load_env_file(path: Path) -> None:
             os.environ.setdefault(key, value)
 
 
+def run_unit_tests() -> dict:
+    from SOTASearch import _clean_ai_tags, _parse_markdown_links, _strip_urls
+
+    ai_content = (
+        "这里是正文内容，模型偶尔会夹带链接："
+        "[xAI Reasoning Guide](https://docs.x.ai/docs/guides/reasoning)。"
+        "也可能出现裸链接 (https://example.com/bare)。"
+        "甚至是尖括号链接 <https://example.com/angle>。"
+        "\n\n参考来源（reasoning中列出）：\n"
+        "- https://example.com/ref1\n"
+        "- https://example.com/ref2\n"
+    )
+    ai_reasoning = "\n".join(
+        [
+            "Sources:",
+            "https://docs.x.ai/docs/guides/reasoning",
+            "[Prompt Engineering](https://docs.x.ai/docs/guides/grok-code-prompt-engineering)",
+        ]
+    )
+
+    links, summary = _parse_markdown_links(ai_content, extra_text=ai_reasoning)
+    summary_clean = _strip_urls(summary)
+    content_clean = _strip_urls(_clean_ai_tags(ai_content))
+
+    assert "http://" not in summary_clean and "https://" not in summary_clean
+    assert "http://" not in content_clean and "https://" not in content_clean
+    assert "参考来源" not in summary_clean and "参考来源" not in content_clean
+
+    urls = {link.get("url") for link in links}
+    assert "https://docs.x.ai/docs/guides/reasoning" in urls
+    assert "https://example.com/bare" in urls
+    assert "https://example.com/ref1" in urls
+
+    return {
+        "success": True,
+        "links_extracted": len(links),
+        "ai_links": links,
+        "ai_summary_clean": summary_clean,
+        "ai_content_clean": content_clean,
+    }
+
+
 def call_llm(content: str) -> dict:
     _load_env_file(Path(__file__).with_name(".env"))
     api_key = os.getenv("OPENAI_API_KEY")
@@ -92,7 +134,9 @@ async def call_playwright(url: str, mode: str = "text") -> dict:
 
 
 def main() -> None:
-    if len(sys.argv) > 1 and sys.argv[1] == "--llm":
+    if len(sys.argv) > 1 and sys.argv[1] == "--unit":
+        result = run_unit_tests()
+    elif len(sys.argv) > 1 and sys.argv[1] == "--llm":
         content = " ".join(sys.argv[2:]).strip()
         result = call_llm(content)
     elif len(sys.argv) > 1 and sys.argv[1] in ("--playwright", "--pw"):

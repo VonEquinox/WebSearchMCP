@@ -184,6 +184,42 @@ def _clean_ai_tags(text: str) -> str:
     return text.strip()
 
 
+def _strip_urls(text: str) -> str:
+    """移除正文中的 URL（保留 markdown 链接的标题文本）"""
+    if not text:
+        return ""
+
+    # 将 markdown 链接 [title](url) 解包为 title
+    text = re.sub(r'\[([^\]]+)\]\((https?://[^)]+)\)', r'\1', text)
+    # 移除 <https://...> 形式的链接
+    text = re.sub(r'<(https?://[^>]+)>', '', text)
+    # 移除裸 URL
+    url_pattern = r'https?://[^\s<>\"\'\)\]，。、；：）】}]+'
+    text = re.sub(url_pattern, '', text)
+
+    # 清理可能残留的空括号/空方括号与多余空白
+    text = re.sub(r'\(\s*\)', '', text)
+    text = re.sub(r'\[\s*\]', '', text)
+    text = re.sub(r'[ \t]{2,}', ' ', text)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    # 移除“参考来源/References/Sources”尾部段落（避免 strip URL 后出现空列表）
+    lines = text.splitlines()
+    for index, line in enumerate(lines):
+        if re.match(r"^\s*(参考来源|参考资料|参考链接|Sources|References)\b.*[:：]\s*$", line):
+            lines = lines[:index]
+            break
+    # 移除空的列表项（例如仅剩 '-'）
+    cleaned_lines: List[str] = []
+    for line in lines:
+        if re.match(r"^\s*[-*]\s*$", line):
+            continue
+        cleaned_lines.append(line)
+
+    text = "\n".join(cleaned_lines)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()
+
+
 def _parse_markdown_links(content: str, extra_text: str = "") -> Tuple[List[Dict[str, str]], str]:
     """
     从 AI 返回的内容中解析链接
@@ -549,24 +585,11 @@ async def web_search(query: str, max_results: int = 10) -> Dict[str, Any]:
             if client is None:
                 raise RuntimeError("OpenAI client not configured")
 
-            prompt = f"""你是一个研究型搜索助手。目标是给出可信来源支撑下的“非常详细总结”，避免编造。严格按输出格式。
+            prompt = f"""你是一个研究型搜索助手。目标：尽可能通过广泛检索与交叉验证，给出高质量、细节充分的回答，避免编造。
 
-要求：
-1. 覆盖多个角度：原理/实现/最佳实践/对比/限制/最新进展
-2. 使用中英文关键词做同义扩展
-3. 尽可能广泛搜索，覆盖尽量多的来源与观点；搜索越多越好
-4. 只给出你确信真实存在的链接，宁可少而准
-5. 优先官方文档、标准、学术论文、项目主页、权威媒体；尽量近3年
-6. 去重，同域名最多 2 条
-7. 总结中不要出现裸链接；用 [标题](URL) 作为来源标注，放在相关句子后
-8. 不要输出 HTML/XML 标签或引用卡片标记
-9. 只输出下面一个部分，不要额外标题或说明
+请覆盖：原理/实现/最佳实践/对比/限制/最新进展。请在内部使用中英文关键词做同义扩展（含缩写、别名、版本号、标准号），生成多组检索 query 并迭代检索；优先官方文档、标准/RFC、学术论文、项目主页、权威媒体，尽量近 3 年（经典标准除外）；关键结论尽量做到多来源交叉验证，无法验证的内容请明确标注“不确定/推测”；去重：同域名最多 2 条，宁可少而准。
 
-输出格式：
-### 详细总结分析
-（内容尽量详尽，可分小节；每条关键结论后标注来源链接）
-- 风险/不确定性：...
-- 进一步检索方向：...
+输出要求：最终回答请用自然语言写作，不要使用固定模板/标题/列表；正文不要输出任何 URL/链接（包括以 http/https 开头的内容），也不要出现“参考来源/References/Sources”等段落或占位符。你参考过的来源 URL 仅写在推理/思考（reasoning）里，按行列出即可（不要在正文提及或重复）。
 
 用户问题：{query}"""
 
@@ -586,7 +609,8 @@ async def web_search(query: str, max_results: int = 10) -> Dict[str, Any]:
             logger.warning("AI 搜索不可用，已降级: %s", e)
             return [], "", ""
         ai_links, summary = _parse_markdown_links(ai_content, extra_text=ai_reasoning)
-        cleaned_content = _clean_ai_tags(ai_content)
+        summary = _strip_urls(summary)
+        cleaned_content = _strip_urls(_clean_ai_tags(ai_content))
         logger.info(f"AI 搜索完成，提取到 {len(ai_links)} 个链接")
         return ai_links, summary, cleaned_content
 
