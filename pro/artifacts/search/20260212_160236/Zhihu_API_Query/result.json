@@ -1,0 +1,245 @@
+{
+  "success": true,
+  "query": "知乎 api v4 answers include content",
+  "links": [
+    {
+      "title": "知乎API v4 整理 - iBlog",
+      "url": "https://luckymrwang.github.io/2019/04/06/%E7%9F%A5%E4%B9%8E-API-v4-%E6%95%B4%E7%90%86",
+      "description": ""
+    },
+    {
+      "title": "知乎api整理· Issue #89 · YaoZeyuan/ZhihuHelp_archived - GitHub",
+      "url": "https://github.com/YaoZeyuan/ZhihuHelp_archived/issues/89",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - yifei/notes",
+      "url": "https://yifei.me/note/460",
+      "description": ""
+    },
+    {
+      "title": "太好玩了，爬虫、部署API、加小程序，一条龙玩转知乎热榜！",
+      "url": "https://zhuanlan.zhihu.com/p/107383965",
+      "description": ""
+    },
+    {
+      "title": "如何让知乎爬虫获取某个问题下所有回答的链接？",
+      "url": "https://www.zhihu.com/question/310373633",
+      "description": ""
+    },
+    {
+      "title": "随手找到的知乎的API",
+      "url": "https://zhuanlan.zhihu.com/p/87029765",
+      "description": ""
+    },
+    {
+      "title": "zhihuapi.answer — zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/_modules/zhihuapi/answer.html",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理- 绝不原创的飞龙- 博客园",
+      "url": "https://www.cnblogs.com/apachecn/p/17313135.html",
+      "description": ""
+    },
+    {
+      "title": "简单！直接copy代码就可运行！爬虫获取知乎评论！！！ 原创 - CSDN博客",
+      "url": "https://blog.csdn.net/m0_74824865/article/details/144344373",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理：开发者必备指南与实战解析 - 百度智能云",
+      "url": "https://cloud.baidu.com/article/4196469",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "知乎API v4 整理 - iBlog",
+      "url": "https://luckymrwang.github.io/2019/04/06/%E7%9F%A5%E4%B9%8E-API-v4-%E6%95%B4%E7%90%86",
+      "description": ""
+    },
+    {
+      "title": "知乎api整理· Issue #89 · YaoZeyuan/ZhihuHelp_archived - GitHub",
+      "url": "https://github.com/YaoZeyuan/ZhihuHelp_archived/issues/89",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - yifei/notes",
+      "url": "https://yifei.me/note/460",
+      "description": ""
+    },
+    {
+      "title": "太好玩了，爬虫、部署API、加小程序，一条龙玩转知乎热榜！",
+      "url": "https://zhuanlan.zhihu.com/p/107383965",
+      "description": ""
+    },
+    {
+      "title": "如何让知乎爬虫获取某个问题下所有回答的链接？",
+      "url": "https://www.zhihu.com/question/310373633",
+      "description": ""
+    },
+    {
+      "title": "随手找到的知乎的API",
+      "url": "https://zhuanlan.zhihu.com/p/87029765",
+      "description": ""
+    },
+    {
+      "title": "zhihuapi.answer — zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/_modules/zhihuapi/answer.html",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理- 绝不原创的飞龙- 博客园",
+      "url": "https://www.cnblogs.com/apachecn/p/17313135.html",
+      "description": ""
+    },
+    {
+      "title": "简单！直接copy代码就可运行！爬虫获取知乎评论！！！ 原创 - CSDN博客",
+      "url": "https://blog.csdn.net/m0_74824865/article/details/144344373",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理：开发者必备指南与实战解析 - 百度智能云",
+      "url": "https://cloud.baidu.com/article/4196469",
+      "description": ""
+    },
+    {
+      "title": "zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py",
+      "description": ""
+    },
+    {
+      "title": "4_fianl_get_answer.py - ethanliuzhuo/zhihu_sprider - GitHub",
+      "url": "https://github.com/ethanliuzhuo/zhihu_sprider/blob/master/4_fianl_get_answer.py",
+      "description": ""
+    },
+    {
+      "title": "zhihu optimizer - Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/420005-zhihu-optimizer/code",
+      "description": ""
+    },
+    {
+      "title": "10.1.8.2.AI AGENTS DEPLOYMENT - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/1633835844",
+      "description": ""
+    },
+    {
+      "title": "lostjay/zhihu_android_crawler: Zhihu Android Reverse Engineering Solution Bypasses ... - GitHub",
+      "url": "https://github.com/lostjay/zhihu_android_crawler",
+      "description": ""
+    },
+    {
+      "title": "NeurIPS Poster Knowledge Circuits in Pretrained Transformers",
+      "url": "https://neurips.cc/virtual/2024/poster/94695",
+      "description": ""
+    },
+    {
+      "title": "Privacy policy - IPCO",
+      "url": "https://www.ipco.com/en-us/privacy-policy",
+      "description": ""
+    },
+    {
+      "title": "Xiaoice: A Generative AI Company Specializing in Emotional Computing - Sage Knowledge",
+      "url": "https://sk.sagepub.com/cases/download/xiaoice-a-generative-ai-company-specializing-in-emotional-computing",
+      "description": ""
+    },
+    {
+      "title": "Accepted Findings Papers - ACL 2025",
+      "url": "https://2025.aclweb.org/program/find_papers",
+      "description": ""
+    },
+    {
+      "title": "Zhihu Answer List V1 知乎回答列表V1 - API Usage Guide",
+      "url": "https://justoneapi.apifox.cn/api-372978135",
+      "description": ""
+    },
+    {
+      "title": "lzjun567/zhihu-api: Zhihu API for Humans - GitHub",
+      "url": "https://github.com/lzjun567/zhihu-api",
+      "description": ""
+    },
+    {
+      "title": "Zhihu-ai/Zhi-Create-Qwen3-32B - Hugging Face",
+      "url": "https://huggingface.co/Zhihu-ai/Zhi-Create-Qwen3-32B",
+      "description": ""
+    },
+    {
+      "title": "python爬取知乎回答图片",
+      "url": "https://zhuanlan.zhihu.com/p/43408400",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎某个问题下所有含有关键词的回答转载 - CSDN博客",
+      "url": "https://blog.csdn.net/chen_zan_yu_/article/details/105589114",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎真福利回答内容 - 腾讯云- Tencent",
+      "url": "https://cloud.tencent.com/developer/article/1459375",
+      "description": ""
+    },
+    {
+      "title": "爬虫实战系列(九)：知乎热榜全爬取及词云制作",
+      "url": "https://zhuanlan.zhihu.com/p/518110234",
+      "description": ""
+    },
+    {
+      "title": "Github Can Be Played Like This? - Tw93",
+      "url": "https://tw93.fun/en/2020-07-17/markdown.html",
+      "description": ""
+    },
+    {
+      "title": "The 18 Node.js Web Frameworks and Tools I Recommend - zhihu - 知乎",
+      "url": "https://en.zhihu.com/article/471529809",
+      "description": ""
+    },
+    {
+      "title": "GraphQL queries | Infrahub Documentation - OpsMill",
+      "url": "https://docs.infrahub.app/topics/graphql",
+      "description": ""
+    },
+    {
+      "title": "Building the Contentful GraphQL API - YouTube",
+      "url": "https://www.youtube.com/watch?v=NeCKZ3VAlYk",
+      "description": ""
+    },
+    {
+      "title": "How to query all the GraphQL type fields without writing a long query? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/34199982/how-to-query-all-the-graphql-type-fields-without-writing-a-long-query",
+      "description": ""
+    },
+    {
+      "title": "GraphQL Content API | Contentful Docs",
+      "url": "https://www.contentful.com/developers/docs/references/graphql",
+      "description": ""
+    },
+    {
+      "title": "使用Go 构建GraphQL API - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/389845637",
+      "description": ""
+    },
+    {
+      "title": "GraphQL APIs 101: Resolving GraphQL Entities - YouTube",
+      "url": "https://www.youtube.com/watch?v=tS-UO6MlYeQ",
+      "description": ""
+    },
+    {
+      "title": "From Zero to GraphQL Hero: Consuming APIs with Powershell - Mike Preston - PSConfEU 2023",
+      "url": "https://www.youtube.com/watch?v=IVRelD6Rr3g",
+      "description": ""
+    },
+    {
+      "title": "www.zhihu.com",
+      "url": "https://www.zhihu.com/api/v4",
+      "description": ""
+    },
+    {
+      "title": "picx.zhimg.com",
+      "url": "https://picx.zhimg.com/",
+      "description": ""
+    }
+  ],
+  "ai_content": "知乎的 V4 API（即 下的接口）在获取回答（answers）数据时，默认返回的字段通常只包含基本的元信息，比如回答 ID、作者概要、投票数、创建时间、摘要（excerpt）等，而**正文内容（content）** 属于扩展字段，需要通过 include 参数显式指定才能包含在响应中。\n\n这个设计是知乎 API 的核心机制之一：基础响应保持精简，减少不必要的数据传输，只有当开发者明确声明需要某些额外字段时，才会返回相应内容。这既优化了性能，也在一定程度上增加了爬取完整内容的门槛。\n\n对于最常用的两个接口：\n\n- 获取某个问题下的回答列表：/api/v4/questions/{question_id}/answers \n 这里 content 字段必须写在 include 的 data[*] 子路径下，例如 include=data[*].content,... \n 常见的完整写法会把 content 和 editable_content（可编辑格式的内容，通常是 HTML）一起带上，同时搭配其他常用字段如 voteup_count、comment_count、created_time、updated_time、author 等。如果不写 content，默认响应里往往只有 excerpt（简短摘要），正文是拿不到的。分页时用 limit（最大一般 20）和 offset 控制，每次响应 paging 里会告诉你是否还有下一页。\n\n- 获取单个回答的详情：/api/v4/answers/{answer_id} \n 同样需要 include 参数带上 content，例如 include=content,editable_content,voteup_count,... \n 这个接口返回的数据结构更直接，content 字段如果指定了就会完整出现，通常是 HTML 格式的富文本，包含段落、图片链接、公式等。\n\n在实际使用中，include 参数的写法非常灵活，支持用分号 ; 分组、用 ? 条件过滤、甚至嵌套子字段（如 data[*].author.follower_count），但 content 本身是回答对象的一级字段，直接写 data[*].content 或者直接 content 都可以（视接口上下文）。很多老的爬虫代码里会看到很长的 include 字符串，那是为了尽可能一次拿到所有有用信息，避免多次请求。\n\n不过需要注意几点实际限制和变化：\n\n- 知乎从 2019 年左右开始逐步加强反爬措施，尤其是无登录态或低频 IP 访问时，即使带了正确的 include，也可能返回 403 或内容被截断/隐藏。很多时候需要模拟 headers（如 User-Agent、Referer、Cookie 中的 z_c0 等授权信息），甚至涉及 x-zse-96 签名（后来 Android 逆向出来的参数）。\n- content 字段本身是 HTML 字符串，里面图片是外链形式（通常 ），需要自行处理下载或替换。\n- 对于盐选付费内容或某些受限回答，即使带 include=content，也可能返回空或提示已付费/不可见。\n- 近年来知乎更倾向于内部使用 GraphQL，但对外公开的还是以 V4 REST 风格为主，第三方库（如老的 zhihu-api python 包）基本都围绕这个 include 机制封装。\n\n最佳实践是：先用少量字段测试接口是否可用（如只 include=data[*].id,voteup_count,content），确认 token/签名/headers 没问题后再扩展 include 列表；同时控制请求频率，避免触发风控；解析时用 lxml 或 beautifulsoup 处理 content 里的 HTML。\n\n目前（2026 年初）这个机制在公开可访问的接口里仍然有效，但完整可靠使用基本离不开登录态的 cookie 或逆向生成的签名，纯匿名访问能稳定拿到 content 的概率已经很低了。一些第三方聚合 API 或工具可能会帮你绕过部分限制，但本质上还是依赖相同的 include 参数来拉取 content 字段。",
+  "ai_summary": "知乎的 V4 API（即 下的接口）在获取回答（answers）数据时，默认返回的字段通常只包含基本的元信息，比如回答 ID、作者概要、投票数、创建时间、摘要（excerpt）等，而**正文内容（content）** 属于扩展字段，需要通过 include 参数显式指定才能包含在响应中。\n\n这个设计是知乎 API 的核心机制之一：基础响应保持精简，减少不必要的数据传输，只有当开发者明确声明需要某些额外字段时，才会返回相应内容。这既优化了性能，也在一定程度上增加了爬取完整内容的门槛。\n\n对于最常用的两个接口：\n\n- 获取某个问题下的回答列表：/api/v4/questions/{question_id}/answers \n 这里 content 字段必须写在 include 的 data[*] 子路径下，例如 include=data[*].content,... \n 常见的完整写法会把 content 和 editable_content（可编辑格式的内容，通常是 HTML）一起带上，同时搭配其他常用字段如 voteup_count、comment_count、created_time、updated_time、author 等。如果不写 content，默认响应里往往只有 excerpt（简短摘要），正文是拿不到的。分页时用 limit（最大一般 20）和 offset 控制，每次响应 paging 里会告诉你是否还有下一页。\n\n- 获取单个回答的详情：/api/v4/answers/{answer_id} \n 同样需要 include 参数带上 content，例如 include=content,editable_content,voteup_count,... \n 这个接口返回的数据结构更直接，content 字段如果指定了就会完整出现，通常是 HTML 格式的富文本，包含段落、图片链接、公式等。\n\n在实际使用中，include 参数的写法非常灵活，支持用分号 ; 分组、用 ? 条件过滤、甚至嵌套子字段（如 data[*].author.follower_count），但 content 本身是回答对象的一级字段，直接写 data[*].content 或者直接 content 都可以（视接口上下文）。很多老的爬虫代码里会看到很长的 include 字符串，那是为了尽可能一次拿到所有有用信息，避免多次请求。\n\n不过需要注意几点实际限制和变化：\n\n- 知乎从 2019 年左右开始逐步加强反爬措施，尤其是无登录态或低频 IP 访问时，即使带了正确的 include，也可能返回 403 或内容被截断/隐藏。很多时候需要模拟 headers（如 User-Agent、Referer、Cookie 中的 z_c0 等授权信息），甚至涉及 x-zse-96 签名（后来 Android 逆向出来的参数）。\n- content 字段本身是 HTML 字符串，里面图片是外链形式（通常 ），需要自行处理下载或替换。\n- 对于盐选付费内容或某些受限回答，即使带 include=content，也可能返回空或提示已付费/不可见。\n- 近年来知乎更倾向于内部使用 GraphQL，但对外公开的还是以 V4 REST 风格为主，第三方库（如老的 zhihu-api python 包）基本都围绕这个 include 机制封装。\n\n最佳实践是：先用少量字段测试接口是否可用（如只 include=data[*].id,voteup_count,content），确认 token/签名/headers 没问题后再扩展 include 列表；同时控制请求频率，避免触发风控；解析时用 lxml 或 beautifulsoup 处理 content 里的 HTML。\n\n目前（2026 年初）这个机制在公开可访问的接口里仍然有效，但完整可靠使用基本离不开登录态的 cookie 或逆向生成的签名，纯匿名访问能稳定拿到 content 的概率已经很低了。一些第三方聚合 API 或工具可能会帮你绕过部分限制，但本质上还是依赖相同的 include 参数来拉取 content 字段。"
+}

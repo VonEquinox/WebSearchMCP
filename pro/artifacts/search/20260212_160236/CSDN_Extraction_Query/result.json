@@ -1,0 +1,250 @@
+{
+  "success": true,
+  "query": "CSDN 正文 提取 去除 广告 导航",
+  "links": [
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "Python爬取CSDN博客文章- shootercheng - 博客园",
+      "url": "https://www.cnblogs.com/shootercheng/p/5962445.html",
+      "description": ""
+    },
+    {
+      "title": "【技巧】如何使用客户端发布BLOG+如何快速发布微信公众号文章 - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/283839",
+      "description": ""
+    },
+    {
+      "title": "GitHub - cirosantilli/china-dictatorship: 反中共政治宣传库。Anti Chinese government propaganda. 住在中国真名用户的网友请别给星星，不然你要被警察请喝茶。常见问答集",
+      "url": "https://github.com/cirosantilli/china-dictatorship",
+      "description": ""
+    },
+    {
+      "title": "CSDN页面上方广告条太烦人？js写个油猴脚本给它隐藏了",
+      "url": "https://developer.aliyun.com/article/1264614",
+      "description": ""
+    },
+    {
+      "title": "浏览器必备，2025 年度最喜欢油猴脚本 - 奔跑中的奶酪",
+      "url": "https://www.runningcheese.com/userscripts",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取新体验：正文提取器v1.0发布 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_34535286/article/details/147914118",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "推荐JReadability，一款强大的网页正文提取工具原创 - CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_00077/article/details/136776188",
+      "description": ""
+    },
+    {
+      "title": "Python爬取CSDN博客文章- shootercheng - 博客园",
+      "url": "https://www.cnblogs.com/shootercheng/p/5962445.html",
+      "description": ""
+    },
+    {
+      "title": "【技巧】如何使用客户端发布BLOG+如何快速发布微信公众号文章 - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/283839",
+      "description": ""
+    },
+    {
+      "title": "GitHub - cirosantilli/china-dictatorship: 反中共政治宣传库。Anti Chinese government propaganda. 住在中国真名用户的网友请别给星星，不然你要被警察请喝茶。常见问答集",
+      "url": "https://github.com/cirosantilli/china-dictatorship",
+      "description": ""
+    },
+    {
+      "title": "CSDN页面上方广告条太烦人？js写个油猴脚本给它隐藏了",
+      "url": "https://developer.aliyun.com/article/1264614",
+      "description": ""
+    },
+    {
+      "title": "从HTML文件中提取正文的简单方案- lexus",
+      "url": "https://www.cnblogs.com/lexus/archive/2012/05/16/2505411.html",
+      "description": ""
+    },
+    {
+      "title": "浏览器必备，2025 年度最喜欢油猴脚本 - 奔跑中的奶酪",
+      "url": "https://www.runningcheese.com/userscripts",
+      "description": ""
+    },
+    {
+      "title": "awesome-ChatGPT-repositories/docs/README.zh-hans.md at main - GitHub",
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories/blob/main/docs/README.zh-hans.md",
+      "description": ""
+    },
+    {
+      "title": "适用于所有网站的用户脚本 - Greasy Fork",
+      "url": "https://greasyfork.org/zh-CN/scripts/by-site/*?language=all",
+      "description": ""
+    },
+    {
+      "title": "分享10个吊炸天的油猴脚本，2025最新！ - Scribd",
+      "url": "https://www.scribd.com/document/940128146/%E5%88%86%E4%BA%AB10%E4%B8%AA%E5%90%8A%E7%82%B8%E5%A4%A9%E7%9A%84%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC-2025%E6%9C%80%E6%96%B0",
+      "description": ""
+    },
+    {
+      "title": "油猴脚本开发之CSDN（上） - 稀土掘金",
+      "url": "https://juejin.cn/post/7127674065426317326",
+      "description": ""
+    },
+    {
+      "title": "11款程序员实用工具，老少皆宜，手快的已经低调安装了！ - 腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/2473442",
+      "description": ""
+    },
+    {
+      "title": "How to prevent external script from top level navigation - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/77816314/how-to-prevent-external-script-from-top-level-navigation",
+      "description": ""
+    },
+    {
+      "title": "User scripts - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts?language=all&page=1&q=csdn&sort=created",
+      "description": ""
+    },
+    {
+      "title": "Web Content Extraction with Heuristics & NLP | by Amy Leong | AI monks.io | Medium",
+      "url": "https://medium.com/aimonks/web-content-extraction-with-heuristics-nlp-8e901875c8ed",
+      "description": ""
+    },
+    {
+      "title": "Mining User Reviews From Hypertension Management Mobile Health Apps to Explore Factors Influencing User Satisfaction and Their Asymmetry: Comparative Study - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11009850",
+      "description": ""
+    },
+    {
+      "title": "LEVERAGING ONLINE ADVERTISING PLATFORMS TO MEASURE AND CHARACTERIZE DIGITAL INEQUALITIES - IMDEA Networks Principal",
+      "url": "https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/791/Y.Mitike_Kassa-PhD_Thesis-December_2020.pdf?isAllowed=y&sequence=1",
+      "description": ""
+    },
+    {
+      "title": "Extraction and Visual Analysis of Negative Traffic Events from Weibo Data - ETH Zurich Research Collection",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/5ff2089c-ff0f-460f-aa02-407cdd9c41dc/content",
+      "description": ""
+    },
+    {
+      "title": "RuihanGao/2019Summer - GitHub",
+      "url": "https://github.com/RuihanGao/2019Summer",
+      "description": ""
+    },
+    {
+      "title": "Vehicular LTE connectivity analysis in urban and rural environments using USRP measurements - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590005620300308",
+      "description": ""
+    },
+    {
+      "title": "Extraction and Visual Analysis of Negative Traffic Events from Weibo Data - International Master in Cartography",
+      "url": "https://cartographymaster.eu/wp-content/theses/2017_Zuo_Thesis.pdf",
+      "description": ""
+    },
+    {
+      "title": "Accurate recognition of UAVs on multi-scenario perception with YOLOv9-CAG - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-12670-8",
+      "description": ""
+    },
+    {
+      "title": "html-to-markdown · GitHub Topics",
+      "url": "https://github.com/topics/html-to-markdown",
+      "description": ""
+    },
+    {
+      "title": "html-to-markdown · GitHub Topics",
+      "url": "https://github.com/topics/html-to-markdown?l=javascript",
+      "description": ""
+    },
+    {
+      "title": "html2md · GitHub Topics",
+      "url": "https://github.com/topics/html2md?o=asc&s=updated",
+      "description": ""
+    },
+    {
+      "title": "caol64/wenyan-pc: 文颜- Markdown文章排版美化工具，支持微信公众号、今日头条、知乎等平台。 - GitHub",
+      "url": "https://github.com/caol64/wenyan-pc",
+      "description": ""
+    },
+    {
+      "title": "ArchiveBox/community: A wiki of the broader Web Archiving ... - GitHub",
+      "url": "https://github.com/ArchiveBox/community",
+      "description": ""
+    },
+    {
+      "title": "arielsalminen/Molten-Leading: Automatically adjust line-height based on element width for optimal readability. - GitHub",
+      "url": "https://github.com/arielsalminen/Molten-Leading",
+      "description": ""
+    },
+    {
+      "title": "silvonli/Summa: A browser extension that uses AI to generate concise summaries of web articles - GitHub",
+      "url": "https://github.com/silvonli/Summa",
+      "description": ""
+    },
+    {
+      "title": "NightKari/go-awesome: Go language excellent resource arrangement, to accelerate the implementation of the project - GitHub",
+      "url": "https://github.com/NightKari/go-awesome",
+      "description": ""
+    },
+    {
+      "title": "awesome-mcp-servers/README.md at main - GitHub",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+      "description": ""
+    },
+    {
+      "title": "jsdom · GitHub Topics",
+      "url": "https://github.com/topics/jsdom",
+      "description": ""
+    }
+  ],
+  "ai_content": "CSDN文章页面通常包含顶部横幅广告、右侧推荐栏、底部相关文章、登录弹窗、复制限制提示以及各种导航元素，这些都会干扰阅读和内容抓取体验。要提取干净的正文（主要是文章标题、正文段落、代码块等核心内容），目前最实用可靠的方式主要有浏览器端用户脚本改造和后端程序化提取两种路径。\n\n在浏览器端，最常见且效果稳定的方法是安装油猴（Tampermonkey / Violentmonkey）脚本。社区里有一些专门针对CSDN的增强脚本，能一键隐藏顶部广告条、收起右侧悬浮推荐、移除登录/关注遮罩、解除复制限制，同时保持页面原有排版。部分脚本还会直接把页面净化成接近阅读模式的样式，去掉大部分非正文干扰。这些脚本在2024-2025年间仍有活跃维护和更新，安装后基本能让CSDN页面瞬间清爽很多，使用时只需在Greasy Fork等平台搜索“CSDN”相关关键词，选择安装量高、近期更新的版本即可。实际体验中，这种方式对大多数普通用户来说是最省力的，几乎不需要额外配置。\n\n如果需要更彻底的纯净正文（比如用于保存为Markdown、批量下载或接入AI处理），推荐结合通用网页正文提取算法。Mozilla的Readability算法（及其各种语言实现，如Readability.js、python-readability、JReadability等）在处理CSDN这类博客页面时表现不错，它通过分析段落文本密度、链接比例、class/id特征等启发式规则，自动过滤掉导航、广告、侧边栏和脚注，保留主体内容。2025年还有一些基于大型站点特征训练的专用提取工具，能针对CSDN、知乎等中文社区做进一步优化，提取出的正文通常只剩标题+段落+代码，基本无冗余。\n\n用Python实现时，trafilatura、newspaper3k、boilerpipe（Java但有Python包装）这些库都可以直接上手，结合requests或playwright获取页面HTML后调用extractor，多数情况下都能得到较干净的结果。代码块部分通常会被保留为pre/code标签，之后再用html2text或自定义规则转成Markdown就很方便。如果CSDN页面结构在某次改版后提取准确率下降（比如class名变动），可以临时补充少量CSS选择器规则，比如针对文章主体的“.article-content”或类似容器进行强制提取，作为兜底方案。\n\n对比几种方式：浏览器脚本最即装即用，但依赖插件生态，遇到CSDN前端大改可能短暂失效；通用提取库更稳定、可自动化批量处理，但对极个别复杂页面（比如嵌套很多广告div的旧文章）可能需要手动调参或结合BeautifulSoup/XPath补充规则；纯硬编码CSS隐藏（display:none针对特定class/id）虽然简单粗暴，但维护成本高，因为CSDN的广告/导航class经常变动，不如前两者智能。\n\n当前限制主要体现在：CSDN前端持续迭代，广告位和反爬机制偶尔加强，导致部分老脚本或库需要跟进更新；极少数文章嵌入了动态加载的内容（比如某些付费专栏片段），通用提取器可能漏掉；严格反作弊页面有时会把正文延迟渲染，这时需要无头浏览器模拟完整加载。\n\n最新进展上看，2025年社区对这类中文技术博客的净化需求依然旺盛，Readability家族算法持续被优化，一些结合轻量机器学习或大模型辅助的提取工具开始出现，准确率在复杂页面上比纯规则方法有明显提升，但对普通场景来说，成熟的Readability+少量站点定制规则仍是性价比最高的选择。",
+  "ai_summary": "CSDN文章页面通常包含顶部横幅广告、右侧推荐栏、底部相关文章、登录弹窗、复制限制提示以及各种导航元素，这些都会干扰阅读和内容抓取体验。要提取干净的正文（主要是文章标题、正文段落、代码块等核心内容），目前最实用可靠的方式主要有浏览器端用户脚本改造和后端程序化提取两种路径。\n\n在浏览器端，最常见且效果稳定的方法是安装油猴（Tampermonkey / Violentmonkey）脚本。社区里有一些专门针对CSDN的增强脚本，能一键隐藏顶部广告条、收起右侧悬浮推荐、移除登录/关注遮罩、解除复制限制，同时保持页面原有排版。部分脚本还会直接把页面净化成接近阅读模式的样式，去掉大部分非正文干扰。这些脚本在2024-2025年间仍有活跃维护和更新，安装后基本能让CSDN页面瞬间清爽很多，使用时只需在Greasy Fork等平台搜索“CSDN”相关关键词，选择安装量高、近期更新的版本即可。实际体验中，这种方式对大多数普通用户来说是最省力的，几乎不需要额外配置。\n\n如果需要更彻底的纯净正文（比如用于保存为Markdown、批量下载或接入AI处理），推荐结合通用网页正文提取算法。Mozilla的Readability算法（及其各种语言实现，如Readability.js、python-readability、JReadability等）在处理CSDN这类博客页面时表现不错，它通过分析段落文本密度、链接比例、class/id特征等启发式规则，自动过滤掉导航、广告、侧边栏和脚注，保留主体内容。2025年还有一些基于大型站点特征训练的专用提取工具，能针对CSDN、知乎等中文社区做进一步优化，提取出的正文通常只剩标题+段落+代码，基本无冗余。\n\n用Python实现时，trafilatura、newspaper3k、boilerpipe（Java但有Python包装）这些库都可以直接上手，结合requests或playwright获取页面HTML后调用extractor，多数情况下都能得到较干净的结果。代码块部分通常会被保留为pre/code标签，之后再用html2text或自定义规则转成Markdown就很方便。如果CSDN页面结构在某次改版后提取准确率下降（比如class名变动），可以临时补充少量CSS选择器规则，比如针对文章主体的“.article-content”或类似容器进行强制提取，作为兜底方案。\n\n对比几种方式：浏览器脚本最即装即用，但依赖插件生态，遇到CSDN前端大改可能短暂失效；通用提取库更稳定、可自动化批量处理，但对极个别复杂页面（比如嵌套很多广告div的旧文章）可能需要手动调参或结合BeautifulSoup/XPath补充规则；纯硬编码CSS隐藏（display:none针对特定class/id）虽然简单粗暴，但维护成本高，因为CSDN的广告/导航class经常变动，不如前两者智能。\n\n当前限制主要体现在：CSDN前端持续迭代，广告位和反爬机制偶尔加强，导致部分老脚本或库需要跟进更新；极少数文章嵌入了动态加载的内容（比如某些付费专栏片段），通用提取器可能漏掉；严格反作弊页面有时会把正文延迟渲染，这时需要无头浏览器模拟完整加载。\n\n最新进展上看，2025年社区对这类中文技术博客的净化需求依然旺盛，Readability家族算法持续被优化，一些结合轻量机器学习或大模型辅助的提取工具开始出现，准确率在复杂页面上比纯规则方法有明显提升，但对普通场景来说，成熟的Readability+少量站点定制规则仍是性价比最高的选择。"
+}

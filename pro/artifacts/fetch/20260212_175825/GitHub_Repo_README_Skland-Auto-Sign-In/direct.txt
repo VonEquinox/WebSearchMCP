@@ -1,0 +1,292 @@
+GitHub - Yan233th/Skland-Auto-Sign-In: 森空岛自动签到脚本，可搭配GitHub Actions等工具实现自动化
+Skip to content
+Navigation Menu
+Toggle navigation
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Spark
+Build and deploy intelligent apps
+GitHub Models
+Manage and compare prompts
+MCP Registry
+New
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search or jump to...
+Search code, repositories, users, issues, pull requests...
+Search
+Clear
+Search syntax tips
+Provide feedback
+We read every piece of feedback, and take your input very seriously.
+Include my email address so I can be contacted
+Cancel
+Submit feedback
+Saved searches
+Use saved searches to filter your results more quickly
+Name
+Query
+To see all available qualifiers, see our
+documentation
+.
+Cancel
+Create saved search
+Sign in
+Sign up
+Appearance settings
+Resetting focus
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Yan233th
+/
+Skland-Auto-Sign-In
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+8
+Star
+8
+森空岛自动签到脚本，可搭配GitHub Actions等工具实现自动化
+License
+AGPL-3.0 license
+8
+stars
+8
+forks
+Branches
+Tags
+Activity
+Star
+Notifications
+You must be signed in to change notification settings
+Code
+Issues
+0
+Pull requests
+0
+Actions
+Projects
+0
+Security
+0
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Yan233th/Skland-Auto-Sign-In
+main
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+Latest commit
+History
+98 Commits
+98 Commits
+.github/
+workflows
+.github/
+workflows
+src
+src
+.gitignore
+.gitignore
+Cargo.toml
+Cargo.toml
+LICENSE
+LICENSE
+README.md
+README.md
+View all files
+Repository files navigation
+README
+AGPL-3.0 license
+Skland-Auto-Sign-In
+森空岛自动签到脚本, 可搭配GitHub Actions等工具实现自动化
+Usage Instructions
+tokens可存放于环境变量
+USER_TOKENS
+或
+user_tokens.txt
+中, 环境变量中用
+;
+分隔tokens,
+user_tokens.txt
+中用
+\n
+(换行)分隔
+登陆
+森空岛
+后获取token:
+https://web-api.skland.com/account/info/hg
+通过传递环境变量
+MAX_RETRIES
+可影响最大重试次数，默认值为3
+推荐搭配 GitHub Actions 使用, Fork仓库并启用
+Scheduled Auto Sign In
+Workflow, 将tokens以
+USER_TOKENS
+存于secrets中即可
+Repository Settings -> Secrets and variables -> Actions -> Repository secrets
+Workflow可能会因缺失创建或编辑Release的权限而失败，若发生此情况，请开启Workflow的写权限
+Repository Settings -> Actions -> General -> Workflow permissions
+Disclaimer
+纯练手用
+Acknowledgments
+鉴权思路来源:
+FancyCabbage/skyland-auto-sign
+About
+森空岛自动签到脚本，可搭配GitHub Actions等工具实现自动化
+Resources
+Readme
+License
+AGPL-3.0 license
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Activity
+Stars
+8
+stars
+Watchers
+1
+watching
+Forks
+8
+forks
+Report repository
+Releases
+11
+Skland-Auto-Sign-In v1.3.1
+Latest
+Jan 22, 2026
++ 10 releases
+Packages
+0
+No packages published
+Languages
+Rust
+100.0%
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "url": "https://www.zhihu.com/question/35814484/answer/3166679319",
+  "via_worker": false,
+  "via_playwright": false,
+  "via_zhihu_api": true,
+  "markdown": "5）定制头和cookie信息 header = {'user-agent': 'my-app/0.0.1''} cookie = {'key':'value'} r = requests.get/post('your url',headers=header,cookies=cookie) data = {'some': 'data'} headers = {'content-type': 'application/json', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0'} r = requests.post('https://api.github.com/some/endpoint', data=data, headers=headers) print(r.text) 6）响应状态码 使用requests方法后，",
+  "truncated": false,
+  "extractor": "trafilatura:baseline",
+  "quality_score": 33,
+  "quality_metrics": {
+    "char_len": 432,
+    "line_count": 1,
+    "unique_line_ratio": 1.0,
+    "noise_line_ratio": 0.0
+  },
+  "degraded": false
+}

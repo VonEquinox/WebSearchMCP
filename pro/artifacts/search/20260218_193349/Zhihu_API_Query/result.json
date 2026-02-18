@@ -1,0 +1,416 @@
+{
+  "success": true,
+  "query": "知乎 api v4 answers include content",
+  "links": [
+    {
+      "title": "知乎api整理· Issue #89 · YaoZeyuan/ZhihuHelp_archived - GitHub",
+      "url": "https://github.com/YaoZeyuan/ZhihuHelp_archived/issues/89",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - iBlog",
+      "url": "https://luckymrwang.github.io/2019/04/06/%E7%9F%A5%E4%B9%8E-API-v4-%E6%95%B4%E7%90%86/",
+      "description": ""
+    },
+    {
+      "title": "随手找到的知乎的API",
+      "url": "https://zhuanlan.zhihu.com/p/87029765",
+      "description": ""
+    },
+    {
+      "title": "太好玩了，爬虫、部署API、加小程序，一条龙玩转知乎热榜！",
+      "url": "https://zhuanlan.zhihu.com/p/107383965",
+      "description": ""
+    },
+    {
+      "title": "如何让知乎爬虫获取某个问题下所有回答的链接？",
+      "url": "https://www.zhihu.com/question/310373633",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - yifei/notes",
+      "url": "https://yifei.me/note/460",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎真福利回答内容 - 腾讯云- Tencent",
+      "url": "https://cloud.tencent.com/developer/article/1459375",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎某个问题下所有含有关键词的回答转载 - CSDN博客",
+      "url": "https://blog.csdn.net/chen_zan_yu_/article/details/105589114",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理- 绝不原创的飞龙- 博客园",
+      "url": "https://www.cnblogs.com/apachecn/p/17313135.html",
+      "description": ""
+    },
+    {
+      "title": "分析知乎API.md - maxuewei2/zhihu-crawler - GitHub",
+      "url": "https://github.com/maxuewei2/zhihu-crawler/blob/master/%E5%88%86%E6%9E%90%E7%9F%A5%E4%B9%8EAPI.md",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理limit：数量，最大20 offset",
+      "url": "https://juejin.cn/post/6844903780199170062",
+      "description": ""
+    },
+    {
+      "title": "如何爬取知乎某问题下的所有回答？ - 李华的回答",
+      "url": "https://www.zhihu.com/question/532925796/answer/2486670460",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4整理：开发者指南与实战解析",
+      "url": "https://cloud.baidu.com/article/3674376",
+      "description": ""
+    },
+    {
+      "title": "zhihuapi.answer — zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/_modules/zhihuapi/answer.html",
+      "description": ""
+    },
+    {
+      "title": "zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "知乎api整理· Issue #89 · YaoZeyuan/ZhihuHelp_archived - GitHub",
+      "url": "https://github.com/YaoZeyuan/ZhihuHelp_archived/issues/89",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - iBlog",
+      "url": "https://luckymrwang.github.io/2019/04/06/%E7%9F%A5%E4%B9%8E-API-v4-%E6%95%B4%E7%90%86/",
+      "description": ""
+    },
+    {
+      "title": "随手找到的知乎的API",
+      "url": "https://zhuanlan.zhihu.com/p/87029765",
+      "description": ""
+    },
+    {
+      "title": "太好玩了，爬虫、部署API、加小程序，一条龙玩转知乎热榜！",
+      "url": "https://zhuanlan.zhihu.com/p/107383965",
+      "description": ""
+    },
+    {
+      "title": "如何让知乎爬虫获取某个问题下所有回答的链接？",
+      "url": "https://www.zhihu.com/question/310373633",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - yifei/notes",
+      "url": "https://yifei.me/note/460",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎真福利回答内容 - 腾讯云- Tencent",
+      "url": "https://cloud.tencent.com/developer/article/1459375",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎某个问题下所有含有关键词的回答转载 - CSDN博客",
+      "url": "https://blog.csdn.net/chen_zan_yu_/article/details/105589114",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理- 绝不原创的飞龙- 博客园",
+      "url": "https://www.cnblogs.com/apachecn/p/17313135.html",
+      "description": ""
+    },
+    {
+      "title": "爬虫实战系列(九)：知乎热榜全爬取及词云制作",
+      "url": "https://zhuanlan.zhihu.com/p/518110234",
+      "description": ""
+    },
+    {
+      "title": "分析知乎API.md - maxuewei2/zhihu-crawler - GitHub",
+      "url": "https://github.com/maxuewei2/zhihu-crawler/blob/master/%E5%88%86%E6%9E%90%E7%9F%A5%E4%B9%8EAPI.md",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理limit：数量，最大20 offset",
+      "url": "https://juejin.cn/post/6844903780199170062",
+      "description": ""
+    },
+    {
+      "title": "如何爬取知乎某问题下的所有回答？ - 李华的回答",
+      "url": "https://www.zhihu.com/question/532925796/answer/2486670460",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4整理：开发者指南与实战解析",
+      "url": "https://cloud.baidu.com/article/3674376",
+      "description": ""
+    },
+    {
+      "title": "自动化脚本获取知乎单个问题下面的图片并剔除水印",
+      "url": "https://zhuanlan.zhihu.com/p/410045257",
+      "description": ""
+    },
+    {
+      "title": "zhihuapi.answer — zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/_modules/zhihuapi/answer.html",
+      "description": ""
+    },
+    {
+      "title": "zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/",
+      "description": ""
+    },
+    {
+      "title": "lostjay/zhihu_android_crawler: Zhihu Android Reverse Engineering Solution Bypasses ... - GitHub",
+      "url": "https://github.com/lostjay/zhihu_android_crawler",
+      "description": ""
+    },
+    {
+      "title": "zhihu optimizer - Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/420005-zhihu-optimizer/code",
+      "description": ""
+    },
+    {
+      "title": "python爬取知乎回答图片",
+      "url": "https://zhuanlan.zhihu.com/p/43408400",
+      "description": ""
+    },
+    {
+      "title": "Zhihu Answer List V1 知乎回答列表V1 - API Usage Guide",
+      "url": "https://justoneapi.apifox.cn/api-372978135",
+      "description": ""
+    },
+    {
+      "title": "Zhihu-ai/Zhi-Create-Qwen3-32B - Hugging Face",
+      "url": "https://huggingface.co/Zhihu-ai/Zhi-Create-Qwen3-32B",
+      "description": ""
+    },
+    {
+      "title": "华为备忘录 - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/721198624",
+      "description": ""
+    },
+    {
+      "title": "Report: Quora Business Breakdown & Founding Story | Contrary Research",
+      "url": "https://research.contrary.com/company/quora",
+      "description": ""
+    },
+    {
+      "title": "https://raw.githubusercontent.com/QingRex/LoonKiss...",
+      "url": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E7%9F%A5%E4%B9%8E%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule",
+      "description": ""
+    },
+    {
+      "title": "doio/Surge-Script: For Bilibii, Zhihu, Netease Music - GitHub",
+      "url": "https://github.com/doio/Surge-Script",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理转载 - CSDN博客",
+      "url": "https://blog.csdn.net/wizardforcel/article/details/87827666",
+      "description": ""
+    },
+    {
+      "title": "请教一下，爬虫怎么爬取知乎话题下面所有回答的图片 - 测试之家",
+      "url": "https://testerhome.com/topics/31306",
+      "description": ""
+    },
+    {
+      "title": "User scripts for zhihu.com - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/zhihu.com?sort=name",
+      "description": ""
+    },
+    {
+      "title": "ios_rule_script/rewrite/Surge/AdvertisingScript/AdvertisingScript_Mock.sgmodule at master",
+      "url": "https://github.com/blackmatrix7/ios_rule_script/blob/master/rewrite/Surge/AdvertisingScript/AdvertisingScript_Mock.sgmodule",
+      "description": ""
+    },
+    {
+      "title": "10.1.8.2.AI AGENTS DEPLOYMENT - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/1633835844",
+      "description": ""
+    },
+    {
+      "title": "Is Stack Overflow accessible in China?",
+      "url": "https://meta.stackoverflow.com/questions/267715/is-stack-overflow-accessible-in-china",
+      "description": ""
+    },
+    {
+      "title": "平常人可以漂亮到什么程度？教你爬取知乎大神们的回答一探究竟！ - 腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/1856510",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理：开发者必备指南与实战解析",
+      "url": "https://cloud.baidu.com/article/4197469",
+      "description": ""
+    },
+    {
+      "title": "简单！直接copy代码就可运行！爬虫获取知乎评论！！！ 原创 - CSDN博客",
+      "url": "https://blog.csdn.net/m0_74824865/article/details/144344373",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - 51CTO博客",
+      "url": "https://blog.51cto.com/wizardforcel/6724260",
+      "description": ""
+    },
+    {
+      "title": "Python 爬虫没有思路？可以看看这篇文章",
+      "url": "https://zhuanlan.zhihu.com/p/77276404",
+      "description": ""
+    },
+    {
+      "title": "Being recognized in an algorithmic system: Cruel optimism in gay visibility on Douyin and Zhihu - Shuaishuai Wang, Oscar Tianyang Zhou, 2024 - Sage Journals",
+      "url": "https://journals.sagepub.com/doi/10.1177/13634607221106912",
+      "description": ""
+    },
+    {
+      "title": "抓取知乎页面· Issue #6 · l0o0/translators_CN - GitHub",
+      "url": "https://github.com/l0o0/translators_CN/issues/6",
+      "description": ""
+    },
+    {
+      "title": "知乎全能助手-知乎文章下载/复制- Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/559930-%E7%9F%A5%E4%B9%8E%E5%85%A8%E8%83%BD%E5%8A%A9%E6%89%8B-%E7%9F%A5%E4%B9%8E%E6%96%87%E7%AB%A0%E4%B8%8B%E8%BD%BD-%E5%A4%8D%E5%88%B6/code",
+      "description": ""
+    },
+    {
+      "title": "ZhiHuCom2File.py - wwyqianqian/ShuYu - GitHub",
+      "url": "https://github.com/wwyqianqian/ShuYu/blob/master/ZhiHuCom2File.py",
+      "description": ""
+    },
+    {
+      "title": "all.txt - jsDelivr",
+      "url": "https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt",
+      "description": ""
+    },
+    {
+      "title": "ADgk.txt - GitHub",
+      "url": "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
+      "description": ""
+    },
+    {
+      "title": "【可用】2025年最新python爬取知乎某个问题下面的回答 - CSDN博客",
+      "url": "https://blog.csdn.net/m0_54132386/article/details/145031465",
+      "description": ""
+    },
+    {
+      "title": "Object Tracking for Automatic Data Generation for Practical Waste Segmentation | Code Ocean",
+      "url": "https://codeocean.com/explore/a28180ac-c076-45d2-90b3-88e0710da41e?query=IEEE%20Data%20Descriptions&page=1&filter=all&refine=journal",
+      "description": ""
+    },
+    {
+      "title": "Post‐transfer adaptation of HGT‐acquired genes and contribution to guanine metabolic diversification in land plants - ResearchGate",
+      "url": "https://www.researchgate.net/publication/383274774_Post-transfer_adaptation_of_HGT-acquired_genes_and_contribution_to_guanine_metabolic_diversification_in_land_plants",
+      "description": ""
+    },
+    {
+      "title": "地理資訊地圖．香港特別行政區政府提供的香港地圖 - GeoInfo Map",
+      "url": "https://www.map.gov.hk/gm/map/search/keyword/TRC20%E8%83%BD%E9%87%8F%E7%A7%9F%E8%B5%81%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%E3%80%90%E7%BD%91%E7%AB%998ATRX%C2%B7Com%E3%80%91TRX%E8%83%BD%E9%87%8F%E7%A7%9F%E8%B5%810.1T%E4%B8%80%E7%AC%94,%E8%83%BD%E9%87%8F%E6%BA%90%E5%A4%B4%E8%BD%ACU%E5%85%8D%E8%B4%B9TRX%E5%85%91%E6%8D%A2%C2%B7TRC20%E8%83%BD%E9%87%8F%E7%A7%9F%E8%B5%81api,trx%E8%83%BD%E9%87%8F%E8%B4%AD%E4%B9%B0UZOgR",
+      "description": ""
+    },
+    {
+      "title": "Understanding the Security Risks of Websites Using Cloud Storage for Direct User File Uploads - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/iel8/10206/10810755/10896886.pdf",
+      "description": ""
+    },
+    {
+      "title": "统计知乎问题：有哪些可称为「神作」的网络小说？所有答案推荐的书名出现次数，https://www.zhihu.com/question/37985771 · GitHub",
+      "url": "https://gist.github.com/fakeyanss/7b1e137bce376dd101b3d866b84f8e34",
+      "description": ""
+    },
+    {
+      "title": "如何评价Google发布的Gemma 3n preview模型？ - 知乎",
+      "url": "https://www.zhihu.com/question/1908604038351654953",
+      "description": ""
+    },
+    {
+      "title": "如何查看最新的知乎API？ · DIYgod RSSHub · Discussion #18136 - GitHub",
+      "url": "https://github.com/DIYgod/RSSHub/discussions/18136",
+      "description": ""
+    },
+    {
+      "title": "Low-dimensional compact states in 3D moir\\'e lattices - Code Ocean",
+      "url": "https://codeocean.com/explore/83539a23-c05d-480a-856e-e55c9a591850?page=1&filter=all",
+      "description": ""
+    },
+    {
+      "title": "GLM-4.1V-Thinking: 奖励系统 - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/1934337662132679603",
+      "description": ""
+    },
+    {
+      "title": "PythonProject/SpiderMan.py at master - GitHub",
+      "url": "https://github.com/MiracleDx/PythonProject/blob/master/SpiderMan.py",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎2018新年愿望下所有答案",
+      "url": "https://zhuanlan.zhihu.com/p/32547780?from_voters_page=true",
+      "description": ""
+    },
+    {
+      "title": "regexes/regexes-dtb_30.txt · a027bec136eac1b43562fc81878a8ad43df79828 · Lenka Turoňová / CountingAutomata - GitLab",
+      "url": "https://pajda.fit.vutbr.cz/ituronova/countingautomata/-/blob/a027bec136eac1b43562fc81878a8ad43df79828/regexes/regexes-dtb_30.txt",
+      "description": ""
+    },
+    {
+      "title": "zzrvv/list - Gitee",
+      "url": "https://gitee.com/zzrvv/list/blob/master/yuedu-rss.txt",
+      "description": ""
+    },
+    {
+      "title": "Raw - Hugging Face",
+      "url": "https://huggingface.co/datasets/clydeiii/cybersecurity/raw/main/2022.clean.txt",
+      "description": ""
+    },
+    {
+      "title": "静觅崔庆才的个人站点- Python爬虫教程",
+      "url": "https://cuiqingcai.com/page/14/",
+      "description": ""
+    },
+    {
+      "title": "Python】知乎回答下载神器，图片/视频/gif动图均可下载 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_39609622/article/details/110698063",
+      "description": ""
+    },
+    {
+      "title": "【python】知乎回答下载，可将问题所有回答保存为pdf文件- 吾爱破解- 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1419511-1-1.html",
+      "description": ""
+    },
+    {
+      "title": "知乎搜索接口解密 - CSDN博客",
+      "url": "https://blog.csdn.net/qq_36532060/article/details/123899805",
+      "description": ""
+    },
+    {
+      "title": "question.go - daniel-007/zhihuxx - GitHub",
+      "url": "https://github.com/daniel-007/zhihuxx/blob/master/question.go",
+      "description": ""
+    },
+    {
+      "title": "请教一下，爬虫怎么爬取知乎话题下面所有回答的图片 - 测试之家",
+      "url": "https://www.testerhome.com/topics/31306",
+      "description": ""
+    },
+    {
+      "title": "使用Python 抓取知乎美图（文末含福利）",
+      "url": "https://zhuanlan.zhihu.com/p/71755265",
+      "description": ""
+    },
+    {
+      "title": "zhihu_spider/zhihu_spider.py at master · python3xxx/zhihu_spider - GitHub",
+      "url": "https://github.com/python3xxx/zhihu_spider/blob/master/zhihu_spider.py",
+      "description": ""
+    }
+  ],
+  "ai_content": "知乎的 v4 版 API（非官方接口，长期被开发者通过逆向工程使用）在 answers 相关端点中，**include 参数**是决定返回数据是否包含完整答案正文的关键。默认响应通常只提供基础元数据（如 ID、作者概要、excerpt 摘要等），不会自动返回答案的详细内容。要获取答案正文，必须在 include 参数中显式指定 **content** 字段（列表接口用 data[*].content，单个答案接口直接用 content）。\n\n对于获取某个问题下答案列表的常用接口（GET 请求），路径是 /api/v4/questions/{问题ID}/answers，支持以下主要参数：\n- limit：单页返回数量，最大值为 20；\n- offset：分页起始偏移量，从 0 开始；\n- sort_by：排序方式，可选 default（默认推荐排序）或 created（按创建时间）；\n- include：字段列表，用逗号分隔字段，支持 data[*] 语法针对列表项，还可用分号分组不同对象（如作者信息、标记信息等）。\n\n一个经过多方验证的典型完整 include 字符串示例是： \ndata[*].is_normal,admin_closed_comment,reward_info,is_collapsed,annotation_action,annotation_detail,collapse_reason,is_sticky,collapsed_by,suggest_edit,comment_count,can_comment,content,editable_content,voteup_count,reshipment_settings,comment_permission,created_time,updated_time,review_info,relevant_info,question.detail,excerpt,relationship.is_authorized,is_author,voting,is_thanked,is_nothelp,is_labeled,is_recognized;data[*].mark_infos[*].url;data[*].author.follower_count,badge[*].topics \n\n其中 **content** 字段返回的就是答案的完整富文本正文（HTML 格式，包含段落、图片链接、加粗、列表等元素）；**editable_content** 则是可编辑的原始版本，有时更适合后续处理。缺少 content 时，响应中对应字段会缺失或仅返回简短 excerpt。\n\n对于单个答案详情接口（GET /api/v4/answers/{答案ID}），用法类似，只需在 include 中加入 content、editable_content 等字段即可获得完整正文，无需 data[*] 前缀。开发者社区长期使用的 include 列表通常也包含 is_normal、voteup_count、comment_count、created_time、updated_time、relationship.is_author 等互动与权限字段，以及作者 badge、follower_count 等扩展信息。\n\n实际调用时，建议带上合理的浏览器 Headers（如 User-Agent 模拟桌面端），部分场景下可能还需要处理 x-zse-96 等签名（尤其移动端或高频请求）。接口返回的 JSON 中，data 数组或直接对象里就会出现指定字段，content 值可直接解析为网页片段。多年来该机制保持稳定，但知乎会不定期微调字段或增加防护，建议结合实际请求测试最新返回结构。\n\n**SOURCES:**",
+  "ai_summary": "知乎的 v4 版 API（非官方接口，长期被开发者通过逆向工程使用）在 answers 相关端点中，**include 参数**是决定返回数据是否包含完整答案正文的关键。默认响应通常只提供基础元数据（如 ID、作者概要、excerpt 摘要等），不会自动返回答案的详细内容。要获取答案正文，必须在 include 参数中显式指定 **content** 字段（列表接口用 data[*].content，单个答案接口直接用 content）。\n\n对于获取某个问题下答案列表的常用接口（GET 请求），路径是 /api/v4/questions/{问题ID}/answers，支持以下主要参数：\n- limit：单页返回数量，最大值为 20；\n- offset：分页起始偏移量，从 0 开始；\n- sort_by：排序方式，可选 default（默认推荐排序）或 created（按创建时间）；\n- include：字段列表，用逗号分隔字段，支持 data[*] 语法针对列表项，还可用分号分组不同对象（如作者信息、标记信息等）。\n\n一个经过多方验证的典型完整 include 字符串示例是： \ndata[*].is_normal,admin_closed_comment,reward_info,is_collapsed,annotation_action,annotation_detail,collapse_reason,is_sticky,collapsed_by,suggest_edit,comment_count,can_comment,content,editable_content,voteup_count,reshipment_settings,comment_permission,created_time,updated_time,review_info,relevant_info,question.detail,excerpt,relationship.is_authorized,is_author,voting,is_thanked,is_nothelp,is_labeled,is_recognized;data[*].mark_infos[*].url;data[*].author.follower_count,badge[*].topics \n\n其中 **content** 字段返回的就是答案的完整富文本正文（HTML 格式，包含段落、图片链接、加粗、列表等元素）；**editable_content** 则是可编辑的原始版本，有时更适合后续处理。缺少 content 时，响应中对应字段会缺失或仅返回简短 excerpt。\n\n对于单个答案详情接口（GET /api/v4/answers/{答案ID}），用法类似，只需在 include 中加入 content、editable_content 等字段即可获得完整正文，无需 data[*] 前缀。开发者社区长期使用的 include 列表通常也包含 is_normal、voteup_count、comment_count、created_time、updated_time、relationship.is_author 等互动与权限字段，以及作者 badge、follower_count 等扩展信息。\n\n实际调用时，建议带上合理的浏览器 Headers（如 User-Agent 模拟桌面端），部分场景下可能还需要处理 x-zse-96 等签名（尤其移动端或高频请求）。接口返回的 JSON 中，data 数组或直接对象里就会出现指定字段，content 值可直接解析为网页片段。多年来该机制保持稳定，但知乎会不定期微调字段或增加防护，建议结合实际请求测试最新返回结构。\n\n**SOURCES:**",
+  "ai_error": ""
+}

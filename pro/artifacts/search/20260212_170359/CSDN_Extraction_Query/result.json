@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "query": "CSDN 正文 提取 去除 广告 导航",
+  "links": [
+    {
+      "title": "如何快速提取网页正文：Textractor终极指南-CSDN博客",
+      "url": "https://duckduckgo.com/l/?uddg=https%3A%2F%2Fblog.csdn.net%2Fgitblog_00866%2Farticle%2Fdetails%2F154676759&rut=c2328ae50f912ebe96afc12cade0f4c28b51651dc9ce95feb042a53e4e26216d",
+      "description": "文章浏览阅读798次，点赞13次，收藏13次。 还在为网页正文提取而烦恼吗？ 😫 广告、导航栏、评论干扰让你无法获取干净的文本内容？ Textractor正是你需要的HTML正文提取神器! 这款基于文本密度算法的高效类库，能在30ms内精准提取网页正文，准确率超过95%📊。"
+    },
+    {
+      "title": "GitHub - Azero-NG/csdnRemoveAd: csdn极致去广告",
+      "url": "https://duckduckgo.com/l/?uddg=https%3A%2F%2Fgithub.com%2FAzero%2DNG%2FcsdnRemoveAd&rut=9392bcd17b17e53f85699566a10419e5733711667494dcc7d042c20d783eb430",
+      "description": "csdn极致去广告. Contribute to Azero-NG/csdnRemoveAd development by creating an account on GitHub."
+    }
+  ],
+  "ai_links": [],
+  "ai_content": "",
+  "ai_summary": ""
+}

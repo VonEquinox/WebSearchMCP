@@ -1,0 +1,165 @@
+{
+  "success": true,
+  "query": "trafilatura extract favor_precision include_comments",
+  "links": [
+    {
+      "title": "Core functions — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+      "description": ""
+    },
+    {
+      "title": "With Python — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage-python.html",
+      "description": ""
+    },
+    {
+      "title": "datatrove/src/datatrove/pipeline/extractors/trafilatura.py at main · huggingface/datatrove",
+      "url": "https://github.com/huggingface/datatrove/blob/main/src/datatrove/pipeline/extractors/trafilatura.py",
+      "description": ""
+    },
+    {
+      "title": "Trafilatura - Agno",
+      "url": "https://docs.agno.com/tools/toolkits/web-scrape/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Integration: Trafilatura",
+      "url": "https://haystack.deepset.ai/integrations/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Core functions — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/corefunctions",
+      "description": ""
+    },
+    {
+      "title": "MCP Trafilatura | MCP Servers - LobeHub",
+      "url": "https://lobehub.com/it/mcp/achieveai-mcp-web-extractor",
+      "description": ""
+    },
+    {
+      "title": "Extract clean content from any webpage | Trafilatura powered",
+      "url": "https://www.contextractor.com/",
+      "description": ""
+    },
+    {
+      "title": "extract function runs indefinitely on large HTML body content · Issue #704 · adbar/trafilatura",
+      "url": "https://github.com/adbar/trafilatura/issues/704",
+      "description": ""
+    },
+    {
+      "title": "With Python — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/usage-python",
+      "description": ""
+    },
+    {
+      "title": "trafilatura 0.3.1 - PyPI",
+      "url": "https://pypi.org/project/trafilatura/0.3.1",
+      "description": ""
+    },
+    {
+      "title": "MCP Trafilatura | MCP Servers - LobeHub",
+      "url": "https://lobehub.com/ru/mcp/achieveai-mcp-web-extractor",
+      "description": ""
+    },
+    {
+      "title": "trafilatura · PyPI",
+      "url": "https://pypi.org/project/trafilatura/",
+      "description": ""
+    },
+    {
+      "title": "trafilatura 网页解析原理分析 - JadePeng - 博客园",
+      "url": "https://www.cnblogs.com/xiaoqi/p/Trafilatura.html",
+      "description": ""
+    },
+    {
+      "title": "trafilatura package - github.com/markusmobius/go-trafilatura - Go Packages",
+      "url": "https://pkg.go.dev/github.com/markusmobius/go-trafilatura",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "Core functions — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+      "description": ""
+    },
+    {
+      "title": "With Python — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage-python.html",
+      "description": ""
+    },
+    {
+      "title": "datatrove/src/datatrove/pipeline/extractors/trafilatura.py at main · huggingface/datatrove",
+      "url": "https://github.com/huggingface/datatrove/blob/main/src/datatrove/pipeline/extractors/trafilatura.py",
+      "description": ""
+    },
+    {
+      "title": "Source code for trafilatura.core",
+      "url": "https://trafilatura.readthedocs.io/en/latest/_modules/trafilatura/core.html",
+      "description": ""
+    },
+    {
+      "title": "Trafilatura - Agno",
+      "url": "https://docs.agno.com/tools/toolkits/web-scrape/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Integration: Trafilatura",
+      "url": "https://haystack.deepset.ai/integrations/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Core functions — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/corefunctions",
+      "description": ""
+    },
+    {
+      "title": "MCP Trafilatura | MCP Servers - LobeHub",
+      "url": "https://lobehub.com/it/mcp/achieveai-mcp-web-extractor",
+      "description": ""
+    },
+    {
+      "title": "Extract clean content from any webpage | Trafilatura powered",
+      "url": "https://www.contextractor.com/",
+      "description": ""
+    },
+    {
+      "title": "extract function runs indefinitely on large HTML body content · Issue #704 · adbar/trafilatura",
+      "url": "https://github.com/adbar/trafilatura/issues/704",
+      "description": ""
+    },
+    {
+      "title": "Quickstart — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/quickstart.html",
+      "description": ""
+    },
+    {
+      "title": "With Python — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/usage-python",
+      "description": ""
+    },
+    {
+      "title": "Settings and customization — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/settings.html",
+      "description": ""
+    },
+    {
+      "title": "trafilatura 0.3.1 - PyPI",
+      "url": "https://pypi.org/project/trafilatura/0.3.1",
+      "description": ""
+    },
+    {
+      "title": "MCP Trafilatura | MCP Servers - LobeHub",
+      "url": "https://lobehub.com/ru/mcp/achieveai-mcp-web-extractor",
+      "description": ""
+    },
+    {
+      "title": "favor_precision and include_links Enabled Together Cause Over-Aggressive Noise Removal and Main Content Misidentification · Issue #821 · adbar/\ntrafilatura - GitHub",
+      "url": "https://github.com/adbar/trafilatura/issues/821",
+      "description": ""
+    }
+  ],
+  "ai_content": "在 Trafilatura（一个高性能的 Python 开源网页正文提取库）中，`extract` 函数是核心提取接口，它支持多个控制提取行为的布尔参数，其中 `favor_precision` 和 `include_comments` 是常用的精细调节选项。\n\n**favor_precision**（默认值为 False） \n这个参数用于优先保证提取结果的**精确性**（precision），而不是全面性（recall）。当设置为 True 时，提取器会更严格地过滤内容，倾向于输出更少但更可靠、更接近核心正文的文本。它会更激进地丢弃可能属于噪声的部分（如侧边栏、相关文章推荐、页脚等），适合对内容纯净度要求高的场景，例如构建高质量语料库或需要最小噪声的 RAG 系统。如果提取结果中总是混入过多无关文本，可以尝试开启这个选项来改善。但在某些复杂页面上，它可能导致核心内容被过度裁剪（over-pruning），尤其是与 `include_links` 等其他选项组合使用时，需要实际测试平衡效果。\n\n与之相对的是 `favor_recall`（也默认为 False），开启后会倾向于保留更多文本，即使有些不确定性也会尽量多提取，适合希望尽可能不漏掉正文信息的场景。 \n注意：`favor_precision` 和 `favor_recall` 通常不要同时设为 True，因为它们在逻辑上是互斥的倾向调整（库内部会优先处理其中一个）。\n\n**include_comments**（默认值为 True） \n这个参数决定是否将网页中的**评论区**（用户留言、讨论串）提取出来并包含在结果中。 \n- 当为 True 时：评论内容会被当作附加文本提取，通常放在正文之后（在 TXT 输出中以一定分隔，在 XML/TEI 等结构化格式中会有专门标记）。这对需要完整论坛帖子、博客留言或社交化内容的任务很有用。 \n- 当为 False 时：评论区会被明确排除，输出更专注于文章主体本身。很多用户在批量处理新闻/博客时会关闭它，以避免评论带来的噪声（广告、水军、灌水等）。 \n\n在实际使用中，这两个参数经常组合调整。例如：\n- 需要最高纯度正文 → `favor_precision=True, include_comments=False`\n- 需要文章+读者互动完整内容 → `include_comments=True`（可搭配 `favor_recall=True` 如果担心漏掉长评论）\n- 默认设置（`favor_precision=False, favor_recall=False, include_comments=True`）已经是比较均衡的选择，适合大多数通用网页提取。\n\n这些参数直接传给 `extract` 函数即可生效，例如：\n\n```python\nfrom trafilatura import extract\n\nresult = extract(html_content,\n favor_precision=True,\n include_comments=False,\n include_tables=True) # 另一个常见搭配\n```\n\nTrafilatura 的设计理念就是在速度与质量间取得平衡，这两个参数提供了灵活的 trade-off 调整空间。实际效果因网页结构差异较大，建议对目标网站类型做小规模对比测试。\n\nSOURCES:",
+  "ai_summary": "在 Trafilatura（一个高性能的 Python 开源网页正文提取库）中，`extract` 函数是核心提取接口，它支持多个控制提取行为的布尔参数，其中 `favor_precision` 和 `include_comments` 是常用的精细调节选项。\n\n**favor_precision**（默认值为 False） \n这个参数用于优先保证提取结果的**精确性**（precision），而不是全面性（recall）。当设置为 True 时，提取器会更严格地过滤内容，倾向于输出更少但更可靠、更接近核心正文的文本。它会更激进地丢弃可能属于噪声的部分（如侧边栏、相关文章推荐、页脚等），适合对内容纯净度要求高的场景，例如构建高质量语料库或需要最小噪声的 RAG 系统。如果提取结果中总是混入过多无关文本，可以尝试开启这个选项来改善。但在某些复杂页面上，它可能导致核心内容被过度裁剪（over-pruning），尤其是与 `include_links` 等其他选项组合使用时，需要实际测试平衡效果。\n\n与之相对的是 `favor_recall`（也默认为 False），开启后会倾向于保留更多文本，即使有些不确定性也会尽量多提取，适合希望尽可能不漏掉正文信息的场景。 \n注意：`favor_precision` 和 `favor_recall` 通常不要同时设为 True，因为它们在逻辑上是互斥的倾向调整（库内部会优先处理其中一个）。\n\n**include_comments**（默认值为 True） \n这个参数决定是否将网页中的**评论区**（用户留言、讨论串）提取出来并包含在结果中。 \n- 当为 True 时：评论内容会被当作附加文本提取，通常放在正文之后（在 TXT 输出中以一定分隔，在 XML/TEI 等结构化格式中会有专门标记）。这对需要完整论坛帖子、博客留言或社交化内容的任务很有用。 \n- 当为 False 时：评论区会被明确排除，输出更专注于文章主体本身。很多用户在批量处理新闻/博客时会关闭它，以避免评论带来的噪声（广告、水军、灌水等）。 \n\n在实际使用中，这两个参数经常组合调整。例如：\n- 需要最高纯度正文 → `favor_precision=True, include_comments=False`\n- 需要文章+读者互动完整内容 → `include_comments=True`（可搭配 `favor_recall=True` 如果担心漏掉长评论）\n- 默认设置（`favor_precision=False, favor_recall=False, include_comments=True`）已经是比较均衡的选择，适合大多数通用网页提取。\n\n这些参数直接传给 `extract` 函数即可生效，例如：\n\n```python\nfrom trafilatura import extract\n\nresult = extract(html_content,\n favor_precision=True,\n include_comments=False,\n include_tables=True) # 另一个常见搭配\n```\n\nTrafilatura 的设计理念就是在速度与质量间取得平衡，这两个参数提供了灵活的 trade-off 调整空间。实际效果因网页结构差异较大，建议对目标网站类型做小规模对比测试。\n\nSOURCES:"
+}

@@ -1,0 +1,465 @@
+{
+  "success": true,
+  "query": "知乎 api v4 answers include content",
+  "links": [
+    {
+      "title": "知乎API v4 整理 - iBlog",
+      "url": "https://luckymrwang.github.io/2019/04/06/%E7%9F%A5%E4%B9%8E-API-v4-%E6%95%B4%E7%90%86",
+      "description": ""
+    },
+    {
+      "title": "知乎api整理· Issue #89 · YaoZeyuan/ZhihuHelp_archived - GitHub",
+      "url": "https://github.com/YaoZeyuan/ZhihuHelp_archived/issues/89",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - yifei/notes",
+      "url": "https://yifei.me/note/460",
+      "description": ""
+    },
+    {
+      "title": "太好玩了，爬虫、部署API、加小程序，一条龙玩转知乎热榜！",
+      "url": "https://zhuanlan.zhihu.com/p/107383965",
+      "description": ""
+    },
+    {
+      "title": "如何让知乎爬虫获取某个问题下所有回答的链接？",
+      "url": "https://www.zhihu.com/question/310373633",
+      "description": ""
+    },
+    {
+      "title": "随手找到的知乎的API",
+      "url": "https://zhuanlan.zhihu.com/p/87029765",
+      "description": ""
+    },
+    {
+      "title": "zhihuapi.answer — zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/_modules/zhihuapi/answer.html",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理- 绝不原创的飞龙- 博客园",
+      "url": "https://www.cnblogs.com/apachecn/p/17313135.html",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎某个问题下所有含有关键词的回答转载 - CSDN博客",
+      "url": "https://blog.csdn.net/chen_zan_yu_/article/details/105589114",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理limit：数量，最大20 offset - 稀土掘金",
+      "url": "https://juejin.cn/post/6844903780199170062",
+      "description": ""
+    },
+    {
+      "title": "zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py",
+      "description": ""
+    },
+    {
+      "title": "4_fianl_get_answer.py - ethanliuzhuo/zhihu_sprider - GitHub",
+      "url": "https://github.com/ethanliuzhuo/zhihu_sprider/blob/master/4_fianl_get_answer.py",
+      "description": ""
+    },
+    {
+      "title": "zhihu optimizer - Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/420005-zhihu-optimizer/code",
+      "description": ""
+    },
+    {
+      "title": "10.1.8.2.AI AGENTS DEPLOYMENT - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/1633835844",
+      "description": ""
+    },
+    {
+      "title": "lostjay/zhihu_android_crawler: Zhihu Android Reverse Engineering Solution Bypasses ... - GitHub",
+      "url": "https://github.com/lostjay/zhihu_android_crawler",
+      "description": ""
+    },
+    {
+      "title": "NeurIPS Poster Knowledge Circuits in Pretrained Transformers",
+      "url": "https://neurips.cc/virtual/2024/poster/94695",
+      "description": ""
+    },
+    {
+      "title": "User scripts for zhihu.com - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/zhihu.com?sort=name",
+      "description": ""
+    },
+    {
+      "title": "Privacy policy - IPCO",
+      "url": "https://www.ipco.com/en-us/privacy-policy",
+      "description": ""
+    },
+    {
+      "title": "Xiaoice: A Generative AI Company Specializing in Emotional Computing - Sage Knowledge",
+      "url": "https://sk.sagepub.com/cases/download/xiaoice-a-generative-ai-company-specializing-in-emotional-computing",
+      "description": ""
+    },
+    {
+      "title": "GraphQL | A query language for your API",
+      "url": "https://graphql.org/",
+      "description": ""
+    },
+    {
+      "title": "GraphQL Content API | Contentful Docs",
+      "url": "https://www.contentful.com/developers/docs/references/graphql",
+      "description": ""
+    },
+    {
+      "title": "Exploring GraphQL endpoints using GraphiQL - YouTube",
+      "url": "https://www.youtube.com/watch?v=76CyYy2rf_Y",
+      "description": ""
+    },
+    {
+      "title": "GitHub GraphQL equivalent of the contents API - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/44137710/github-graphql-equivalent-of-the-contents-api",
+      "description": ""
+    },
+    {
+      "title": "GitHub's GraphQL API - YouTube",
+      "url": "https://www.youtube.com/watch?v=B4rY2rgn1RY",
+      "description": ""
+    },
+    {
+      "title": "The 18 Node.js Web Frameworks and Tools I Recommend - zhihu - 知乎",
+      "url": "https://en.zhihu.com/article/471529809",
+      "description": ""
+    },
+    {
+      "title": "Using the GraphQL API for Discussions - GitHub Enterprise Server 3.14 Docs",
+      "url": "https://docs.github.com/en/enterprise-server@3.14/graphql/guides/using-the-graphql-api-for-discussions",
+      "description": ""
+    },
+    {
+      "title": "Serving over HTTP - GraphQL",
+      "url": "https://graphql.org/learn/serving-over-http",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理：开发者必备指南与实战解析 - 百度智能云",
+      "url": "https://cloud.baidu.com/article/4196469",
+      "description": ""
+    },
+    {
+      "title": "python爬取知乎回答图片",
+      "url": "https://zhuanlan.zhihu.com/p/43408400",
+      "description": ""
+    },
+    {
+      "title": "Zhihu Answer List V1 知乎回答列表V1 - API Usage Guide",
+      "url": "https://justoneapi.apifox.cn/api-372978135",
+      "description": ""
+    },
+    {
+      "title": "知乎全能助手-知乎文章下载/复制- Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/559930-%E7%9F%A5%E4%B9%8E%E5%85%A8%E8%83%BD%E5%8A%A9%E6%89%8B-%E7%9F%A5%E4%B9%8E%E6%96%87%E7%AB%A0%E4%B8%8B%E8%BD%BD-%E5%A4%8D%E5%88%B6/code",
+      "description": ""
+    },
+    {
+      "title": "Suplementary code for: Addressing Class Imbalance in Tabular Data through Neural Network-based Synthetic Data Generation: A Comprehensive Survey and Library | Code Ocean",
+      "url": "https://codeocean.com/explore/70b1eee1-338c-4263-b227-338a7fc5e6d6?filter=all&page=1&query=IEEE+Data+Descriptions&refine=journal",
+      "description": ""
+    },
+    {
+      "title": "RSSHub/lib/routes/zhihu/answers.ts at master - GitHub",
+      "url": "https://github.com/DIYgod/RSSHub/blob/master/lib/routes/zhihu/answers.ts",
+      "description": ""
+    },
+    {
+      "title": "doctool/zhihu-ques.py at master · apachecn/doctool · GitHub",
+      "url": "https://github.com/apachecn/doctool/blob/master/zhihu-ques.py",
+      "description": ""
+    },
+    {
+      "title": "uv.py - EscaticZheng/zhihu-hot-qa-crawler · GitHub",
+      "url": "https://github.com/EscaticZheng/zhihu-hot-qa-crawler/blob/main/uv.py",
+      "description": ""
+    },
+    {
+      "title": "zhihu_spider/zhihu_spider.py at master · python3xxx/zhihu_spider - GitHub",
+      "url": "https://github.com/python3xxx/zhihu_spider/blob/master/zhihu_spider.py",
+      "description": ""
+    },
+    {
+      "title": "question.go - daniel-007/zhihuxx - GitHub",
+      "url": "https://github.com/daniel-007/zhihuxx/blob/master/question.go",
+      "description": ""
+    },
+    {
+      "title": "ios_rule_script/rewrite/Surge/AdvertisingScript/AdvertisingScript_Mock.sgmodule at master",
+      "url": "https://github.com/blackmatrix7/ios_rule_script/blob/master/rewrite/Surge/AdvertisingScript/AdvertisingScript_Mock.sgmodule",
+      "description": ""
+    },
+    {
+      "title": "ZhiHuCom2File.py - wwyqianqian/ShuYu - GitHub",
+      "url": "https://github.com/wwyqianqian/ShuYu/blob/master/ZhiHuCom2File.py",
+      "description": ""
+    },
+    {
+      "title": "README.md - LJSthu/cracker-zhihu · GitHub",
+      "url": "https://github.com/LJSthu/cracker-zhihu/blob/master/README.md",
+      "description": ""
+    },
+    {
+      "title": "tiam-bloom/zhihuQuestionAnswer: 某乎问答及评论抓取 - GitHub",
+      "url": "https://github.com/tiam-bloom/zhihuQuestionAnswer",
+      "description": ""
+    },
+    {
+      "title": "wtog/web-crawler - GitHub",
+      "url": "https://github.com/wtog/web-crawler",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎图片 - GitHub Gist",
+      "url": "https://gist.github.com/powersee/619a9f4688b1f8f9cb65f80531e3d8ee",
+      "description": ""
+    },
+    {
+      "title": "Python-practice/ZhihuSpider_keywords.py at master - GitHub",
+      "url": "https://github.com/Luoxiaoxu/Python-practice/blob/master/ZhihuSpider_keywords.py",
+      "description": ""
+    },
+    {
+      "title": "知乎 API v4 整理 - 简书",
+      "url": "https://www.jianshu.com/p/86139ab70b86",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理转载",
+      "url": "https://blog.csdn.net/wizardforcel/article/details/87827666",
+      "description": ""
+    },
+    {
+      "title": "抓取知乎页面 · Issue #6 · l0o0/translators_CN",
+      "url": "https://github.com/l0o0/translators_CN/issues/6",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "知乎API v4 整理 - iBlog",
+      "url": "https://luckymrwang.github.io/2019/04/06/%E7%9F%A5%E4%B9%8E-API-v4-%E6%95%B4%E7%90%86",
+      "description": ""
+    },
+    {
+      "title": "知乎api整理· Issue #89 · YaoZeyuan/ZhihuHelp_archived - GitHub",
+      "url": "https://github.com/YaoZeyuan/ZhihuHelp_archived/issues/89",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理 - yifei/notes",
+      "url": "https://yifei.me/note/460",
+      "description": ""
+    },
+    {
+      "title": "太好玩了，爬虫、部署API、加小程序，一条龙玩转知乎热榜！",
+      "url": "https://zhuanlan.zhihu.com/p/107383965",
+      "description": ""
+    },
+    {
+      "title": "如何让知乎爬虫获取某个问题下所有回答的链接？",
+      "url": "https://www.zhihu.com/question/310373633",
+      "description": ""
+    },
+    {
+      "title": "随手找到的知乎的API",
+      "url": "https://zhuanlan.zhihu.com/p/87029765",
+      "description": ""
+    },
+    {
+      "title": "zhihuapi.answer — zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py/_modules/zhihuapi/answer.html",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理- 绝不原创的飞龙- 博客园",
+      "url": "https://www.cnblogs.com/apachecn/p/17313135.html",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎某个问题下所有含有关键词的回答转载 - CSDN博客",
+      "url": "https://blog.csdn.net/chen_zan_yu_/article/details/105589114",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理limit：数量，最大20 offset - 稀土掘金",
+      "url": "https://juejin.cn/post/6844903780199170062",
+      "description": ""
+    },
+    {
+      "title": "zhihu api 0.5.0 documentation",
+      "url": "https://syaning.github.io/zhihuapi-py",
+      "description": ""
+    },
+    {
+      "title": "4_fianl_get_answer.py - ethanliuzhuo/zhihu_sprider - GitHub",
+      "url": "https://github.com/ethanliuzhuo/zhihu_sprider/blob/master/4_fianl_get_answer.py",
+      "description": ""
+    },
+    {
+      "title": "zhihu optimizer - Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/420005-zhihu-optimizer/code",
+      "description": ""
+    },
+    {
+      "title": "10.1.8.2.AI AGENTS DEPLOYMENT - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/1633835844",
+      "description": ""
+    },
+    {
+      "title": "lostjay/zhihu_android_crawler: Zhihu Android Reverse Engineering Solution Bypasses ... - GitHub",
+      "url": "https://github.com/lostjay/zhihu_android_crawler",
+      "description": ""
+    },
+    {
+      "title": "NeurIPS Poster Knowledge Circuits in Pretrained Transformers",
+      "url": "https://neurips.cc/virtual/2024/poster/94695",
+      "description": ""
+    },
+    {
+      "title": "User scripts for zhihu.com - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/zhihu.com?sort=name",
+      "description": ""
+    },
+    {
+      "title": "Privacy policy - IPCO",
+      "url": "https://www.ipco.com/en-us/privacy-policy",
+      "description": ""
+    },
+    {
+      "title": "Xiaoice: A Generative AI Company Specializing in Emotional Computing - Sage Knowledge",
+      "url": "https://sk.sagepub.com/cases/download/xiaoice-a-generative-ai-company-specializing-in-emotional-computing",
+      "description": ""
+    },
+    {
+      "title": "GraphQL | A query language for your API",
+      "url": "https://graphql.org/",
+      "description": ""
+    },
+    {
+      "title": "GraphQL Content API | Contentful Docs",
+      "url": "https://www.contentful.com/developers/docs/references/graphql",
+      "description": ""
+    },
+    {
+      "title": "Exploring GraphQL endpoints using GraphiQL - YouTube",
+      "url": "https://www.youtube.com/watch?v=76CyYy2rf_Y",
+      "description": ""
+    },
+    {
+      "title": "GitHub GraphQL equivalent of the contents API - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/44137710/github-graphql-equivalent-of-the-contents-api",
+      "description": ""
+    },
+    {
+      "title": "GitHub's GraphQL API - YouTube",
+      "url": "https://www.youtube.com/watch?v=B4rY2rgn1RY",
+      "description": ""
+    },
+    {
+      "title": "The 18 Node.js Web Frameworks and Tools I Recommend - zhihu - 知乎",
+      "url": "https://en.zhihu.com/article/471529809",
+      "description": ""
+    },
+    {
+      "title": "Using the GraphQL API for Discussions - GitHub Enterprise Server 3.14 Docs",
+      "url": "https://docs.github.com/en/enterprise-server@3.14/graphql/guides/using-the-graphql-api-for-discussions",
+      "description": ""
+    },
+    {
+      "title": "Serving over HTTP - GraphQL",
+      "url": "https://graphql.org/learn/serving-over-http",
+      "description": ""
+    },
+    {
+      "title": "知乎API v4 整理：开发者必备指南与实战解析 - 百度智能云",
+      "url": "https://cloud.baidu.com/article/4196469",
+      "description": ""
+    },
+    {
+      "title": "python爬取知乎回答图片",
+      "url": "https://zhuanlan.zhihu.com/p/43408400",
+      "description": ""
+    },
+    {
+      "title": "Zhihu Answer List V1 知乎回答列表V1 - API Usage Guide",
+      "url": "https://justoneapi.apifox.cn/api-372978135",
+      "description": ""
+    },
+    {
+      "title": "知乎全能助手-知乎文章下载/复制- Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/559930-%E7%9F%A5%E4%B9%8E%E5%85%A8%E8%83%BD%E5%8A%A9%E6%89%8B-%E7%9F%A5%E4%B9%8E%E6%96%87%E7%AB%A0%E4%B8%8B%E8%BD%BD-%E5%A4%8D%E5%88%B6/code",
+      "description": ""
+    },
+    {
+      "title": "Suplementary code for: Addressing Class Imbalance in Tabular Data through Neural Network-based Synthetic Data Generation: A Comprehensive Survey and Library | Code Ocean",
+      "url": "https://codeocean.com/explore/70b1eee1-338c-4263-b227-338a7fc5e6d6?filter=all&page=1&query=IEEE+Data+Descriptions&refine=journal",
+      "description": ""
+    },
+    {
+      "title": "RSSHub/lib/routes/zhihu/answers.ts at master - GitHub",
+      "url": "https://github.com/DIYgod/RSSHub/blob/master/lib/routes/zhihu/answers.ts",
+      "description": ""
+    },
+    {
+      "title": "doctool/zhihu-ques.py at master · apachecn/doctool · GitHub",
+      "url": "https://github.com/apachecn/doctool/blob/master/zhihu-ques.py",
+      "description": ""
+    },
+    {
+      "title": "uv.py - EscaticZheng/zhihu-hot-qa-crawler · GitHub",
+      "url": "https://github.com/EscaticZheng/zhihu-hot-qa-crawler/blob/main/uv.py",
+      "description": ""
+    },
+    {
+      "title": "zhihu_spider/zhihu_spider.py at master · python3xxx/zhihu_spider - GitHub",
+      "url": "https://github.com/python3xxx/zhihu_spider/blob/master/zhihu_spider.py",
+      "description": ""
+    },
+    {
+      "title": "question.go - daniel-007/zhihuxx - GitHub",
+      "url": "https://github.com/daniel-007/zhihuxx/blob/master/question.go",
+      "description": ""
+    },
+    {
+      "title": "ios_rule_script/rewrite/Surge/AdvertisingScript/AdvertisingScript_Mock.sgmodule at master",
+      "url": "https://github.com/blackmatrix7/ios_rule_script/blob/master/rewrite/Surge/AdvertisingScript/AdvertisingScript_Mock.sgmodule",
+      "description": ""
+    },
+    {
+      "title": "ZhiHuCom2File.py - wwyqianqian/ShuYu - GitHub",
+      "url": "https://github.com/wwyqianqian/ShuYu/blob/master/ZhiHuCom2File.py",
+      "description": ""
+    },
+    {
+      "title": "README.md - LJSthu/cracker-zhihu · GitHub",
+      "url": "https://github.com/LJSthu/cracker-zhihu/blob/master/README.md",
+      "description": ""
+    },
+    {
+      "title": "tiam-bloom/zhihuQuestionAnswer: 某乎问答及评论抓取 - GitHub",
+      "url": "https://github.com/tiam-bloom/zhihuQuestionAnswer",
+      "description": ""
+    },
+    {
+      "title": "wtog/web-crawler - GitHub",
+      "url": "https://github.com/wtog/web-crawler",
+      "description": ""
+    },
+    {
+      "title": "爬取知乎图片 - GitHub Gist",
+      "url": "https://gist.github.com/powersee/619a9f4688b1f8f9cb65f80531e3d8ee",
+      "description": ""
+    },
+    {
+      "title": "Python-practice/ZhihuSpider_keywords.py at master - GitHub",
+      "url": "https://github.com/Luoxiaoxu/Python-practice/blob/master/ZhihuSpider_keywords.py",
+      "description": ""
+    }
+  ],
+  "ai_content": "知乎的 v4 API（主要指 RESTful 风格的 /api/v4 路径下的接口）在获取回答（answers）相关数据时，**content** 字段代表回答的完整正文内容，通常以 HTML 格式返回，包含文本、图片链接、格式化标签等。\n\n这个字段并不是默认包含在响应里的基本数据中。知乎 API 设计了一个通用的 **include** 查询参数，用于按需扩展返回的字段集合，从而控制响应体积和性能。如果不指定 include 或没有把 content 列入其中，回答列表接口（比如 /questions/{id}/answers 或 /members/{token}/answers）通常只会返回一些元信息，例如 id、author 概要、voteup_count、comment_count、created_time、updated_time、excerpt（摘要）等，而正文 content 会缺失或为空/简短。\n\n要获取完整的回答内容，正规做法就是在请求 URL 的查询字符串中显式加入 include 参数，并把 content（有时还会带上 editable_content 用于可编辑原始版本）写进去。常见的写法是：\n\n- include=data[*].content （针对列表接口，data[*] 表示对数组中每个回答对象扩展 content 字段）\n- include=content （针对单条回答接口 /answers/{id}）\n\n实际使用中开发者通常会组合很多字段，比如：\n\ninclude=data[*].is_normal,admin_closed_comment,reward_info,is_collapsed,suggest_edit,comment_count,can_comment,content,editable_content,voteup_count,created_time,updated_time,question,excerpt,relationship.is_author,voting,is_thanked;data[*].author.follower_count,badge[*].topics\n\n这样一次请求就能拿到丰富的信息，而 content 作为其中关键一项就会出现在每个回答对象里。\n\n如果只是获取单条回答的详情，直接用 /api/v4/answers/{answer_id}?include=content 就能拿到完整正文。列表接口每次最多返回 20 条（limit=20 是硬限制），所以爬取或批量处理时需要通过 offset 分页循环请求。\n\n需要注意几点限制和现实情况：\n\n- 几乎所有知乎 v4 API 接口都需要登录态（cookie 里带 z_c0 等凭证），匿名请求基本无法获取 content 等敏感/完整数据。\n- 从 2020 年左右开始，知乎逐步加强了反爬措施，引入了 x-zse-96、x-zse-93 等签名验证参数，尤其是涉及 content 的请求基本都需要模拟 app 端的签名算法才能成功调用，否则返回 403 或签名错误。\n- 即使签名通过，content 字段在某些场景下也可能被限制，比如盐选付费内容、被折叠/折叠的回答、审核中的内容等，会返回空或提示信息，而不是完整 HTML。\n- 官方从未公开过完整的 v4 API 文档，所有用法都来自逆向、抓包和社区整理，接口行为可能随时变动。\n- 近几年（2023-2026）社区中活跃的爬虫项目大多转向了 Android 逆向生成签名 + API 调用的组合方式，纯 web 端 cookie + include=content 的老路子成功率已大幅下降。\n\n总结下来，在知乎 v4 API 中想要 answers include content，核心就是正确构造 include 参数把 content 字段包含进来，同时解决认证和签名问题，才能稳定拿到回答的完整正文。",
+  "ai_summary": "知乎的 v4 API（主要指 RESTful 风格的 /api/v4 路径下的接口）在获取回答（answers）相关数据时，**content** 字段代表回答的完整正文内容，通常以 HTML 格式返回，包含文本、图片链接、格式化标签等。\n\n这个字段并不是默认包含在响应里的基本数据中。知乎 API 设计了一个通用的 **include** 查询参数，用于按需扩展返回的字段集合，从而控制响应体积和性能。如果不指定 include 或没有把 content 列入其中，回答列表接口（比如 /questions/{id}/answers 或 /members/{token}/answers）通常只会返回一些元信息，例如 id、author 概要、voteup_count、comment_count、created_time、updated_time、excerpt（摘要）等，而正文 content 会缺失或为空/简短。\n\n要获取完整的回答内容，正规做法就是在请求 URL 的查询字符串中显式加入 include 参数，并把 content（有时还会带上 editable_content 用于可编辑原始版本）写进去。常见的写法是：\n\n- include=data[*].content （针对列表接口，data[*] 表示对数组中每个回答对象扩展 content 字段）\n- include=content （针对单条回答接口 /answers/{id}）\n\n实际使用中开发者通常会组合很多字段，比如：\n\ninclude=data[*].is_normal,admin_closed_comment,reward_info,is_collapsed,suggest_edit,comment_count,can_comment,content,editable_content,voteup_count,created_time,updated_time,question,excerpt,relationship.is_author,voting,is_thanked;data[*].author.follower_count,badge[*].topics\n\n这样一次请求就能拿到丰富的信息，而 content 作为其中关键一项就会出现在每个回答对象里。\n\n如果只是获取单条回答的详情，直接用 /api/v4/answers/{answer_id}?include=content 就能拿到完整正文。列表接口每次最多返回 20 条（limit=20 是硬限制），所以爬取或批量处理时需要通过 offset 分页循环请求。\n\n需要注意几点限制和现实情况：\n\n- 几乎所有知乎 v4 API 接口都需要登录态（cookie 里带 z_c0 等凭证），匿名请求基本无法获取 content 等敏感/完整数据。\n- 从 2020 年左右开始，知乎逐步加强了反爬措施，引入了 x-zse-96、x-zse-93 等签名验证参数，尤其是涉及 content 的请求基本都需要模拟 app 端的签名算法才能成功调用，否则返回 403 或签名错误。\n- 即使签名通过，content 字段在某些场景下也可能被限制，比如盐选付费内容、被折叠/折叠的回答、审核中的内容等，会返回空或提示信息，而不是完整 HTML。\n- 官方从未公开过完整的 v4 API 文档，所有用法都来自逆向、抓包和社区整理，接口行为可能随时变动。\n- 近几年（2023-2026）社区中活跃的爬虫项目大多转向了 Android 逆向生成签名 + API 调用的组合方式，纯 web 端 cookie + include=content 的老路子成功率已大幅下降。\n\n总结下来，在知乎 v4 API 中想要 answers include content，核心就是正确构造 include 参数把 content 字段包含进来，同时解决认证和签名问题，才能稳定拿到回答的完整正文。"
+}

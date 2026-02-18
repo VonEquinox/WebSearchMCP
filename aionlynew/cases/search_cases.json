@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Trafilatura Query",
+    "query": "trafilatura extract favor_precision include_comments",
+    "min_links": 3,
+    "hard_fail": true
+  },
+  {
+    "name": "Zhihu API Query",
+    "query": "知乎 api v4 answers include content",
+    "min_links": 3,
+    "hard_fail": false
+  },
+  {
+    "name": "CSDN Extraction Query",
+    "query": "CSDN 正文 提取 去除 广告 导航",
+    "min_links": 3,
+    "hard_fail": false
+  },
+  {
+    "name": "Pixel10 Normal",
+    "query": "pixel10 怎么样",
+    "min_links": 3,
+    "hard_fail": false
+  },
+  {
+    "name": "Pixel10 Site Zhihu",
+    "query": "pixel10 site:zhihu.com",
+    "min_links": 2,
+    "hard_fail": false
+  }
+]

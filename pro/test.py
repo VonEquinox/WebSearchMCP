@@ -47,7 +47,14 @@ def _looks_like_challenge(title: str) -> bool:
 
 
 def run_unit_tests() -> dict:
-    from SOTASearch import _clean_ai_tags, _parse_markdown_links, _strip_urls
+    from SOTASearch import (
+        _clean_ai_tags,
+        _extract_browse_page_links,
+        _parse_markdown_links,
+        _parse_sse_chat_completions,
+        _strip_urls,
+        _unwrap_redirect_url,
+    )
 
     ai_content = (
         "这里是正文内容，模型偶尔会夹带链接："
@@ -79,6 +86,54 @@ def run_unit_tests() -> dict:
     assert "https://example.com/bare" in urls
     assert "https://example.com/ref1" in urls
 
+    # SSE parsing (upstream returns text/event-stream)
+    sse = "\n".join(
+        [
+            'data: {"choices":[{"delta":{"role":"assistant","content":"Hello "}}]}',
+            "",
+            'data: {"choices":[{"delta":{"content":"world"}}]}',
+            "",
+            "data: [DONE]",
+            "",
+        ]
+    )
+    sse_content, sse_reasoning = _parse_sse_chat_completions(sse)
+    assert sse_content == "Hello world"
+    assert sse_reasoning == ""
+
+    # Redirect unwrap
+    ddg = "https://duckduckgo.com/l/?uddg=https%3A%2F%2Fexample.com%2Fa%3Fb%3Dc"
+    assert _unwrap_redirect_url(ddg) == "https://example.com/a?b=c"
+    brave = "https://r.search.brave.com/redirect?url=https%3A%2F%2Fexample.com%2Fp"
+    assert _unwrap_redirect_url(brave) == "https://example.com/p"
+    zhihu = "https://link.zhihu.com/?target=https%3A%2F%2Fexample.com%2Fz"
+    assert _unwrap_redirect_url(zhihu) == "https://example.com/z"
+
+    # Link parsing should accept www/ // / json-url and unwrap redirects
+    content2 = (
+        "Sources:\n"
+        "- [Example](www.example.com/path)\n"
+        "- //example.com/p2\n"
+        '- {"url": "https://duckduckgo.com/l/?uddg=https%3A%2F%2Fexample.com%2Fp3"}\n'
+    )
+    links2, _ = _parse_markdown_links(content2)
+    urls2 = {link.get("url") for link in links2}
+    assert "https://www.example.com/path" in urls2
+    assert "https://example.com/p2" in urls2
+    assert "https://example.com/p3" in urls2
+
+    # Grok browse_page trace URL extraction
+    browse_text = (
+        'browse_page {"url":"https://openai.com/index/introducing-gpt-5-3-codex/",'
+        '"instructions":"Confirm release date and safety notes."}\\n'
+        'browse_page {"url":"https://duckduckgo.com/l/?uddg=https%3A%2F%2Fexample.com%2Fwrapped",'
+        '"instructions":"unwrap redirect"}'
+    )
+    browse_links = _extract_browse_page_links(browse_text)
+    browse_urls = [link.get("url") for link in browse_links]
+    assert "https://openai.com/index/introducing-gpt-5-3-codex/" in browse_urls
+    assert "https://example.com/wrapped" in browse_urls
+
     return {
         "success": True,
         "links_extracted": len(links),
@@ -109,14 +164,11 @@ def call_llm(content: str) -> dict:
 
 
 async def call_fetch(url: str, mode: str = "text") -> dict:
-    from SOTASearch import fetch_html, fetch_metadata, fetch_text
+    from SOTASearch import fetch
 
     mode = (mode or "text").lower()
-    if mode == "html":
-        return await fetch_html(url)
-    if mode in ("meta", "metadata"):
-        return await fetch_metadata(url)
-    return await fetch_text(url)
+    _ = mode  # reserved for compatibility
+    return await fetch(url)
 
 
 async def call_playwright(url: str, mode: str = "text") -> dict:

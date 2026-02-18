@@ -1,0 +1,231 @@
+With Python#
+The Python programming language#
+Step-by-step#
+Quickstart#
+For the basics see quickstart documentation page.
+Extraction functions#
+from trafilatura import ...
+and used on raw documents (strings) or parsed HTML (LXML elements).
+Main text extraction, good balance between precision and recall:
+extract
+: Wrapper function, easiest way to perform text extraction and conversionbare_extraction
+: Internal function returning bare Python variables
+Additional fallback functions:
+baseline
+: Faster extraction function targeting text paragraphs and/or JSON metadatahtml2txt
+: Extract all text in a document, maximizing recall
+Output#
+CSV
+HTML (from version 1.11 onwards)
+JSON
+Markdown (from version 1.9 onwards)
+XML and XML-TEI (following the guidelines of the Text Encoding Initiative)
+"csv", "json", "html", "markdown", "txt", "xml", "xmltei"
+.
+bare_extraction
+function also accepts an additional python
+format to work with Python on the output.
+To extract and include metadata in the output, use the with_metadata=True
+argument.
+Examples#
+# some formatting preserved in basic XML structure
+>>> extract(downloaded, output_format="xml")
+# output in JSON format with metadata extracted
+>>> extract(downloaded, output_format="json", with_metadata=True)
+Choice of HTML elements#
+Customize the extraction process by including or excluding specific HTML elements:
+- Text elements:
+include_comments=True
+Include comment sections at the bottom of articles.
+include_tables=True
+Extract text from HTML
+<table>
+elements.
+- Structural elements:
+include_formatting=True
+Keep structural elements related to formatting (
+<b>
+/<strong>
+,<i>
+/<emph>
+etc.)include_links=True
+Keep link targets (in
+href="..."
+)include_images=True
+Keep track of images along with their targets (
+<img>
+attributes: alt, src, title)
+To operate on these elements, pass the corresponding parameters to the extract()
+function:
+# exclude comments from the output
+>>> result = extract(downloaded, include_comments=False)
+# skip tables and include links in the output
+>>> result = extract(downloaded, include_tables=False, include_links=True)
+# convert relative links to absolute links where possible
+>>> extract(downloaded, output_format='xml', include_links=True, url=url)
+Important notes#
+include_comments
+andinclude_tables
+are activated by default.bare_extraction()
+. This allows for direct display and manipulation of the elements.Certain elements may not be visible in the output if the chosen format does not allow it.
+Selecting Markdown automatically includes text formatting.
+Hint
+The precision and recall presets#
+favor_precision
+and favor_recall
+.
+>>> result = extract(downloaded, url, favor_precision=True)
+Precision#
+prune_xpath
+parameter to target specific HTML elements using a list of XPath expressions.
+Recall#
+If parts of your documents are missing, try this preset to take more elements into account.
+If content is still missing, refer to the troubleshooting guide.
+Additional functions for text extraction#
+html2txt
+and baseline
+functions offer simpler approaches to extracting text from HTML content, prioritizing performance over precision.
+html2txt()#
+html2txt
+function serves as a last resort for extracting text from HTML content. It emulates the behavior of similar functions in other packages and can be used to output all possible text from a given HTML source, maximizing recall. However, it may not always produce accurate or meaningful results, as it does not consider the context of the extracted sections.
+>>> from trafilatura import html2txt
+>>> html2txt(downloaded)
+baseline()#
+baseline
+function instead. This function returns a tuple containing an LXML element with the body, the extracted text as a string, and the length of the text. It uses a set of heuristics to extract text from the HTML content, which generally produces more accurate results than html2txt
+.
+>>> from trafilatura import baseline
+>>> postbody, text, len_text = baseline(downloaded)
+Guessing if text can be found#
+is_probably_readerable()
+has been ported from Mozilla’s Readability.js, it is available from version 1.10 onwards and provides a way to guess if a page probably has a main text to extract.
+>>> from trafilatura.readability_lxml import is_probably_readerable
+>>> is_probably_readerable(html) # HTML string or already parsed tree
+Language identification#
+>>> result = extract(downloaded, url, target_language="de")
+Note
+pip install trafilatura[all]
+.
+This feature currently uses the py3langid package and is dependent on language availability and performance of the original model.
+Optimizing for speed#
+trafilatura[all]
+, htmldate[speed]
+), but also on the extraction strategy.
+# skip algorithms used as fallback
+>>> result = extract(downloaded, no_fallback=True)
+The following combination usually leads to shorter processing times:
+>>> result = extract(downloaded, include_comments=False, include_tables=False, no_fallback=True)
+Extraction settings#
+Function parameters#
+Extractor
+class provides a convenient way to define and manage extraction parameters. It allows users to customize all options used by the extraction functions and offers a convenient shortcut compared to multiple function parameters.
+Here is how to use the class:
+# import the Extractor class from the settings module
+>>> from trafilatura.settings import Extractor
+# set multiple options at once
+>>> options = Extractor(output_format="json", with_metadata=True)
+# add or adjust settings as needed
+>>> options.formatting = True # same as include_formatting
+>>> options.source = "My Source" # useful for debugging
+# use the options in an extraction function
+>>> extract(my_doc, options=options)
+See the settings.py
+file for a full example.
+Metadata extraction#
+with_metadata=True
+: extract metadata fields and include them in the outputonly_with_metadata=True
+: only output documents featuring all essential metadata (date, title, url)
+Date#
+extract_metadata
+function in trafilatura.metadata
+, most notably:
+extensive_search
+(boolean), to activate further heuristics (higher recall, lower precision)original_date
+(boolean) to look for the original publication date,outputformat
+(string), to provide a custom datetime format,max_date
+(string), to set the latest acceptable date manually (YYYY-MM-DD format).
+# import the extract() function, use a previously downloaded document
+# pass the new parameters as dict
+>>> extract(downloaded, output_format="xml", date_extraction_params={
+"extensive_search": True, "max_date": "2018-07-01"
+})
+URL#
+# define a URL and download the example
+>>> url = "https://web.archive.org/web/20210613232513/https://www.thecanary.co/feature/2021/05/19/another-by-election-headache-is-incoming-for-keir-starmer/"
+>>> downloaded = fetch_url(url)
+# content discarded since necessary metadata couldn't be extracted
+>>> bare_extraction(downloaded, only_with_metadata=True)
+>>>
+# date found in URL, extraction successful
+>>> bare_extraction(downloaded, only_with_metadata=True, url=url)
+Memory use#
+# import the function
+>>> from trafilatura.meta import reset_caches
+# use it at any given point
+>>> reset_caches()
+Input/Output types#
+Python objects as output#
+The extraction can be customized using a series of parameters, for more see the core functions page.
+bare_extraction
+can be used to bypass output conversion, it returns Python variables for metadata (dictionary) as well as main text and comments (both LXML objects).
+>>> from trafilatura import bare_extraction
+>>> bare_extraction(downloaded)
+Raw HTTP response objects#
+The fetch_response()
+function can pass a response object straight to the extraction.
+response.url
+and then pass is directly as a URL argument to the extraction function:
+# necessary components
+>>> from trafilatura import fetch_response, bare_extraction
+# load an example
+>>> response = fetch_response("https://www.example.org")
+# perform extract() or bare_extraction() on Trafilatura's response object
+>>> bare_extraction(response.data, url=response.url) # here is the redirection URL
+LXML objects#
+# define document and load it with LXML
+>>> from lxml import html
+>>> my_doc = """<html><body><article><p>
+Here is the main text.
+</p></article></body></html>"""
+>>> mytree = html.fromstring(my_doc)
+# extract from the already loaded LXML tree
+>>> extract(mytree)
+'Here is the main text.'
+Interaction with BeautifulSoup#
+Here is how to convert a BS4 object to LXML format in order to use it with Trafilatura:
+>>> from bs4 import BeautifulSoup
+>>> from lxml.html.soupparser import convert_tree
+>>> from trafilatura import extract
+>>> soup = BeautifulSoup("<html><body><time>The date is Feb 2, 2024</time></body></html>", "lxml")
+>>> lxml_tree = convert_tree(soup)[0]
+>>> extract(lxml_tree)
+Deprecations#
+The following functions and arguments are deprecated:
+- extraction:
+process_record()
+function → useextract()
+insteadcsv_output
+,json_output
+,tei_output
+,xml_output
+→ useoutput_format
+parameter insteadbare_extraction(as_dict=True)
+→ the function returns aDocument
+object, use.as_dict()
+method on itbare_extraction()
+andextract()
+:no_fallback
+→ usefast
+insteadmax_tree_size
+parameter moved tosettings.cfg
+file
+downloads:
+decode
+argument infetch_url()
+→ usefetch_response
+insteadutils:
+decode_response()
+function → usedecode_file()
+insteadwith_metadata
+(include metadata) had once the effect of today’sonly_with_metadata
+(only documents with necessary metadata)

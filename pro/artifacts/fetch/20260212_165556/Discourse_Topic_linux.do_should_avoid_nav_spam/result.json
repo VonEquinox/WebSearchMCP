@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "url": "https://linux.do/t/topic/1344967",
+  "via_worker": false,
+  "via_playwright": true,
+  "markdown": "Gemini3Flash王朝了，Codeforces打到了全球第一 - 开发调优 - LINUX DO\n话题\n近期活动\nConnect\nChannel\nIDC Flare\n开发调优\n国产替代\n资源荟萃\n网盘资源\n文档共建\n非我莫属\n读书成诗\n前沿快讯\n网络记忆\n福利羊毛\n搞七捻三\n虫洞广场\n运营反馈\n所有类别\n人工智能\n公告\n原创\n快问快答\n抽奖\n精华神帖\n集中帖\n所有标签\nDefault\n真诚\n、\n友善\n、\n团结\n、\n专业\n，共建你我引以为荣之社区。\n《常见问题解答》\nGemini3Flash王朝了，Codeforces打到了全球第一\n开发调优\n纯水\n,\n人工智能\n您已选择\n0\n个帖子。\n全选\n取消选择\n4\n4\n3\n2\n2025 年 12月\n1 / 19\n2025 年 12月\n2025 年 12月\n由 VonEquinox 发布于 2025 年 12月 20 日\nVonEquinox\n2025 年 12月\n用Gemini 3 flash试了试昨天的Codeforce的div 1+2居然AK了所有题目（原本有个账号参赛的但是被封号了所以开了个小号VP）真是王朝了\na0be3226330cbfebf85655ecf60fee12\n1762×844 157 KB\n1dfee357f274154d48892e1102ef91a8\n1758×1502 511 KB\nGemini 3 Flash大概是40分钟左右做完的，做出了没有选手成功做出来的H2，如果没被封号的话应该是全球第一了\nimage\n2362×900 357 KB\n使用的是一个自己写的agent来打比赛，没有网络搜索功能只用了代码执行功能\nagent代码\nGitHub - VonEquinox/AICodeforcer\n补一下没开联网昨天赛时打到这里\n4d43571ee422836e22f5215e61da8445\n1959×1280 132 KB\n看到有人说C用AI基本过不了这里放一下复刻的AI过C题的日志\nimage\n1752×450 95 KB\nsolve_20251220_225636.txt\n(105.2 KB)\n最后TLE了让ai改成cpp代码就能ac了：）\n4\n4\n3\n2\n由 wazou_pau 发布于 2025 年 12月 20 日\n由 VonEquinox 发布于 2025 年 12月 20 日\n由 Timmyzzo 发布于 2025 年 12月 20 日\n由 HitC 发布于 2025 年 12月 20 日\n由 ATRI 发布于 2025 年 12月 20 日\n由 VonEquinox 发布于 2025 年 12月 20 日\n由 Yan233th 发布于 2025 年 12月 20 日\n由 ShowUNow 发布于 2025 年 12月 20 日\n由 OpenAI_Q-Star 发布于 2025 年 12月 20 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 ATRI 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日\n相关话题\n话题列表，带有按钮的列标题可以排序。\n话题\n回复\n浏览量\n活动\n所谓的gemini3是gemini占领排行榜123名\n前沿快讯\n纯水\n,\n人工智能\n35\n1.9k\n2025 年 12月\n关于牢根Logan的发癫以及Gemini3的一些消息和猜想（瞎猜）\n前沿快讯\n纯水\n,\n人工智能\n16\n709\n2025 年 9月\ngemini3pro疑似上线大模型竞技场\n前沿快讯\n人工智能\n,\nGemini\n15\n1.0k\n2025 年 10月\nOpenAI？不行！Google？行！\n资源荟萃\n14\n771\n2025 年 1月\ngemini 2.5 flash 0520免费的api已经可用了~\n开发调优\n纯水\n,\n人工智能\n38\n1.7k\n2025 年 5月",
+  "truncated": false,
+  "blocked": false,
+  "extractor": "bs4:text",
+  "quality_score": 60,
+  "quality_metrics": {
+    "char_len": 1819,
+    "line_count": 144,
+    "unique_line_ratio": 0.729,
+    "noise_line_ratio": 0.0
+  },
+  "degraded": false
+}

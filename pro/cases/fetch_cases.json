@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Trafilatura Docs (should remove nav/buttons)",
+    "url": "https://trafilatura.readthedocs.io/en/latest/usage-python.html",
+    "min_chars": 800,
+    "require_any": ["Trafilatura", "extract"],
+    "forbid": ["Skip to main content", "Back to top", "Ctrl", "GitHub"],
+    "hard_fail": true
+  },
+  {
+    "name": "GitHub Repo README (SHIEP-Course-Selection-Script)",
+    "url": "https://github.com/Yan233th/SHIEP-Course-Selection-Script",
+    "min_chars": 800,
+    "require_any": ["custom.py", "JSESSIONID", "profileId", "uv"],
+    "forbid": ["Skip to content", "You signed in with another tab or window", "Repository files navigation"],
+    "hard_fail": false
+  },
+  {
+    "name": "GitHub Repo README (Skland-Auto-Sign-In)",
+    "url": "https://github.com/Yan233th/Skland-Auto-Sign-In",
+    "min_chars": 200,
+    "require_any": ["森空岛自动签到", "USER_TOKENS", "MAX_RETRIES"],
+    "forbid": ["Skip to content", "You signed in with another tab or window", "Repository files navigation"],
+    "hard_fail": false
+  },
+  {
+    "name": "CSDN Blog Article (main content only)",
+    "url": "https://blog.csdn.net/wtyuong/article/details/136691433",
+    "min_chars": 500,
+    "forbid": ["返回顶部", "打开APP", "下载APP", "请先登录", "验证码"],
+    "hard_fail": false
+  },
+  {
+    "name": "Discourse Topic (linux.do) should avoid nav spam",
+    "url": "https://linux.do/t/topic/1344967",
+    "min_chars": 200,
+    "require_any": ["Gemini", "Codeforces"],
+    "forbid": ["跳转到顶部", "所有类别", "话题列表"],
+    "hard_fail": false
+  },
+  {
+    "name": "Bangumi User Page (bgm.tv) should avoid global nav",
+    "url": "https://bgm.tv/user/666340",
+    "min_chars": 800,
+    "require_any": ["Yan233_", "动画", "Outer Wilds"],
+    "forbid": ["近期注目", "排行榜", "每日放送"],
+    "hard_fail": false
+  },
+  {
+    "name": "Steam Community Profile should avoid language/nav menu",
+    "url": "https://steamcommunity.com/id/Yan233_/",
+    "min_chars": 200,
+    "require_any": ["Yan233_", "Steam"],
+    "forbid": ["Change language", "Get the Steam Mobile App", "繁體中文", "简体中文"],
+    "hard_fail": false
+  },
+  {
+    "name": "Zhihu Answer (API preferred)",
+    "url": "https://www.zhihu.com/question/35814484/answer/3166679319",
+    "min_chars": 300,
+    "forbid": ["打开 App", "下载 App", "请先登录", "验证码", "访问异常"],
+    "hard_fail": false
+  },
+  {
+    "name": "Xiaohongshu Discovery Item (public if accessible)",
+    "url": "https://www.xiaohongshu.com/discovery/item/5baf75a8910cf646d910806f",
+    "min_chars": 20,
+    "forbid": ["打开APP", "下载APP", "请先登录", "验证码", "访问异常"],
+    "allow_blocked": true,
+    "hard_fail": false
+  }
+]

@@ -1,0 +1,250 @@
+{
+  "success": true,
+  "query": "CSDN 正文 提取 去除 广告 导航",
+  "links": [
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "Python爬取CSDN博客文章- shootercheng - 博客园",
+      "url": "https://www.cnblogs.com/shootercheng/p/5962445.html",
+      "description": ""
+    },
+    {
+      "title": "【技巧】如何使用客户端发布BLOG+如何快速发布微信公众号文章 - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/283839",
+      "description": ""
+    },
+    {
+      "title": "How to extract article content from a website/blog - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/29874809/how-to-extract-article-content-from-a-website-blog",
+      "description": ""
+    },
+    {
+      "title": "Main Content Extraction from Web Pages - YTG Central",
+      "url": "https://central.yourtext.guru/main-content-extraction-from-web-pages",
+      "description": ""
+    },
+    {
+      "title": "Extracting the Main Content of Web Pages Using the First Impression Area",
+      "url": "https://scholarworks.bwise.kr/hanyang/bitstream/2021.sw.hanyang/182218/1/Extracting_the_Main_Content_of_Web_Pages_Using_the_First_Impression_Area.pdf",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取与去重实战：从精准抓取到重复数据清零的全技巧 - CSDN博客",
+      "url": "https://blog.csdn.net/shanwei_spider/article/details/154235269",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "Python网页正文提取神器: readability库详解 - CSDN博客",
+      "url": "https://blog.csdn.net/engchina/article/details/140179476",
+      "description": ""
+    },
+    {
+      "title": "Python爬取CSDN博客文章- shootercheng - 博客园",
+      "url": "https://www.cnblogs.com/shootercheng/p/5962445.html",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取新体验：正文提取器v1.0发布 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_34535286/article/details/147914118",
+      "description": ""
+    },
+    {
+      "title": "【技巧】如何使用客户端发布BLOG+如何快速发布微信公众号文章 - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/283839",
+      "description": ""
+    },
+    {
+      "title": "How to extract article content from a website/blog - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/29874809/how-to-extract-article-content-from-a-website-blog",
+      "description": ""
+    },
+    {
+      "title": "Main Content Extraction from Web Pages - YTG Central",
+      "url": "https://central.yourtext.guru/main-content-extraction-from-web-pages",
+      "description": ""
+    },
+    {
+      "title": "Extracting the Main Content of Web Pages Using the First Impression Area",
+      "url": "https://scholarworks.bwise.kr/hanyang/bitstream/2021.sw.hanyang/182218/1/Extracting_the_Main_Content_of_Web_Pages_Using_the_First_Impression_Area.pdf",
+      "description": ""
+    },
+    {
+      "title": "Remove Headers, Footers, External Links and their related data · Issue #181 · unclecode/crawl4ai - GitHub",
+      "url": "https://github.com/unclecode/crawl4ai/issues/181",
+      "description": ""
+    },
+    {
+      "title": "Web Content Extraction with Heuristics & NLP | by Amy Leong | AI monks.io | Medium",
+      "url": "https://medium.com/aimonks/web-content-extraction-with-heuristics-nlp-8e901875c8ed",
+      "description": ""
+    },
+    {
+      "title": "去除CKFinder版权信息以及启用文件移动功能 转载 - CSDN博客",
+      "url": "https://blog.csdn.net/nevergiveuplzl/article/details/79965885",
+      "description": ""
+    },
+    {
+      "title": "Navigation Objects Extraction for Better Content Structure Understanding - ResearchGate",
+      "url": "https://www.researchgate.net/publication/319049992_Navigation_Objects_Extraction_for_Better_Content_Structure_Understanding",
+      "description": ""
+    },
+    {
+      "title": "How to extract only main content of text from a web page? | Firecrawl Glossary",
+      "url": "https://www.firecrawl.dev/glossary/web-extraction-apis/how-to-extract-only-main-content-from-web-page",
+      "description": ""
+    },
+    {
+      "title": "Extracting Insights From Website, Blogs, Study | PDF | Html - Scribd",
+      "url": "https://www.scribd.com/presentation/933012466/Extracting-Insights-From-Website-Blogs-Study",
+      "description": ""
+    },
+    {
+      "title": "What's the best way to extract content from any website? - Quora",
+      "url": "https://www.quora.com/Whats-the-best-way-to-extract-content-from-any-website",
+      "description": ""
+    },
+    {
+      "title": "NLP-Interview-Notes/NLPinterview/EventExtraction/readme.md at main - GitHub",
+      "url": "https://github.com/daiyizheng/NLP-Interview-Notes/blob/main/NLPinterview/EventExtraction/readme.md",
+      "description": ""
+    },
+    {
+      "title": "taishan1994/PointerNet_Chinese_Information_Extraction: 利用指针网络进行信息抽取，包含命名实体识别、关系抽取、事件抽取。 - GitHub",
+      "url": "https://github.com/taishan1994/PointerNet_Chinese_Information_Extraction",
+      "description": ""
+    },
+    {
+      "title": "yangdonghao621/Extract-Verify-EE: 先抽取后验证的DUEE1.0事件抽取深度学习框架（2023年本科毕业设计） - GitHub",
+      "url": "https://github.com/y573082640/Extract-Verify-EE",
+      "description": ""
+    },
+    {
+      "title": "eastmountyxz/RSJZ-fighting - GitHub",
+      "url": "https://github.com/eastmountyxz/RSJZ-fighting",
+      "description": ""
+    },
+    {
+      "title": "at master · liuhuanyong/ChineseNLPCorpus - GitHub",
+      "url": "https://github.com/liuhuanyong/ChineseNLPCorpus?search=1",
+      "description": ""
+    },
+    {
+      "title": "GitHub - yinizhilian/nlp-materials-share: 自然语言处理NLP（自然语言生成NLG、自然语言理解NLU）、自然语言学术会议大盘点",
+      "url": "https://github.com/yinizhilian/nlp-materials-share",
+      "description": ""
+    },
+    {
+      "title": "AI-Compass/3.1 RAG+workflow/3.RAG+workflow.md at main · tingaicompass/AI-Compass",
+      "url": "https://github.com/tingaicompass/AI-Compass/blob/main/3.1%20RAG+workflow/3.RAG+workflow.md",
+      "description": ""
+    },
+    {
+      "title": "HelloGitHub/content/HelloGitHub42.md at master",
+      "url": "https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub42.md",
+      "description": ""
+    },
+    {
+      "title": "gmftbyGMFTBY/BlogRunner: The Team Work For My Fundamentals of Software Engines Class - GitHub",
+      "url": "https://github.com/gmftbyGMFTBY/BlogRunner",
+      "description": ""
+    },
+    {
+      "title": "GitHub - RogerJTX/RogerJTX.github.io: Programming Notes. URL: https://rogerjtx.github.io/",
+      "url": "https://github.com/RogerJTX/RogerJTX.github.io",
+      "description": ""
+    },
+    {
+      "title": "An Index-based Approach for Efficient and Effective Web Content Extraction - arXiv",
+      "url": "https://arxiv.org/html/2512.06641v1",
+      "description": ""
+    },
+    {
+      "title": "An Empirical Comparison of Web Content Extraction Algorithms - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/10.1145/3539618.3591920",
+      "description": ""
+    },
+    {
+      "title": "AI driven web crawling for semantic extraction of news content from newspapers - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-25616-x",
+      "description": ""
+    },
+    {
+      "title": "article-extraction-benchmark/README.rst at master - GitHub",
+      "url": "https://github.com/scrapinghub/article-extraction-benchmark/blob/master/README.rst",
+      "description": ""
+    },
+    {
+      "title": "Comparing algorithms for extracting content from web pages - Chuniversiteit.nl",
+      "url": "https://chuniversiteit.nl/papers/comparison-of-web-content-extraction-algorithms",
+      "description": ""
+    },
+    {
+      "title": "Unlocking Content with Ease: The Top Article Extractor APIs of 2024 | by Muhammad Nazam",
+      "url": "https://medium.com/@codewithnazam/unlocking-content-with-ease-the-top-article-extractor-apis-of-2024-adfca5909f63",
+      "description": ""
+    },
+    {
+      "title": "What is the state of the art in HTML content extraction? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1962389/what-is-the-state-of-the-art-in-html-content-extraction",
+      "description": ""
+    },
+    {
+      "title": "An Empirical Comparison of Web Content Extraction Algorithms",
+      "url": "https://downloads.webis.de/publications/papers/bevendorff_2023c.pdf",
+      "description": ""
+    }
+  ],
+  "ai_content": "从 CSDN 文章页面提取纯正文内容（去除广告、导航栏、侧边栏、推荐阅读、评论区、页脚等干扰元素）是常见的网页清洗需求，尤其在做内容爬取、知识库构建或阅读体验优化时经常遇到。CSDN 的页面结构在过去几年变化较大，早期靠硬编码 class 或 id（如 article_content、blog_article）还能比较稳定地定位，但近几年广告位、悬浮推荐、AI 总结块、会员弹窗等元素越来越多且位置动态，单纯的 CSS 选择器或 XPath 规则容易失效或漏掉部分噪音。\n\n目前最实用、鲁棒性较好的方式是优先采用通用型正文提取算法，这些算法不依赖特定网站的 class 名，而是通过启发式规则分析 DOM 树中文本密度、段落连续性、链接密度、位置权重等特征来判断哪个节点最可能是主要内容。Mozilla 开发的 Readability 算法及其衍生实现是目前社区公认效果最好的之一，在 CSDN 这类技术博客上表现尤为稳定。它能较干净地把标题、正文、代码块保留下来，同时剔除顶部导航、右侧工具栏、下方相关文章和广告。\n\nPython 生态里推荐使用 readability-lxml（Readability.js 的移植版），安装后几行代码就能处理：先用 requests 或 httpx 获取 HTML，再传入 Document 对象解析，最后调用 summary 或 article.content 就能拿到清洗后的正文 HTML 或纯文本。它对 CSDN 的文章页识别率很高，基本能把 .htmledit_views 包裹的核心内容完整提取出来，同时过滤掉大部分广告和导航。\n\n如果追求更高精度或需要处理极少数异常页面，可以结合 Trafilatura（另一个近年很强的开源提取器），它在多语言支持和长文本召回上比 Readability 更激进一些，适合批量处理 CSDN 文章时使用。两者都是纯规则/统计驱动，不依赖大模型，所以速度快、资源占用低，对比基于 LLM 的提取方式（如用大模型直接 prompt “提取正文”）更经济且延迟更低。\n\n对于不想写代码的用户，浏览器端方案也很方便：\n- 安装 Tampermonkey / Violentmonkey 之类的用户脚本管理器，然后找或自己写一个 Greasy Fork / GitHub 上的 CSDN 专杀脚本。这些脚本通常会直接隐藏或删除已知的广告 class（如 csdn-tracking、recommend、blog-extension 等），并把正文区域放大。有些脚本还会一键去除登录弹窗、底部备案信息。\n- 或者直接用浏览器自带的“阅读模式”（Firefox Reader View 或 Edge/Chrome 的阅读视图），它内部用的就是类似 Readability 的算法，对 CSDN 文章支持度不错，能一键得到去广告去导航的纯阅读版，但有时代码块格式会略有损失。\n- 还有人开发过油猴脚本专门针对 CSDN 头部横幅广告做快速关闭，或把整个页面改成极简模式。\n\n硬编码 CSS/JS 方式（比如用 BeautifulSoup + select 或 jQuery 移除特定元素）虽然可控，但维护成本高，因为 CSDN 经常小范围改 class 名或增加新广告位，规则过几个月就可能失效。2024-2025 年间有开发者提到 CSDN 引入了更多动态加载的推荐内容，用传统选择器越来越难覆盖全，所以更推荐上述通用提取器。\n\n如果你的场景是批量下载或做 RAG 知识库，建议组合使用：先用 Playwright / Puppeteer 完整渲染页面（因为 CSDN 部分广告和推荐是 JS 后加载的），再喂给 Readability 或 Trafilatura 处理，能得到最干净的结果。纯 requests + lxml 偶尔会漏掉动态内容，但对大多数文章已经够用。\n\n总之，优先 Readability 系库 → Trafilatura 作为备选 → 浏览器阅读模式 / 油猴脚本做快速方案 → 最后才考虑维护特定网站的 XPath/CSS 规则，这样组合下来基本能应对 CSDN 当前和未来一段时间的页面变化。",
+  "ai_summary": "从 CSDN 文章页面提取纯正文内容（去除广告、导航栏、侧边栏、推荐阅读、评论区、页脚等干扰元素）是常见的网页清洗需求，尤其在做内容爬取、知识库构建或阅读体验优化时经常遇到。CSDN 的页面结构在过去几年变化较大，早期靠硬编码 class 或 id（如 article_content、blog_article）还能比较稳定地定位，但近几年广告位、悬浮推荐、AI 总结块、会员弹窗等元素越来越多且位置动态，单纯的 CSS 选择器或 XPath 规则容易失效或漏掉部分噪音。\n\n目前最实用、鲁棒性较好的方式是优先采用通用型正文提取算法，这些算法不依赖特定网站的 class 名，而是通过启发式规则分析 DOM 树中文本密度、段落连续性、链接密度、位置权重等特征来判断哪个节点最可能是主要内容。Mozilla 开发的 Readability 算法及其衍生实现是目前社区公认效果最好的之一，在 CSDN 这类技术博客上表现尤为稳定。它能较干净地把标题、正文、代码块保留下来，同时剔除顶部导航、右侧工具栏、下方相关文章和广告。\n\nPython 生态里推荐使用 readability-lxml（Readability.js 的移植版），安装后几行代码就能处理：先用 requests 或 httpx 获取 HTML，再传入 Document 对象解析，最后调用 summary 或 article.content 就能拿到清洗后的正文 HTML 或纯文本。它对 CSDN 的文章页识别率很高，基本能把 .htmledit_views 包裹的核心内容完整提取出来，同时过滤掉大部分广告和导航。\n\n如果追求更高精度或需要处理极少数异常页面，可以结合 Trafilatura（另一个近年很强的开源提取器），它在多语言支持和长文本召回上比 Readability 更激进一些，适合批量处理 CSDN 文章时使用。两者都是纯规则/统计驱动，不依赖大模型，所以速度快、资源占用低，对比基于 LLM 的提取方式（如用大模型直接 prompt “提取正文”）更经济且延迟更低。\n\n对于不想写代码的用户，浏览器端方案也很方便：\n- 安装 Tampermonkey / Violentmonkey 之类的用户脚本管理器，然后找或自己写一个 Greasy Fork / GitHub 上的 CSDN 专杀脚本。这些脚本通常会直接隐藏或删除已知的广告 class（如 csdn-tracking、recommend、blog-extension 等），并把正文区域放大。有些脚本还会一键去除登录弹窗、底部备案信息。\n- 或者直接用浏览器自带的“阅读模式”（Firefox Reader View 或 Edge/Chrome 的阅读视图），它内部用的就是类似 Readability 的算法，对 CSDN 文章支持度不错，能一键得到去广告去导航的纯阅读版，但有时代码块格式会略有损失。\n- 还有人开发过油猴脚本专门针对 CSDN 头部横幅广告做快速关闭，或把整个页面改成极简模式。\n\n硬编码 CSS/JS 方式（比如用 BeautifulSoup + select 或 jQuery 移除特定元素）虽然可控，但维护成本高，因为 CSDN 经常小范围改 class 名或增加新广告位，规则过几个月就可能失效。2024-2025 年间有开发者提到 CSDN 引入了更多动态加载的推荐内容，用传统选择器越来越难覆盖全，所以更推荐上述通用提取器。\n\n如果你的场景是批量下载或做 RAG 知识库，建议组合使用：先用 Playwright / Puppeteer 完整渲染页面（因为 CSDN 部分广告和推荐是 JS 后加载的），再喂给 Readability 或 Trafilatura 处理，能得到最干净的结果。纯 requests + lxml 偶尔会漏掉动态内容，但对大多数文章已经够用。\n\n总之，优先 Readability 系库 → Trafilatura 作为备选 → 浏览器阅读模式 / 油猴脚本做快速方案 → 最后才考虑维护特定网站的 XPath/CSS 规则，这样组合下来基本能应对 CSDN 当前和未来一段时间的页面变化。"
+}

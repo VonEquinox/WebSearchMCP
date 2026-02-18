@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "query": "trafilatura extract favor_precision include_comments",
+  "links": [
+    {
+      "title": "Core functions — Trafilatura 2.0.0 documentation",
+      "url": "https://duckduckgo.com/l/?uddg=https%3A%2F%2Ftrafilatura.readthedocs.io%2Fen%2Flatest%2Fcorefunctions.html&rut=4292de4f8aff24423ceac26c4dc289c70eb6aa751e3b3f5cdd6715393e4163ac",
+      "description": "include_comments-Extractcomments along with the main text. output_format - Define an output format, Python being the default and the interest of this internal function."
+    },
+    {
+      "title": "Text Extraction Examples | adbar/trafilatura | DeepWiki",
+      "url": "https://duckduckgo.com/l/?uddg=https%3A%2F%2Fdeepwiki.com%2Fadbar%2Ftrafilatura%2F9.2%2Dtext%2Dextraction%2Dexamples&rut=1249acd460d8c77b486b9933133e2ac2b1254eadbbd3c684ec54e65078d8031e",
+      "description": "Theextract() function intrafilatura/core.py 100-184 serves as the primary entry point, accepting multiple parameters to control extraction behavior. The function returns plain text by default but supports multiple output formats through the output_format parameter."
+    }
+  ],
+  "ai_links": [],
+  "ai_content": "",
+  "ai_summary": ""
+}

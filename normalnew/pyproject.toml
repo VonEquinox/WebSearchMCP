@@ -1,0 +1,16 @@
+[project]
+name = "websearchmcp"
+version = "0.1.0"
+description = "MCP (Model Context Protocol) web search server (Brave search + fetch tools)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "beautifulsoup4",
+  "curl_cffi",
+  "fastmcp",
+  "lxml",
+  "openai",
+  "python-dotenv",
+  "trafilatura",
+  "uvicorn",
+]

@@ -1,0 +1,54 @@
+{
+  "success": true,
+  "query": "trafilatura extract favor_precision include_comments",
+  "links": [
+    {
+      "title": "Core functions — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+      "description": "include_comments-Extractcomments along with the main text. output_format - Define an output format, Python being the default and the interest of this internal function."
+    },
+    {
+      "title": "Text Extraction Examples | adbar/trafilatura | DeepWiki",
+      "url": "https://deepwiki.com/adbar/trafilatura/9.2-text-extraction-examples",
+      "description": "Theextract() function intrafilatura/core.py 100-184 serves as the primary entry point, accepting multiple parameters to control extraction behavior. The function returns plain text by default but supports multiple output formats through the output_format parameter."
+    },
+    {
+      "title": "trafilatura/trafilatura/core.py at master · adbar/trafilatura · GitHub",
+      "url": "https://github.com/adbar/trafilatura/blob/master/trafilatura/core.py",
+      "description": "Args: filecontent: HTML code as string. url: URL of the webpage. record_id: Add an ID to the metadata. fast: Use faster heuristics and skip backup extraction. no_fallback: Will be deprecated, use \"fast\" instead.favor_precision: prefer less text but correct extraction. favor_recall: when unsure, prefer more text.include_comments:Extract..."
+    },
+    {
+      "title": "Core functions — trafilatura 1.2.2 documentation",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/corefunctions/",
+      "description": "filecontent - HTML code as string. url - URL of the webpage. record_id - Add an ID to the metadata. no_fallback - Skip the backup extraction with readability-lxml and justext.favor_precision- prefer less text but correct extraction. favor_recall - when unsure, prefer more text.include_comments-Extractcomments along with the main text. output_format - Define an output ..."
+    },
+    {
+      "title": "Core Extraction System | adbar/trafilatura | DeepWiki",
+      "url": "https://deepwiki.com/adbar/trafilatura/2-core-extraction-system",
+      "description": "#Extractwith formatting preserved as markdown text =trafilatura.extract(html, include_formatting=True) #Extractwith custom focus text =trafilatura.extract(html, favor_precision=True) # Prioritize precision text =trafilatura.extract(html, favor_recall=True) # Prioritize recall #Extractwith specific output format xml =trafilatura..."
+    },
+    {
+      "title": "With Python — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage-python.html",
+      "description": "Extraction functions # The functions can be imported using fromtrafilaturaimport ... and used on raw documents (strings) or parsed HTML (LXML elements). Main text extraction, good balance between precision and recall:extract: Wrapper function, easiest way to perform text extraction and conversion bare_extraction: Internal function returning bare Python variables Additional fallback ..."
+    },
+    {
+      "title": "Julien's data blog",
+      "url": "https://blanchardjulien.com/posts/20231029_trafilatura.html",
+      "description": "Toextractthe base content as well as some metadata from a simple webpage, all we need to do is pass a url throughTrafilatura's fetch_url() function and then use theextract() wrapper:"
+    },
+    {
+      "title": "datatrove/src/datatrove/pipeline/extractors/trafilatura.py at main ...",
+      "url": "https://github.com/huggingface/datatrove/blob/main/src/datatrove/pipeline/extractors/trafilatura.py",
+      "description": "No specific data structure is exchanged withTrafilatura, only the text is passed and the extracted text is returned. Alternatively and identically, `trafilatura` could be used through its command line main interface."
+    },
+    {
+      "title": "Trafilatura Web Extraction - PraisonAI",
+      "url": "https://docs.praison.ai/docs/tools/trafilatura",
+      "description": "OverviewTrafilaturais a Python library and command-line tool designed toextractmeaningful content from web pages. It focuses on main text extraction, metadata parsing, and content quality assessment, making it ideal for creating clean datasets from web sources."
+    }
+  ],
+  "ai_links": [],
+  "ai_content": "",
+  "ai_summary": ""
+}

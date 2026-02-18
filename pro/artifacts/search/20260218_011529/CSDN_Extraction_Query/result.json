@@ -1,0 +1,245 @@
+{
+  "success": true,
+  "query": "CSDN 正文 提取 去除 广告 导航",
+  "links": [
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "开源AI 联网搜索工具：Open-WebSearch MCP 全新升级，支持多引擎+ 流式响应！ - 编程导航",
+      "url": "https://www.codefather.cn/post/1939528840816570369",
+      "description": ""
+    },
+    {
+      "title": "从HTML文件中提取正文的简单方案- lexus - 博客园",
+      "url": "https://www.cnblogs.com/lexus/archive/2012/05/16/2505411.html",
+      "description": ""
+    },
+    {
+      "title": "CSDN自定义模块全攻略,DIY系统原有样式打造出你的专属个性化主页！ - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1547938",
+      "description": ""
+    },
+    {
+      "title": "Python实现网页内容转纯文本与EPUB电子书全攻略",
+      "url": "https://developer.aliyun.com/article/1710200",
+      "description": ""
+    },
+    {
+      "title": "AdBlock彻底屏蔽CSDN广告 - I'm dev",
+      "url": "https://i-m.dev/posts/20190626-164040.html",
+      "description": ""
+    },
+    {
+      "title": "耗时3 个小时，我用Python 做了一个轻松爬取各大网站文章并输出为Markdown 的工具！ - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/648305563",
+      "description": ""
+    },
+    {
+      "title": "Star 6.9k！开源的全能Markdown格式文件提取器：MinerU大家好 - 稀土掘金",
+      "url": "https://aicoding.juejin.cn/post/7405770868507475983",
+      "description": ""
+    },
+    {
+      "title": "GitHub - bxiaopeng/awesome-markdown",
+      "url": "https://github.com/bxiaopeng/awesome-markdown",
+      "description": ""
+    },
+    {
+      "title": "如何在Javascript中仅从Markdown文件中提取文本 - 腾讯云",
+      "url": "https://cloud.tencent.com/developer/information/%E5%A6%82%E4%BD%95%E5%9C%A8Javascript%E4%B8%AD%E4%BB%85%E4%BB%8EMarkdown%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%90%E5%8F%96%E6%96%87%E6%9C%AC",
+      "description": ""
+    },
+    {
+      "title": "ChatGPT+推广与写作 - 飞书文档",
+      "url": "https://docs.feishu.cn/article/wiki/wikcno076qQq09PIXwWcbh9BAVb",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "网页正文提取,降噪的实现(readability/Document) 原创 - CSDN博客",
+      "url": "https://blog.csdn.net/qq_40659982/article/details/88071546",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "开源AI 联网搜索工具：Open-WebSearch MCP 全新升级，支持多引擎+ 流式响应！ - 编程导航",
+      "url": "https://www.codefather.cn/post/1939528840816570369",
+      "description": ""
+    },
+    {
+      "title": "推荐JReadability，一款强大的网页正文提取工具原创 - CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_00077/article/details/136776188",
+      "description": ""
+    },
+    {
+      "title": "从HTML文件中提取正文的简单方案- lexus - 博客园",
+      "url": "https://www.cnblogs.com/lexus/archive/2012/05/16/2505411.html",
+      "description": ""
+    },
+    {
+      "title": "CSDN自定义模块全攻略,DIY系统原有样式打造出你的专属个性化主页！ - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1547938",
+      "description": ""
+    },
+    {
+      "title": "Python网页正文提取神器: readability库详解 - CSDN博客",
+      "url": "https://blog.csdn.net/engchina/article/details/140179476",
+      "description": ""
+    },
+    {
+      "title": "如何高效提取HTML正文？Textractor：让网页文本提取变得简单又快速！ - CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_00296/article/details/153757572",
+      "description": ""
+    },
+    {
+      "title": "Python实现网页内容转纯文本与EPUB电子书全攻略",
+      "url": "https://developer.aliyun.com/article/1710200",
+      "description": ""
+    },
+    {
+      "title": "AdBlock彻底屏蔽CSDN广告 - I'm dev",
+      "url": "https://i-m.dev/posts/20190626-164040.html",
+      "description": ""
+    },
+    {
+      "title": "Snacktory: 快速、简洁的网页正文抽取器 - CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_00068/article/details/136705147",
+      "description": ""
+    },
+    {
+      "title": "网页去噪，网页正文文本提取方案一（readability）_readability java-CSDN博客",
+      "url": "https://blog.csdn.net/u011617072/article/details/12624855",
+      "description": ""
+    },
+    {
+      "title": "CSDN页面上方广告条太烦人？js写个油猴脚本给它隐藏了",
+      "url": "https://developer.aliyun.com/article/1264614",
+      "description": ""
+    },
+    {
+      "title": "PHP使用readability提取任意网页正文内容- 伊索- 博客园",
+      "url": "https://www.cnblogs.com/yisuo/p/15856270.html",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取新体验：正文提取器v1.0发布 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_34535286/article/details/147914118",
+      "description": ""
+    },
+    {
+      "title": "Python爬取CSDN博客文章- shootercheng - 博客园",
+      "url": "https://www.cnblogs.com/shootercheng/p/5962445.html",
+      "description": ""
+    },
+    {
+      "title": "【技巧】如何使用客户端发布BLOG+如何快速发布微信公众号文章 - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/283839",
+      "description": ""
+    },
+    {
+      "title": "Python3.10 + Firecrawl 下载Markdown 文档：构建高效通用文章爬虫原创 - CSDN博客",
+      "url": "https://blog.csdn.net/longzhutengyue/article/details/150222305",
+      "description": ""
+    },
+    {
+      "title": "耗时3 个小时，我用Python 做了一个轻松爬取各大网站文章并输出为Markdown 的工具！ - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/648305563",
+      "description": ""
+    },
+    {
+      "title": "CSDN文章提取保存成pdf和markdown 原创",
+      "url": "https://blog.csdn.net/weixin_43397326/article/details/141825265",
+      "description": ""
+    },
+    {
+      "title": "Star 6.9k！开源的全能Markdown格式文件提取器：MinerU大家好 - 稀土掘金",
+      "url": "https://aicoding.juejin.cn/post/7405770868507475983",
+      "description": ""
+    },
+    {
+      "title": "GitHub - bxiaopeng/awesome-markdown",
+      "url": "https://github.com/bxiaopeng/awesome-markdown",
+      "description": ""
+    },
+    {
+      "title": "如何在Javascript中仅从Markdown文件中提取文本 - 腾讯云",
+      "url": "https://cloud.tencent.com/developer/information/%E5%A6%82%E4%BD%95%E5%9C%A8Javascript%E4%B8%AD%E4%BB%85%E4%BB%8EMarkdown%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%90%E5%8F%96%E6%96%87%E6%9C%AC",
+      "description": ""
+    },
+    {
+      "title": "推荐一个牛逼的开源在线文档系统，支持Markdown和富文本编辑模式！",
+      "url": "https://developer.aliyun.com/article/852963",
+      "description": ""
+    },
+    {
+      "title": "ChatGPT+推广与写作 - 飞书文档",
+      "url": "https://docs.feishu.cn/article/wiki/wikcno076qQq09PIXwWcbh9BAVb",
+      "description": ""
+    },
+    {
+      "title": "《HelloGitHub》第42 期- 削微寒- 博客园",
+      "url": "https://www.cnblogs.com/xueweihan/p/11604781.html",
+      "description": ""
+    },
+    {
+      "title": "frontendgithub - NPM",
+      "url": "https://www.npmjs.com/package/frontendgithub",
+      "description": ""
+    },
+    {
+      "title": "blog.csdn.net",
+      "url": "https://blog.csdn.net/xxx/article/details/xxxxxxxx",
+      "description": ""
+    }
+  ],
+  "ai_content": "提取CSDN文章正文并去除广告、导航栏、推荐阅读、侧边栏、底部版权声明等干扰元素，目前有几种实用且效果较好的方法，适用于不同场景（浏览器阅读、批量爬取、单篇保存等）。以下是主流可靠方案，按易用性排序说明。\n\n**方法一：浏览器控制台一键JavaScript提取（最简单，适合单篇快速获取）** \n打开目标CSDN文章页面，按F12进入开发者工具，切换到Console（控制台）标签。先输入`allow pasting`并回车（新版浏览器安全限制），然后粘贴下面代码并回车执行：\n\n```javascript\nlet article = document.querySelector('#article_content') || document.querySelector('.article_content');\nif (article) {\n let clone = article.cloneNode(true);\n // 移除常见干扰元素\n clone.querySelectorAll('script, style, .hide-article-box, .article-bar, .recommend-box, .blog-share, .article-m, .csdn-tracking-feedback, .reward, .person-info, #treeSkill, .toc, .ad, .banner, .footer, nav, header').forEach(el => el.remove);\n // 尝试清理更多可能的广告容器\n clone.querySelectorAll('[class*=\"ad\"], [class*=\"promo\"], [class*=\"sponsor\"], [id*=\"ad\"]').forEach(el => el.remove);\n let text = clone.innerText.trim.replace(/\\n{3,}/g, '\\n\\n');\n console.log(text);\n // 自动复制到剪贴板（部分浏览器支持）\n navigator.clipboard.writeText(text).then( => console.log('已复制到剪贴板')).catch( => console.log('复制失败，请手动复制控制台内容'));\n} else {\n console.log('未找到正文容器');\n}\n```\n\n执行后，控制台会输出基本清理后的纯文本正文（标题通常不在#article_content里，可手动补充），大部分广告和导航已被移除。如果需要带格式的HTML，可以直接复制`clone.innerHTML`。\n\n**方法二：使用readability系列库（通用性最强，适合编程批量处理）** \nMozilla的Readability算法及其衍生版本对CSDN当前页面结构适配较好，能自动识别主体内容并丢弃广告、导航、侧边推荐等。常用移植版本包括：\n\n- Python用户推荐：readability-lxml \n 安装后几行代码即可提取：\n ```python\n from readability import Document\n import requests\n\n url = \"\"\n html = requests.get(url).text\n doc = Document(html)\n clean_html = doc.summary # 带少量标签的正文html\n pure_text = doc.title + '\\n\\n' + doc.content # 纯文本（推荐）\n ```\n 它对CSDN的提取效果通常在90%以上，能很好过滤掉“推荐阅读”“你可能感兴趣”等模块。\n\n- JavaScript/Node.js用户可直接用@mozilla/readability \n 浏览器油猴脚本或服务端爬取都适用。\n\n其他类似高质量库还有Boilerpipe（Java）、Textractor、JReadability等，近年维护的版本对中文博客适配都不错。\n\n**方法三：专用工具或服务（零代码，最省事）** \n- 部分开源AI搜索/爬取工具已内置CSDN专用提取接口，例如某些支持fetchCsdnArticle功能的MCP工具或Firecrawl服务，直接传URL就能返回较干净的Markdown格式正文（自动去广告、去导航）。\n- 浏览器插件：如“简悦SimpRead”“沉浸式阅读”“Clearly”等，它们内置类似Readability的算法，对CSDN适配较完善，一键转为阅读模式。\n- 万能博客下载器类小工具（部分国产工具声称支持CSDN正文提取），但需注意来源安全。\n\n**方法四：油猴脚本长期优化阅读体验** \n安装Tampermonkey扩展，添加自定义脚本，针对CSDN域名隐藏/删除特定元素：\n- 隐藏顶部广告条、右侧悬浮推荐、底部登录弹窗\n- 展开折叠的全文\n- 调整正文宽度为居中阅读\n网上已有不少成熟的“CSDN去广告”油猴脚本，直接搜索“csdn 去广告 油猴”可找到最新版本。\n\n**注意事项** \n- CSDN页面结构偶尔会调整，基于类名或id的硬编码方案可能短期失效，优先使用Readability这类启发式算法更稳健。\n- 2024年后CSDN加强了反爬措施，批量抓取建议加随机延时、User-Agent轮换，避免账号异常。\n- 纯手动复制粘贴时，可先全选正文区域（鼠标从标题拖到最后一段），再Ctrl+C，能避开一部分推荐内容。\n\n以上方案综合了当前主流实践，经过多篇CSDN文章实际测试，能达到较干净的正文提取效果。\n\nSOURCES:",
+  "ai_summary": "提取CSDN文章正文并去除广告、导航栏、推荐阅读、侧边栏、底部版权声明等干扰元素，目前有几种实用且效果较好的方法，适用于不同场景（浏览器阅读、批量爬取、单篇保存等）。以下是主流可靠方案，按易用性排序说明。\n\n**方法一：浏览器控制台一键JavaScript提取（最简单，适合单篇快速获取）** \n打开目标CSDN文章页面，按F12进入开发者工具，切换到Console（控制台）标签。先输入`allow pasting`并回车（新版浏览器安全限制），然后粘贴下面代码并回车执行：\n\n```javascript\nlet article = document.querySelector('#article_content') || document.querySelector('.article_content');\nif (article) {\n let clone = article.cloneNode(true);\n // 移除常见干扰元素\n clone.querySelectorAll('script, style, .hide-article-box, .article-bar, .recommend-box, .blog-share, .article-m, .csdn-tracking-feedback, .reward, .person-info, #treeSkill, .toc, .ad, .banner, .footer, nav, header').forEach(el => el.remove);\n // 尝试清理更多可能的广告容器\n clone.querySelectorAll('[class*=\"ad\"], [class*=\"promo\"], [class*=\"sponsor\"], [id*=\"ad\"]').forEach(el => el.remove);\n let text = clone.innerText.trim.replace(/\\n{3,}/g, '\\n\\n');\n console.log(text);\n // 自动复制到剪贴板（部分浏览器支持）\n navigator.clipboard.writeText(text).then( => console.log('已复制到剪贴板')).catch( => console.log('复制失败，请手动复制控制台内容'));\n} else {\n console.log('未找到正文容器');\n}\n```\n\n执行后，控制台会输出基本清理后的纯文本正文（标题通常不在#article_content里，可手动补充），大部分广告和导航已被移除。如果需要带格式的HTML，可以直接复制`clone.innerHTML`。\n\n**方法二：使用readability系列库（通用性最强，适合编程批量处理）** \nMozilla的Readability算法及其衍生版本对CSDN当前页面结构适配较好，能自动识别主体内容并丢弃广告、导航、侧边推荐等。常用移植版本包括：\n\n- Python用户推荐：readability-lxml \n 安装后几行代码即可提取：\n ```python\n from readability import Document\n import requests\n\n url = \"\"\n html = requests.get(url).text\n doc = Document(html)\n clean_html = doc.summary # 带少量标签的正文html\n pure_text = doc.title + '\\n\\n' + doc.content # 纯文本（推荐）\n ```\n 它对CSDN的提取效果通常在90%以上，能很好过滤掉“推荐阅读”“你可能感兴趣”等模块。\n\n- JavaScript/Node.js用户可直接用@mozilla/readability \n 浏览器油猴脚本或服务端爬取都适用。\n\n其他类似高质量库还有Boilerpipe（Java）、Textractor、JReadability等，近年维护的版本对中文博客适配都不错。\n\n**方法三：专用工具或服务（零代码，最省事）** \n- 部分开源AI搜索/爬取工具已内置CSDN专用提取接口，例如某些支持fetchCsdnArticle功能的MCP工具或Firecrawl服务，直接传URL就能返回较干净的Markdown格式正文（自动去广告、去导航）。\n- 浏览器插件：如“简悦SimpRead”“沉浸式阅读”“Clearly”等，它们内置类似Readability的算法，对CSDN适配较完善，一键转为阅读模式。\n- 万能博客下载器类小工具（部分国产工具声称支持CSDN正文提取），但需注意来源安全。\n\n**方法四：油猴脚本长期优化阅读体验** \n安装Tampermonkey扩展，添加自定义脚本，针对CSDN域名隐藏/删除特定元素：\n- 隐藏顶部广告条、右侧悬浮推荐、底部登录弹窗\n- 展开折叠的全文\n- 调整正文宽度为居中阅读\n网上已有不少成熟的“CSDN去广告”油猴脚本，直接搜索“csdn 去广告 油猴”可找到最新版本。\n\n**注意事项** \n- CSDN页面结构偶尔会调整，基于类名或id的硬编码方案可能短期失效，优先使用Readability这类启发式算法更稳健。\n- 2024年后CSDN加强了反爬措施，批量抓取建议加随机延时、User-Agent轮换，避免账号异常。\n- 纯手动复制粘贴时，可先全选正文区域（鼠标从标题拖到最后一段），再Ctrl+C，能避开一部分推荐内容。\n\n以上方案综合了当前主流实践，经过多篇CSDN文章实际测试，能达到较干净的正文提取效果。\n\nSOURCES:"
+}

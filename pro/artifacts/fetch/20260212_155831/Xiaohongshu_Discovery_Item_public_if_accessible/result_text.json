@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "url": "https://www.xiaohongshu.com/discovery/item/5baf75a8910cf646d910806f",
+  "via_worker": false,
+  "via_playwright": true,
+  "text": "小红书 - 你的生活兴趣社区\n\n3 亿人的生活经验，都在小红书",
+  "truncated": false,
+  "blocked": true,
+  "extractor": "meta:blocked",
+  "quality_score": 21,
+  "quality_metrics": {
+    "char_len": 31,
+    "line_count": 2,
+    "unique_line_ratio": 1.0,
+    "noise_line_ratio": 0.0
+  },
+  "degraded": true
+}

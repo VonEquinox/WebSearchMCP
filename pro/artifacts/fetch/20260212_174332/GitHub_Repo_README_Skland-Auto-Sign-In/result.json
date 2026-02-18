@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "url": "https://github.com/Yan233th/Skland-Auto-Sign-In",
+  "via_worker": false,
+  "via_playwright": false,
+  "status_code": 200,
+  "markdown": "# Skland-Auto-Sign-In\n\n森空岛自动签到脚本, 可搭配GitHub Actions等工具实现自动化\n\n## Usage Instructions\n\ntokens可存放于环境变量`USER_TOKENS`\n\n或`user_tokens.txt`\n\n中, 环境变量中用`;`\n\n分隔tokens, `user_tokens.txt`\n\n中用`\\n`\n\n(换行)分隔\n\n登陆 [森空岛](https://www.skland.com/) 后获取token: [https://web-api.skland.com/account/info/hg](https://web-api.skland.com/account/info/hg)\n\n通过传递环境变量 `MAX_RETRIES`\n\n可影响最大重试次数，默认值为3\n\n推荐搭配 GitHub Actions 使用, Fork仓库并启用 `Scheduled Auto Sign In`\n\nWorkflow, 将tokens以 `USER_TOKENS`\n\n存于secrets中即可\n\nRepository Settings -> Secrets and variables -> Actions -> Repository secrets\n\nWorkflow可能会因缺失创建或编辑Release的权限而失败，若发生此情况，请开启Workflow的写权限\n\nRepository Settings -> Actions -> General -> Workflow permissions\n\n## Disclaimer\n\n纯练手用\n\n## Acknowledgments\n\n鉴权思路来源: [FancyCabbage/skyland-auto-sign](https://gitee.com/FancyCabbage/skyland-auto-sign)",
+  "truncated": false,
+  "blocked": false,
+  "extractor": "adapter:github+trafilatura",
+  "quality_score": 56,
+  "quality_metrics": {
+    "char_len": 809,
+    "line_count": 22,
+    "unique_line_ratio": 1.0,
+    "noise_line_ratio": 0.0
+  },
+  "degraded": false
+}

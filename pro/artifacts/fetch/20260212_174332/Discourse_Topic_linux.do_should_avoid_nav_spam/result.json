@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "url": "https://linux.do/t/topic/1344967",
+  "via_worker": false,
+  "via_playwright": true,
+  "markdown": "Gemini3Flash王朝了，Codeforces打到了全球第一\n开发调优\n纯水\n,\n人工智能\n您已选择\n0\n个帖子。\n4\n4\n3\n2\n2025 年 12月\n1 / 19\n2025 年 12月\n2025 年 12月\n由 VonEquinox 发布于 2025 年 12月 20 日\nVonEquinox\n2025 年 12月\n用Gemini 3 flash试了试昨天的Codeforce的div 1+2居然AK了所有题目（原本有个账号参赛的但是被封号了所以开了个小号VP）真是王朝了\na0be3226330cbfebf85655ecf60fee12\n1762×844 157 KB\n1dfee357f274154d48892e1102ef91a8\n1758×1502 511 KB\nGemini 3 Flash大概是40分钟左右做完的，做出了没有选手成功做出来的H2，如果没被封号的话应该是全球第一了\nimage\n2362×900 357 KB\n使用的是一个自己写的agent来打比赛，没有网络搜索功能只用了代码执行功能\nagent代码\nGitHub - VonEquinox/AICodeforcer\n补一下没开联网昨天赛时打到这里\n4d43571ee422836e22f5215e61da8445\n1959×1280 132 KB\n看到有人说C用AI基本过不了这里放一下复刻的AI过C题的日志\nimage\n1752×450 95 KB\nsolve_20251220_225636.txt\n(105.2 KB)\n最后TLE了让ai改成cpp代码就能ac了：）\n4\n4\n3\n2\n由 wazou_pau 发布于 2025 年 12月 20 日\n由 VonEquinox 发布于 2025 年 12月 20 日\n由 Timmyzzo 发布于 2025 年 12月 20 日\n由 HitC 发布于 2025 年 12月 20 日\n由 ATRI 发布于 2025 年 12月 20 日\n由 VonEquinox 发布于 2025 年 12月 20 日\n由 Yan233th 发布于 2025 年 12月 20 日\n由 ShowUNow 发布于 2025 年 12月 20 日\n由 OpenAI_Q-Star 发布于 2025 年 12月 20 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日\n由 YuXiu_Bai 发布于 2025 年 12月 21 日\n由 ATRI 发布于 2025 年 12月 21 日\n由 yeahhe 发布于 2025 年 12月 21 日",
+  "truncated": false,
+  "blocked": false,
+  "extractor": "adapter:discourse:text_pruned",
+  "quality_score": 52,
+  "quality_metrics": {
+    "char_len": 1241,
+    "line_count": 61,
+    "unique_line_ratio": 0.721,
+    "noise_line_ratio": 0.0
+  },
+  "degraded": false
+}

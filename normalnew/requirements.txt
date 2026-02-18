@@ -1,0 +1,8 @@
+fastmcp
+beautifulsoup4
+lxml
+openai
+curl_cffi
+uvicorn
+python-dotenv
+trafilatura

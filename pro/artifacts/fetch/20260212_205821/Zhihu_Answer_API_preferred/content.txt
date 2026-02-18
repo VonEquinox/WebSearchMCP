@@ -1,0 +1,14 @@
+5）定制头和cookie信息
+
+header = {'user-agent': 'my-app/0.0.1''}
+cookie = {'key':'value'}
+r = requests.get/post('your url',headers=header,cookies=cookie)
+data = {'some': 'data'}
+headers = {'content-type': 'application/json',
+'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0'}
+r = requests.post('https://api.github.com/some/endpoint', data=data, headers=headers)
+print(r.text)
+
+6）响应状态码
+
+使用requests方法后，

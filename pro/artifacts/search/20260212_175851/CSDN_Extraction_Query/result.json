@@ -1,0 +1,54 @@
+{
+  "success": true,
+  "query": "CSDN 正文 提取 去除 广告 导航",
+  "links": [
+    {
+      "title": "如何快速提取网页正文：Textractor终极指南-CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_00866/article/details/154676759",
+      "description": "文章浏览阅读798次，点赞13次，收藏13次。 还在为网页正文提取而烦恼吗？ 😫 广告、导航栏、评论干扰让你无法获取干净的文本内容？ Textractor正是你需要的HTML正文提取神器! 这款基于文本密度算法的高效类库，能在30ms内精准提取网页正文，准确率超过95%📊。"
+    },
+    {
+      "title": "GitHub - Azero-NG/csdnRemoveAd: csdn极致去广告",
+      "url": "https://github.com/Azero-NG/csdnRemoveAd",
+      "description": "csdn极致去广告. Contribute to Azero-NG/csdnRemoveAd development by creating an account on GitHub."
+    },
+    {
+      "title": "开源csdn去广告浏览器插件 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/1928229776180647043",
+      "description": "作为一名资深程序员，写技术文章时最讨厌的是什么？没错，就是那些恼人的广告!尤其是在CSDN上，侧边栏弹窗、底部悬浮广告层层叠叠，干扰阅读体验，严重影响学习效率。 为了彻底解决这个问题，我开发了一款 开源…"
+    },
+    {
+      "title": "去除【CSDN论坛】【博客】所有广告的方法（非会员or非专家/版主 也可使用哦）-腾讯云开发者社区-腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/1764713",
+      "description": "教你彻底屏蔽CSDN烦人广告!通过安装AdGuard插件并添加自定义过滤规则，可一键去除CSDN论坛回复中的垃圾博客推荐、底部广告和在线客服弹窗。详细教程包含过滤规则代码和设置方法，让CSDN界面恢复清爽，提升学习效率。适用于Chrome浏览器，开发者必备的去广告技巧。"
+    },
+    {
+      "title": "5分钟掌握网页正文提取：告别广告和导航干扰的终极方案-csdn博客",
+      "url": "https://blog.csdn.net/gitblog_00373/article/details/155408004",
+      "description": "当构建新闻聚合应用时，使用ArticleExtractor可以准确提取各新闻网站的文章主体，去除页眉、页脚和广告干扰，为用户提供纯净的阅读体验。 学术研究数据采集 研究人员可以利用该工具从学术网站批量提取论文摘要和核心内容，大大提升文献整理的效率。"
+    },
+    {
+      "title": "去除 Csdn \"官方免费去广告 + 万能工具\" - 模糊计算士 - 博客园",
+      "url": "https://www.cnblogs.com/fanlumaster/p/14423522.html",
+      "description": "去除CSDN\"官方免费去广告 + 万能工具\" 最近CSDN搞了一些小动作，导致在安装了 adblock 的插件的情况下，其顶部会出现这样的广告： 我们可以直接用油猴脚本进行去除："
+    },
+    {
+      "title": "网页正文提取工具（去除广告和噪音）_小工具-优美选Python小工具资源库",
+      "url": "https://www.youmeixuan.com/tool/5631.html",
+      "description": "打开任意新闻门户网站，页面四周漂浮的广告弹窗总在干扰阅读。 当我们使用传统截图保存方式时，常常连带保存了侧边栏推荐、相关阅读链接等冗余信息。 专业级网页正文提取工具通过多层过滤机制，能将核心内容的提取准确率提升至92%以上。"
+    },
+    {
+      "title": "开源分享：我开发了一个智能文本提取浏览器插件，彻底解决复制粘贴的烦恼-腾讯云开发者社区-腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/2542911",
+      "description": "开发者推出Smart Text Extractor浏览器插件，可一键提取网页纯文本，智能过滤广告，支持元素精准选择，本地处理保护隐私，已开源供开发者使用与改进。"
+    },
+    {
+      "title": "Csdn文章一键打印、输出pdf（自动阅读全文、全清爽模式），去广告模式 - 小小仓鼠 - 博客园",
+      "url": "https://www.cnblogs.com/y593216/p/17242766.html",
+      "description": "2、删除顶栏、侧栏、相关文章展示、浏览信息、广告、点赞等多余信息。 真正的全清爽模式。 3、自动输出打印预览 4、自动缩放打印页面、避免页边缘内容被裁剪。 （2020/10/31 新增） 5、自动展开折叠的代码段（2022/8/8 新增） 二、两种方法获取 方法一：移除法"
+    }
+  ],
+  "ai_links": [],
+  "ai_content": "",
+  "ai_summary": ""
+}

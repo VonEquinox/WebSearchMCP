@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "query": "trafilatura extract favor_precision include_comments",
+  "links": [
+    {
+      "title": "Core functions — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+      "description": ""
+    },
+    {
+      "title": "trafilatura.core — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/_modules/trafilatura/core.html",
+      "description": ""
+    },
+    {
+      "title": "datatrove/src/datatrove/pipeline/extractors/trafilatura.py at main · huggingface/datatrove",
+      "url": "https://github.com/huggingface/datatrove/blob/main/src/datatrove/pipeline/extractors/trafilatura.py",
+      "description": ""
+    },
+    {
+      "title": "trafilatura · PyPI",
+      "url": "https://pypi.org/project/trafilatura/",
+      "description": ""
+    }
+  ],
+  "ai_links": [],
+  "ai_content": "",
+  "ai_summary": ""
+}

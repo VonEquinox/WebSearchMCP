@@ -1,0 +1,436 @@
+GitHub - Yan233th/SHIEP-Course-Selection-Script: Course Selection Script for SHIEP
+Skip to content
+Navigation Menu
+Toggle navigation
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Spark
+Build and deploy intelligent apps
+GitHub Models
+Manage and compare prompts
+MCP Registry
+New
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search or jump to...
+Search code, repositories, users, issues, pull requests...
+Search
+Clear
+Search syntax tips
+Provide feedback
+We read every piece of feedback, and take your input very seriously.
+Include my email address so I can be contacted
+Cancel
+Submit feedback
+Saved searches
+Use saved searches to filter your results more quickly
+Name
+Query
+To see all available qualifiers, see our
+documentation
+.
+Cancel
+Create saved search
+Sign in
+Sign up
+Appearance settings
+Resetting focus
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Yan233th
+/
+SHIEP-Course-Selection-Script
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+7
+Star
+14
+Course Selection Script for SHIEP
+14
+stars
+7
+forks
+Branches
+Tags
+Activity
+Star
+Notifications
+You must be signed in to change notification settings
+Code
+Issues
+0
+Pull requests
+0
+Actions
+Projects
+0
+Security
+0
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Yan233th/SHIEP-Course-Selection-Script
+main
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+Latest commit
+History
+54 Commits
+54 Commits
+.gitignore
+.gitignore
+.python-version
+.python-version
+README.md
+README.md
+about_access_permissions.md
+about_access_permissions.md
+analyze_limits.py
+analyze_limits.py
+check_course.py
+check_course.py
+config.py
+config.py
+custom.py.example
+custom.py.example
+inquire_course_info.py
+inquire_course_info.py
+main.py
+main.py
+main_select_courses.py
+main_select_courses.py
+pyproject.toml
+pyproject.toml
+utils.py
+utils.py
+uv.lock
+uv.lock
+verify_cookie_validity.py
+verify_cookie_validity.py
+View all files
+Repository files navigation
+README
+Course Selection Engine
+An asynchronous automation tool for course registration, inquiry, and session management. This engine is designed to handle state-heavy legacy systems by simulating required navigation paths and maintaining persistent session states.
+Technical Context
+The system requires specific session activation sequences to prevent server-side errors. For a detailed technical analysis of the underlying access logic, refer to:
+about_access_permissions.md
+.
+Installation
+This project requires Python 3.10+ and uses
+uv
+for dependency management.
+Install the environment and dependencies:
+uv sync
+Configuration Guide
+Configuration is managed via
+custom.py
+. Copy the template to begin:
+cp custom.py.example custom.py
+1. Account Cookies
+Required for all operations.
+How to obtain
+: Open the course system in a browser, press
+F12
+, and navigate to
+Application
+->
+Storage
+->
+Cookies
+.
+Values
+: Copy the values for
+JSESSIONID
+and
+SERVERNAME
+.
+Expiry
+: If the script returns
+302
+redirects, your cookies have expired and must be updated in
+custom.py
+.
+2. Identifying the Profile ID
+The
+profileId
+is a prerequisite for both inquiry and selection.
+How to obtain
+: Log in to the course system manually and enter the course selection module. Check the browser address bar for the URL; the
+profileId
+is the numeric value following the
+profileId=
+parameter.
+Usage
+: Enter this ID in
+INQUIRY_USER_DATA
+to enable searching, and in
+USER_CONFIGS
+for registration.
+3. Fetching Course Information
+With valid cookies and a
+profileId
+, use the inquiry tool to retrieve specific course details.
+Command
+:
+uv run main.py --inquire
+Function
+: This command retrieves course names, teacher information, current enrollment status, and the unique
+Course ID
+.
+Alternative
+: Course IDs can also be obtained by inspecting network traffic via browser developer tools (
+F12
+), though using the
+--inquire
+function is recommended for efficiency.
+Usage
+: Copy the
+Course ID
+from the inquiry results into the
+course_ids
+list under
+USER_CONFIGS
+for the registration process.
+4. Proxy and Network Environments
+Configuration of the
+USE_PROXY
+setting depends on your connection method:
+Official VPN (EasyConnect) or Campus Network
+: These environments usually provide a direct route to the server, requiring
+USE_PROXY
+to be set to
+False
+.
+Third-party VPNs (e.g., EasierConnect)
+: These environments often require a SOCKS5 proxy to route traffic. Set
+USE_PROXY
+to
+True
+and specify the proxy server address and port within the
+proxies
+dictionary in
+custom.py
+.
+5. API Parameters
+Configure
+ENROLLMENT_DATA_API_PARAMS
+with the correct
+projectId
+and
+semesterId
+.
+How to obtain
+: Open the browser developer tools (
+F12
+), switch to the
+Network
+tab, and refresh the course system page. Search for
+projectId
+or
+semesterId
+within the captured requests to find the values for the current academic term.
+Usage
+Commands are executed via
+uv run main.py <command>
+.
+Available Commands
+--start
+: Executes the registration process for all users defined in
+USER_CONFIGS
+.
+--endless
+: Optional flag to retry indefinitely until successful. Used for sniping courses as they become available.
+--inquire
+: Interactive mode to search for courses and check enrollment status. Requires a valid
+profileId
+.
+--validate
+: Batch verification of cookie validity for all accounts.
+--check
+: Real-time verification of course capacity and current enrollment status for courses in your config.
+--help
+: Displays the command help menu.
+Characteristics
+Asynchronous Concurrency
+: Built with
+asyncio
+and
+aiohttp
+for efficient multi-account management.
+Session Activation
+: Automated pre-access routine to satisfy server-side state requirements.
+Rate Limit Protection
+: Implements sequential activation and task interleaving to avoid triggering IP or session-based frequency limits.
+Data Sanitization
+: Built-in recovery for non-standard JSON responses from legacy endpoints.
+Maintenance and Safety
+SSL
+: Verification is disabled by default to accommodate internal network certificate issues.
+Termination
+: Use
+Ctrl+C
+to stop the process safely.
+About
+Course Selection Script for SHIEP
+Resources
+Readme
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Activity
+Stars
+14
+stars
+Watchers
+2
+watching
+Forks
+7
+forks
+Report repository
+Releases
+No releases published
+Packages
+0
+No packages published
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Contributors
+4
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Languages
+Python
+100.0%
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

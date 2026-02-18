@@ -1,0 +1,440 @@
+{
+  "success": true,
+  "query": "CSDN 正文 提取 去除 广告 导航",
+  "links": [
+    {
+      "title": "Python网页正文提取神器: readability库详解 - CSDN博客",
+      "url": "https://blog.csdn.net/engchina/article/details/140179476",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取与去重实战：从精准抓取到重复数据清零的全技巧 - CSDN博客",
+      "url": "https://blog.csdn.net/shanwei_spider/article/details/154235269",
+      "description": ""
+    },
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "从HTML文件中提取正文的简单方案- lexus",
+      "url": "https://www.cnblogs.com/lexus/archive/2012/05/16/2505411.html",
+      "description": ""
+    },
+    {
+      "title": "CSDN自定义模块全攻略,DIY系统原有样式打造出你的专属个性化主页！ - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1547938",
+      "description": ""
+    },
+    {
+      "title": "推荐JReadability，一款强大的网页正文提取工具原创 - CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_00077/article/details/136776188",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取新体验：正文提取器v1.0发布 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_34535286/article/details/147914118",
+      "description": ""
+    },
+    {
+      "title": "基于视觉特征的网页正文提取方法研究- 刺猬的温驯- 博客园",
+      "url": "https://www.cnblogs.com/chenying99/articles/3174039.html",
+      "description": ""
+    },
+    {
+      "title": "CN121030073A - 信息爬取方法、装置、设备、存储介质及计算机程序产品",
+      "url": "https://patents.google.com/patent/CN121030073A/zh",
+      "description": ""
+    },
+    {
+      "title": "鸿蒙_标签 - 华为云开发者",
+      "url": "https://developer.huaweicloud.com/tags/202987/post_4",
+      "description": ""
+    },
+    {
+      "title": "动态竞品网站前端深度克隆方案：基于Cursor与MCP协议的实时交互开发框架 - UniFuncs",
+      "url": "https://unifuncs.com/s/eIkqEJC0",
+      "description": ""
+    },
+    {
+      "title": "授权验证失败",
+      "url": "https://foodgonj.com/",
+      "description": ""
+    },
+    {
+      "title": "秀儿の科技软件|资源分享社 - Telegram",
+      "url": "https://t.me/s/jianjiaoPD?before=5673",
+      "description": ""
+    },
+    {
+      "title": "GitHub - zhaoolee/ChromeAppHeroes: 谷粒-Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类",
+      "url": "https://github.com/zhaoolee/ChromeAppHeroes",
+      "description": ""
+    },
+    {
+      "title": "Python 解析Markdown 并提取所有超链接原创 - CSDN博客",
+      "url": "https://blog.csdn.net/2501_90690306/article/details/146640511",
+      "description": ""
+    },
+    {
+      "title": "使用js从Markdown中提取纯文本的函数原创 - CSDN博客",
+      "url": "https://blog.csdn.net/yuzheh521/article/details/147142394",
+      "description": ""
+    },
+    {
+      "title": "获取CSDN文章内容并转换为markdown文本的python - 何三笔记",
+      "url": "https://www.h3blog.com/article/csdn-to-markdown",
+      "description": ""
+    },
+    {
+      "title": "python 爬取csdn文章为markdown - 51CTO博客",
+      "url": "https://blog.51cto.com/u_16175489/12786364",
+      "description": ""
+    },
+    {
+      "title": "Python 解析Markdown 文件的基础方法原创 - CSDN博客",
+      "url": "https://blog.csdn.net/2501_91162176/article/details/146515673",
+      "description": ""
+    },
+    {
+      "title": "caol64/omni-article-markdown: 墨探- 轻松将网页文章（博客、新闻 - GitHub",
+      "url": "https://github.com/caol64/omni-article-markdown",
+      "description": ""
+    },
+    {
+      "title": "使用Pandoc读取Docx，捕获docx文本框的内容- 腾讯云开发者社区",
+      "url": "https://cloud.tencent.com.cn/developer/information/%E4%BD%BF%E7%94%A8Pandoc%E8%AF%BB%E5%8F%96Docx%EF%BC%8C%E6%8D%95%E8%8E%B7docx%E6%96%87%E6%9C%AC%E6%A1%86%E7%9A%84%E5%86%85%E5%AE%B9",
+      "description": ""
+    },
+    {
+      "title": "CSDN-markdown编辑器之从线上导入Markdown文件 - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/342658",
+      "description": ""
+    },
+    {
+      "title": "耗时3 个小时，我用Python 做了一个轻松爬取各大网站文章并输出为Markdown 的工具！ - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/648305563",
+      "description": ""
+    },
+    {
+      "title": "提取代码块提取markdown中的代码原创 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_37763484/article/details/143223180",
+      "description": ""
+    },
+    {
+      "title": "网页正文提取,降噪的实现(readability/Document) 原创 - CSDN博客",
+      "url": "https://blog.csdn.net/qq_40659982/article/details/88071546",
+      "description": ""
+    },
+    {
+      "title": "提取html网页正文信息_解析网页中的正文 - CSDN博客",
+      "url": "https://blog.csdn.net/liuzonghao88/article/details/91455630",
+      "description": ""
+    },
+    {
+      "title": "User scripts for csdn.net - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/csdn.net",
+      "description": ""
+    },
+    {
+      "title": "User scripts for csdn.net - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/csdn.net?sort=created",
+      "description": ""
+    },
+    {
+      "title": "User scripts - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts?q=adblock&sort=ratings",
+      "description": ""
+    },
+    {
+      "title": "CSDN ad remover - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/405724-csdn-ad-remover",
+      "description": ""
+    },
+    {
+      "title": "Assassinate Ad Block Blockers - Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/382482-assassinate-ad-block-blockers/code",
+      "description": ""
+    },
+    {
+      "title": "User scripts for all sites - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/*",
+      "description": ""
+    },
+    {
+      "title": "How to use Greasemonkey to selectively remove content from a website? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/48462714/how-to-use-greasemonkey-to-selectively-remove-content-from-a-website",
+      "description": ""
+    },
+    {
+      "title": "UserScripts/csdn-blocker/README_en.md at main - GitHub",
+      "url": "https://github.com/ChinaGodMan/UserScripts/blob/main/csdn-blocker/README_en.md",
+      "description": ""
+    },
+    {
+      "title": "User scripts for all sites - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/*?sort=created",
+      "description": ""
+    },
+    {
+      "title": "Excellent tutorial on how to write Tampermonkey javascript code : r/learnjavascript - Reddit",
+      "url": "https://www.reddit.com/r/learnjavascript/comments/u1n1r2/excellent_tutorial_on_how_to_write_tampermonkey",
+      "description": ""
+    },
+    {
+      "title": "去除CSDN的广告——chrome插件_linxigjs的博客-CSDN博客",
+      "url": "https://blog.csdn.net/linxigjs/article/details/93169948",
+      "description": ""
+    },
+    {
+      "title": "去除【CSDN论坛】【博客】所有广告的方法（非会员or非专家/版主 也可使用哦）-腾讯云开发者社区-腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/1764713",
+      "description": ""
+    },
+    {
+      "title": "CSDN去广告，超清爽界面_csdn 去广告-CSDN博客",
+      "url": "https://blog.csdn.net/jerry_kim123/article/details/120460369",
+      "description": ""
+    },
+    {
+      "title": "去除CSDN 博客页广告的历程_如何去掉csdn博客页面顶部的广告-CSDN博客",
+      "url": "https://blog.csdn.net/Marksinoberg/article/details/52742744",
+      "description": ""
+    },
+    {
+      "title": "CSDN去广告_csdn广告过滤-CSDN博客",
+      "url": "https://blog.csdn.net/T19900/article/details/132784986",
+      "description": ""
+    },
+    {
+      "title": "No Title",
+      "url": "https://blog.csdn.net/J080624/article/details/71439798",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "Python网页正文提取神器: readability库详解 - CSDN博客",
+      "url": "https://blog.csdn.net/engchina/article/details/140179476",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取与去重实战：从精准抓取到重复数据清零的全技巧 - CSDN博客",
+      "url": "https://blog.csdn.net/shanwei_spider/article/details/154235269",
+      "description": ""
+    },
+    {
+      "title": "Readability.js 与Newspaper提取网页内容和元数据 - CSDN博客",
+      "url": "https://blog.csdn.net/ylong52/article/details/145915265",
+      "description": ""
+    },
+    {
+      "title": "C#实现网页正文提取算法- fancing - 博客园",
+      "url": "https://www.cnblogs.com/fancing/archive/2012/04/14/2446770.html",
+      "description": ""
+    },
+    {
+      "title": "HTML 正文内容提取库Boilerpipe-腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/1035230",
+      "description": ""
+    },
+    {
+      "title": "webScraper（一个网页内容解析下载浏览器插件） - 稀土掘金",
+      "url": "https://juejin.cn/post/7204485623460462650",
+      "description": ""
+    },
+    {
+      "title": "csdn文章网页头广告快速关闭原创",
+      "url": "https://blog.csdn.net/weixin_49119066/article/details/137688435",
+      "description": ""
+    },
+    {
+      "title": "从HTML文件中提取正文的简单方案- lexus",
+      "url": "https://www.cnblogs.com/lexus/archive/2012/05/16/2505411.html",
+      "description": ""
+    },
+    {
+      "title": "CSDN自定义模块全攻略,DIY系统原有样式打造出你的专属个性化主页！ - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1547938",
+      "description": ""
+    },
+    {
+      "title": "推荐JReadability，一款强大的网页正文提取工具原创 - CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_00077/article/details/136776188",
+      "description": ""
+    },
+    {
+      "title": "网页内容提取新体验：正文提取器v1.0发布 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_34535286/article/details/147914118",
+      "description": ""
+    },
+    {
+      "title": "基于视觉特征的网页正文提取方法研究- 刺猬的温驯- 博客园",
+      "url": "https://www.cnblogs.com/chenying99/articles/3174039.html",
+      "description": ""
+    },
+    {
+      "title": "CN121030073A - 信息爬取方法、装置、设备、存储介质及计算机程序产品",
+      "url": "https://patents.google.com/patent/CN121030073A/zh",
+      "description": ""
+    },
+    {
+      "title": "鸿蒙_标签 - 华为云开发者",
+      "url": "https://developer.huaweicloud.com/tags/202987/post_4",
+      "description": ""
+    },
+    {
+      "title": "动态竞品网站前端深度克隆方案：基于Cursor与MCP协议的实时交互开发框架 - UniFuncs",
+      "url": "https://unifuncs.com/s/eIkqEJC0",
+      "description": ""
+    },
+    {
+      "title": "授权验证失败",
+      "url": "https://foodgonj.com/",
+      "description": ""
+    },
+    {
+      "title": "秀儿の科技软件|资源分享社 - Telegram",
+      "url": "https://t.me/s/jianjiaoPD?before=5673",
+      "description": ""
+    },
+    {
+      "title": "GitHub - zhaoolee/ChromeAppHeroes: 谷粒-Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类",
+      "url": "https://github.com/zhaoolee/ChromeAppHeroes",
+      "description": ""
+    },
+    {
+      "title": "Python 解析Markdown 并提取所有超链接原创 - CSDN博客",
+      "url": "https://blog.csdn.net/2501_90690306/article/details/146640511",
+      "description": ""
+    },
+    {
+      "title": "使用js从Markdown中提取纯文本的函数原创 - CSDN博客",
+      "url": "https://blog.csdn.net/yuzheh521/article/details/147142394",
+      "description": ""
+    },
+    {
+      "title": "获取CSDN文章内容并转换为markdown文本的python - 何三笔记",
+      "url": "https://www.h3blog.com/article/csdn-to-markdown",
+      "description": ""
+    },
+    {
+      "title": "python 爬取csdn文章为markdown - 51CTO博客",
+      "url": "https://blog.51cto.com/u_16175489/12786364",
+      "description": ""
+    },
+    {
+      "title": "Python 解析Markdown 文件的基础方法原创 - CSDN博客",
+      "url": "https://blog.csdn.net/2501_91162176/article/details/146515673",
+      "description": ""
+    },
+    {
+      "title": "caol64/omni-article-markdown: 墨探- 轻松将网页文章（博客、新闻 - GitHub",
+      "url": "https://github.com/caol64/omni-article-markdown",
+      "description": ""
+    },
+    {
+      "title": "使用Pandoc读取Docx，捕获docx文本框的内容- 腾讯云开发者社区",
+      "url": "https://cloud.tencent.com.cn/developer/information/%E4%BD%BF%E7%94%A8Pandoc%E8%AF%BB%E5%8F%96Docx%EF%BC%8C%E6%8D%95%E8%8E%B7docx%E6%96%87%E6%9C%AC%E6%A1%86%E7%9A%84%E5%86%85%E5%AE%B9",
+      "description": ""
+    },
+    {
+      "title": "CSDN-markdown编辑器之从线上导入Markdown文件 - 阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/342658",
+      "description": ""
+    },
+    {
+      "title": "耗时3 个小时，我用Python 做了一个轻松爬取各大网站文章并输出为Markdown 的工具！ - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/648305563",
+      "description": ""
+    },
+    {
+      "title": "提取代码块提取markdown中的代码原创 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_37763484/article/details/143223180",
+      "description": ""
+    },
+    {
+      "title": "网页正文提取,降噪的实现(readability/Document) 原创 - CSDN博客",
+      "url": "https://blog.csdn.net/qq_40659982/article/details/88071546",
+      "description": ""
+    },
+    {
+      "title": "提取html网页正文信息_解析网页中的正文 - CSDN博客",
+      "url": "https://blog.csdn.net/liuzonghao88/article/details/91455630",
+      "description": ""
+    },
+    {
+      "title": "User scripts for csdn.net - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/csdn.net",
+      "description": ""
+    },
+    {
+      "title": "User scripts for csdn.net - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/csdn.net?sort=created",
+      "description": ""
+    },
+    {
+      "title": "User scripts - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts?q=adblock&sort=ratings",
+      "description": ""
+    },
+    {
+      "title": "CSDN ad remover - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/405724-csdn-ad-remover",
+      "description": ""
+    },
+    {
+      "title": "Assassinate Ad Block Blockers - Source code - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/382482-assassinate-ad-block-blockers/code",
+      "description": ""
+    },
+    {
+      "title": "User scripts for all sites - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/*",
+      "description": ""
+    },
+    {
+      "title": "How to use Greasemonkey to selectively remove content from a website? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/48462714/how-to-use-greasemonkey-to-selectively-remove-content-from-a-website",
+      "description": ""
+    },
+    {
+      "title": "UserScripts/csdn-blocker/README_en.md at main - GitHub",
+      "url": "https://github.com/ChinaGodMan/UserScripts/blob/main/csdn-blocker/README_en.md",
+      "description": ""
+    },
+    {
+      "title": "User scripts for all sites - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/*?sort=created",
+      "description": ""
+    },
+    {
+      "title": "Excellent tutorial on how to write Tampermonkey javascript code : r/learnjavascript - Reddit",
+      "url": "https://www.reddit.com/r/learnjavascript/comments/u1n1r2/excellent_tutorial_on_how_to_write_tampermonkey",
+      "description": ""
+    }
+  ],
+  "ai_content": "CSDN文章页面目前布局比较复杂，顶部有导航栏、搜索框和登录/会员推广，右侧通常有推荐文章、下载App二维码、相关热文等侧边栏，文章正文下方还有评论区、版权声明以及各种推荐链接和广告位（包括原生广告和第三方广告）。这些元素会严重干扰阅读体验，尤其是复制正文时经常带入无关内容。\n\n最实用且效果稳定的方式是通过浏览器用户脚本（UserScript）来实现一键清理。安装Tampermonkey（或Violentmonkey）扩展后，在Greasy Fork等脚本平台可以找到多个专门针对CSDN的优化脚本。这些脚本通常会直接隐藏或删除导航栏、顶部横幅广告、右侧侧边栏、底部推荐、登录弹窗、复制时的版权声明水印等非正文部分，让页面呈现接近纯净阅读模式。部分脚本还能同时去除反爬链、强制展开全文、优化代码块显示、免登录复制等功能，使用体验接近沉浸式阅读。\n\n如果不想依赖脚本，也可以借助通用网页正文提取工具来处理。Mozilla的Readability算法（及其Python移植版readability-lxml、JavaScript版本Readability.js）是目前最成熟的方案之一，它通过启发式规则分析DOM树密度、文本长度、类名特征等，智能判断哪个<div>或<article>是主要内容，能有效剔除导航、广告、侧边推荐等噪音块。许多在线工具或本地Python脚本都基于此实现CSDN文章的正文提取，并输出干净的文本或Markdown格式。类似Boilerpipe（Java）或一些基于机器学习的提取器也能达到不错效果，但Readability系列对中文博客类页面的适配普遍更好。\n\n自己动手写提取逻辑时，可以用Python + BeautifulSoup或Playwright，先请求文章页面，定位文章主体常用的类名或id（如article_content、article-detail-box、content、blog-content-box等，根据2024-2025年页面结构变化，这些class可能会有微调），然后移除已知的广告容器（如reward、csdn-tracking-ad、recommend、aside等），最后提取剩余的正文HTML或纯文本。提取后若转Markdown，可结合markdownify或turndown库处理。\n\n纯手动方式最简单的是用浏览器阅读模式（Firefox的Reader View或Edge的沉浸式阅读器），它通常能自动隐藏导航和广告，保留核心正文，但对CSDN的代码高亮块和表格支持有时不够完美，偶尔会漏掉部分格式。\n\n对比几种方案：用户脚本方式最实时、无需额外请求，适合日常浏览；Readability类库提取更通用、可批量处理或集成到自己的爬虫/笔记工具中，但需要写代码或找现成工具；浏览器内置阅读模式零成本但定制性最差。当前CSDN页面结构在2024年后有多次调整（如加强会员墙、广告位增多），老脚本可能失效，因此优先选择近一年内更新活跃的脚本。\n\n限制方面，用户脚本依赖维护者跟进页面变化，一旦CSDN前端大改就可能短暂失效；通用提取库对极度非标准或动态加载的内容识别准确率不是100%，偶尔会误砍掉正文段落或留下少量噪音；阅读模式对复杂排版的文章（如大量嵌套列表、长代码块）渲染有时不理想。\n\n最新进展上，2025年一些工具开始结合大模型辅助二次过滤（如先用Readability粗提，再让LLM判断哪些段落是广告），但对个人用户来说性价比不高，经典的Readability + 针对性CSS隐藏仍是最高效组合。实际使用中，结合一个好的CSDN专用脚本通常就能解决90%以上的广告和导航干扰，阅读体验提升非常明显。",
+  "ai_summary": "CSDN文章页面目前布局比较复杂，顶部有导航栏、搜索框和登录/会员推广，右侧通常有推荐文章、下载App二维码、相关热文等侧边栏，文章正文下方还有评论区、版权声明以及各种推荐链接和广告位（包括原生广告和第三方广告）。这些元素会严重干扰阅读体验，尤其是复制正文时经常带入无关内容。\n\n最实用且效果稳定的方式是通过浏览器用户脚本（UserScript）来实现一键清理。安装Tampermonkey（或Violentmonkey）扩展后，在Greasy Fork等脚本平台可以找到多个专门针对CSDN的优化脚本。这些脚本通常会直接隐藏或删除导航栏、顶部横幅广告、右侧侧边栏、底部推荐、登录弹窗、复制时的版权声明水印等非正文部分，让页面呈现接近纯净阅读模式。部分脚本还能同时去除反爬链、强制展开全文、优化代码块显示、免登录复制等功能，使用体验接近沉浸式阅读。\n\n如果不想依赖脚本，也可以借助通用网页正文提取工具来处理。Mozilla的Readability算法（及其Python移植版readability-lxml、JavaScript版本Readability.js）是目前最成熟的方案之一，它通过启发式规则分析DOM树密度、文本长度、类名特征等，智能判断哪个<div>或<article>是主要内容，能有效剔除导航、广告、侧边推荐等噪音块。许多在线工具或本地Python脚本都基于此实现CSDN文章的正文提取，并输出干净的文本或Markdown格式。类似Boilerpipe（Java）或一些基于机器学习的提取器也能达到不错效果，但Readability系列对中文博客类页面的适配普遍更好。\n\n自己动手写提取逻辑时，可以用Python + BeautifulSoup或Playwright，先请求文章页面，定位文章主体常用的类名或id（如article_content、article-detail-box、content、blog-content-box等，根据2024-2025年页面结构变化，这些class可能会有微调），然后移除已知的广告容器（如reward、csdn-tracking-ad、recommend、aside等），最后提取剩余的正文HTML或纯文本。提取后若转Markdown，可结合markdownify或turndown库处理。\n\n纯手动方式最简单的是用浏览器阅读模式（Firefox的Reader View或Edge的沉浸式阅读器），它通常能自动隐藏导航和广告，保留核心正文，但对CSDN的代码高亮块和表格支持有时不够完美，偶尔会漏掉部分格式。\n\n对比几种方案：用户脚本方式最实时、无需额外请求，适合日常浏览；Readability类库提取更通用、可批量处理或集成到自己的爬虫/笔记工具中，但需要写代码或找现成工具；浏览器内置阅读模式零成本但定制性最差。当前CSDN页面结构在2024年后有多次调整（如加强会员墙、广告位增多），老脚本可能失效，因此优先选择近一年内更新活跃的脚本。\n\n限制方面，用户脚本依赖维护者跟进页面变化，一旦CSDN前端大改就可能短暂失效；通用提取库对极度非标准或动态加载的内容识别准确率不是100%，偶尔会误砍掉正文段落或留下少量噪音；阅读模式对复杂排版的文章（如大量嵌套列表、长代码块）渲染有时不理想。\n\n最新进展上，2025年一些工具开始结合大模型辅助二次过滤（如先用Readability粗提，再让LLM判断哪些段落是广告），但对个人用户来说性价比不高，经典的Readability + 针对性CSS隐藏仍是最高效组合。实际使用中，结合一个好的CSDN专用脚本通常就能解决90%以上的广告和导航干扰，阅读体验提升非常明显。"
+}

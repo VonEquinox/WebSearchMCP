@@ -1,0 +1,270 @@
+{
+  "success": true,
+  "query": "trafilatura extract favor_precision include_comments",
+  "links": [
+    {
+      "title": "Core functions — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+      "description": ""
+    },
+    {
+      "title": "With Python — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage-python.html",
+      "description": ""
+    },
+    {
+      "title": "datatrove/src/datatrove/pipeline/extractors/trafilatura.py at main · huggingface/datatrove",
+      "url": "https://github.com/huggingface/datatrove/blob/main/src/datatrove/pipeline/extractors/trafilatura.py",
+      "description": ""
+    },
+    {
+      "title": "Source code for trafilatura.core",
+      "url": "https://trafilatura.readthedocs.io/en/latest/_modules/trafilatura/core.html",
+      "description": ""
+    },
+    {
+      "title": "Integration: Trafilatura",
+      "url": "https://haystack.deepset.ai/integrations/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Core functions — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/corefunctions",
+      "description": ""
+    },
+    {
+      "title": "MCP Trafilatura | MCP Servers - LobeHub",
+      "url": "https://lobehub.com/ru/mcp/achieveai-mcp-web-extractor",
+      "description": ""
+    },
+    {
+      "title": "Quickstart — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/quickstart.html",
+      "description": ""
+    },
+    {
+      "title": "extract function runs indefinitely on large HTML body content · Issue #704 · adbar/trafilatura",
+      "url": "https://github.com/adbar/trafilatura/issues/704",
+      "description": ""
+    },
+    {
+      "title": "With Python — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/usage-python",
+      "description": ""
+    },
+    {
+      "title": "trafilatura/trafilatura/core.py at master · adbar/trafilatura - GitHub",
+      "url": "https://github.com/adbar/trafilatura/blob/master/trafilatura/core.py",
+      "description": ""
+    },
+    {
+      "title": "How to scrape a blog and collect its articles in Python | Kaggle",
+      "url": "https://www.kaggle.com/discussions/getting-started/349150",
+      "description": ""
+    },
+    {
+      "title": "Settings and customization — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/settings.html",
+      "description": ""
+    },
+    {
+      "title": "Source code for trafilatura.main_extractor - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/_modules/trafilatura/main_extractor.html",
+      "description": ""
+    },
+    {
+      "title": "contextractor - Trafilatura based - Apify",
+      "url": "https://apify.com/shortc/contextractor/Dockerfile",
+      "description": ""
+    },
+    {
+      "title": "On the command-line — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage-cli.html",
+      "description": ""
+    },
+    {
+      "title": "Are there any settings that allow us to make sure that the full article is scraped inspead of just the initial part of it? · Issue #85 · adbar/\ntrafilatura - GitHub",
+      "url": "https://github.com/adbar/trafilatura/issues/85",
+      "description": ""
+    },
+    {
+      "title": "trafilatura.md - deepset-ai/haystack-integrations - GitHub",
+      "url": "https://github.com/deepset-ai/haystack-integrations/blob/main/integrations/trafilatura.md",
+      "description": ""
+    },
+    {
+      "title": "Include links on scraping · adbar trafilatura · Discussion #516 - GitHub",
+      "url": "https://github.com/adbar/trafilatura/discussions/516",
+      "description": ""
+    },
+    {
+      "title": "LukasBBAW/trafilatura-1: Web scraping library: downloads web pages, finds main text and comments, converts to TXT, CSV, XML & TEI - GitHub",
+      "url": "https://github.com/LukasBBAW/trafilatura-1",
+      "description": ""
+    },
+    {
+      "title": "Cannot extract Heading tags · Issue #354 · adbar/trafilatura - GitHub",
+      "url": "https://github.com/adbar/trafilatura/issues/354",
+      "description": ""
+    },
+    {
+      "title": "Trafilatura - Agno",
+      "url": "https://docs.agno.com/integrations/toolkits/web-scrape/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Extracting the main text content from web pages using Python - Adrien Barbaresi",
+      "url": "https://adrien.barbaresi.eu/blog/trafilatura-main-text-content-python.html",
+      "description": ""
+    },
+    {
+      "title": "Simplify Website Scraping With Trafilatura - Julien Blanchard",
+      "url": "https://blanchardjulien.com/posts/20231029_trafilatura.html",
+      "description": ""
+    },
+    {
+      "title": "Usage — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage.html",
+      "description": ""
+    },
+    {
+      "title": "Trafilatura - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/",
+      "description": ""
+    },
+    {
+      "title": "trafilatura · PyPI",
+      "url": "https://pypi.org/project/trafilatura/",
+      "description": ""
+    }
+  ],
+  "ai_links": [
+    {
+      "title": "Core functions — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+      "description": ""
+    },
+    {
+      "title": "With Python — Trafilatura 2.0.0 documentation",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage-python.html",
+      "description": ""
+    },
+    {
+      "title": "datatrove/src/datatrove/pipeline/extractors/trafilatura.py at main · huggingface/datatrove",
+      "url": "https://github.com/huggingface/datatrove/blob/main/src/datatrove/pipeline/extractors/trafilatura.py",
+      "description": ""
+    },
+    {
+      "title": "Source code for trafilatura.core",
+      "url": "https://trafilatura.readthedocs.io/en/latest/_modules/trafilatura/core.html",
+      "description": ""
+    },
+    {
+      "title": "Integration: Trafilatura",
+      "url": "https://haystack.deepset.ai/integrations/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Core functions — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/corefunctions",
+      "description": ""
+    },
+    {
+      "title": "MCP Trafilatura | MCP Servers - LobeHub",
+      "url": "https://lobehub.com/ru/mcp/achieveai-mcp-web-extractor",
+      "description": ""
+    },
+    {
+      "title": "Quickstart — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/quickstart.html",
+      "description": ""
+    },
+    {
+      "title": "extract function runs indefinitely on large HTML body content · Issue #704 · adbar/trafilatura",
+      "url": "https://github.com/adbar/trafilatura/issues/704",
+      "description": ""
+    },
+    {
+      "title": "With Python — trafilatura 1.2.2 documentation - · DOKK",
+      "url": "https://dokk.org/documentation/trafilatura/v1.2.2/usage-python",
+      "description": ""
+    },
+    {
+      "title": "trafilatura/trafilatura/core.py at master · adbar/trafilatura - GitHub",
+      "url": "https://github.com/adbar/trafilatura/blob/master/trafilatura/core.py",
+      "description": ""
+    },
+    {
+      "title": "How to scrape a blog and collect its articles in Python | Kaggle",
+      "url": "https://www.kaggle.com/discussions/getting-started/349150",
+      "description": ""
+    },
+    {
+      "title": "Settings and customization — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/settings.html",
+      "description": ""
+    },
+    {
+      "title": "Source code for trafilatura.main_extractor - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/_modules/trafilatura/main_extractor.html",
+      "description": ""
+    },
+    {
+      "title": "contextractor - Trafilatura based - Apify",
+      "url": "https://apify.com/shortc/contextractor/Dockerfile",
+      "description": ""
+    },
+    {
+      "title": "On the command-line — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage-cli.html",
+      "description": ""
+    },
+    {
+      "title": "Are there any settings that allow us to make sure that the full article is scraped inspead of just the initial part of it? · Issue #85 · adbar/\ntrafilatura - GitHub",
+      "url": "https://github.com/adbar/trafilatura/issues/85",
+      "description": ""
+    },
+    {
+      "title": "trafilatura.md - deepset-ai/haystack-integrations - GitHub",
+      "url": "https://github.com/deepset-ai/haystack-integrations/blob/main/integrations/trafilatura.md",
+      "description": ""
+    },
+    {
+      "title": "Include links on scraping · adbar trafilatura · Discussion #516 - GitHub",
+      "url": "https://github.com/adbar/trafilatura/discussions/516",
+      "description": ""
+    },
+    {
+      "title": "LukasBBAW/trafilatura-1: Web scraping library: downloads web pages, finds main text and comments, converts to TXT, CSV, XML & TEI - GitHub",
+      "url": "https://github.com/LukasBBAW/trafilatura-1",
+      "description": ""
+    },
+    {
+      "title": "Cannot extract Heading tags · Issue #354 · adbar/trafilatura - GitHub",
+      "url": "https://github.com/adbar/trafilatura/issues/354",
+      "description": ""
+    },
+    {
+      "title": "Trafilatura - Agno",
+      "url": "https://docs.agno.com/integrations/toolkits/web-scrape/trafilatura",
+      "description": ""
+    },
+    {
+      "title": "Extracting the main text content from web pages using Python - Adrien Barbaresi",
+      "url": "https://adrien.barbaresi.eu/blog/trafilatura-main-text-content-python.html",
+      "description": ""
+    },
+    {
+      "title": "Simplify Website Scraping With Trafilatura - Julien Blanchard",
+      "url": "https://blanchardjulien.com/posts/20231029_trafilatura.html",
+      "description": ""
+    },
+    {
+      "title": "Usage — Trafilatura 2.0.0 documentation - Read the Docs",
+      "url": "https://trafilatura.readthedocs.io/en/latest/usage.html",
+      "description": ""
+    }
+  ],
+  "ai_content": "Trafilatura 是一个专为从网页 HTML 中提取主要文本内容而设计的 Python 库，它在处理新闻、博客、论坛等多样化网页结构时表现出色，尤其注重速度和准确性。`extract` 函数是其核心接口，用于从下载的 HTML 内容中抽取干净的文本、元数据或其他结构化输出，而 `favor_precision` 和 `include_comments` 是其中两个关键的布尔参数，用于精细调整提取行为。\n\n`favor_precision` 参数默认值为 False，当设置为 True 时，库会优先保证提取结果的准确性和纯净度，即更倾向于只保留高度置信度的主要内容部分，即使这意味着丢弃一些可能相关的文本块。这种模式在输出中出现较多噪声（如侧边栏、广告残留、重复段落）时特别有用，它通过更严格的过滤规则（如链接密度阈值调整、元素选择更保守）来减少误包含，从而获得更高质量但通常更短的文本。相反，如果设置为 False（默认），提取倾向于更全面的召回，即在不确定边界的情况下尽量多保留内容，这对应另一个参数 `favor_recall`（两者通常互斥使用，避免同时启用）。在实际应用中，当你处理大量网页且更在意内容干净度而非完整性时（例如用于下游 LLM 训练或高质量语料构建），开启 `favor_precision=True` 往往是推荐做法，虽然处理时间可能略有增加，但整体输出质量提升明显。\n\n`include_comments` 参数默认值为 True，表示是否将网页中的评论区内容一并提取进来。许多文章页面底部会有读者评论，这些部分通常位于独立的 `<div>` 或类似容器中，Trafilatura 会尝试识别并包含它们（连同主文一起输出），这在需要完整线程讨论或用户生成内容时很有价值。但评论往往噪声大、质量参差不齐，还可能包含大量无关回复或垃圾信息，因此在追求主文纯净度的场景下，建议显式设置为 False 来排除它们。启用时，评论通常会出现在主文本的末尾部分，便于后续区分处理；禁用后提取结果更聚焦于文章主体本身。值得一提的是，这个选项与 `include_tables`、`include_links` 等类似，都属于对特定 HTML 元素的显式包含控制，默认开启评论和表格是为了覆盖更广的使用场景，但实际项目中经常需要根据需求关闭部分以优化结果。\n\n这两个参数可以独立或组合使用。例如，在需要极致干净的主文输出时，同时设置 `favor_precision=True` 和 `include_comments=False` 是常见搭配，能显著降低噪声比例，尤其适合处理论坛式或带大量用户互动的页面。库的底层实现基于树遍历、启发式规则和机器学习轻量模型的混合（包括链接密度、文本长度、标签语义等特征），这些参数会影响树剪枝和元素保留的阈值逻辑。最新版本（截至 2.0 系列）保持了向后兼容，同时优化了默认行为和速度，在大规模爬取中表现稳定。\n\n不过，这些调整并非万能：`favor_precision` 可能导致某些长文章的关键段落被意外截断（尤其是结构不标准的博客），而关闭 `include_comments` 会完全丢失有用讨论信息；另外，对于极度复杂的动态加载页面，Trafilatura 本身依赖静态 HTML，结合无头浏览器预渲染往往效果更好。总体而言，这两个参数体现了库在精度-召回权衡和内容范围控制上的灵活性，是实际调优中最常触碰的开关之一。",
+  "ai_summary": "Trafilatura 是一个专为从网页 HTML 中提取主要文本内容而设计的 Python 库，它在处理新闻、博客、论坛等多样化网页结构时表现出色，尤其注重速度和准确性。`extract` 函数是其核心接口，用于从下载的 HTML 内容中抽取干净的文本、元数据或其他结构化输出，而 `favor_precision` 和 `include_comments` 是其中两个关键的布尔参数，用于精细调整提取行为。\n\n`favor_precision` 参数默认值为 False，当设置为 True 时，库会优先保证提取结果的准确性和纯净度，即更倾向于只保留高度置信度的主要内容部分，即使这意味着丢弃一些可能相关的文本块。这种模式在输出中出现较多噪声（如侧边栏、广告残留、重复段落）时特别有用，它通过更严格的过滤规则（如链接密度阈值调整、元素选择更保守）来减少误包含，从而获得更高质量但通常更短的文本。相反，如果设置为 False（默认），提取倾向于更全面的召回，即在不确定边界的情况下尽量多保留内容，这对应另一个参数 `favor_recall`（两者通常互斥使用，避免同时启用）。在实际应用中，当你处理大量网页且更在意内容干净度而非完整性时（例如用于下游 LLM 训练或高质量语料构建），开启 `favor_precision=True` 往往是推荐做法，虽然处理时间可能略有增加，但整体输出质量提升明显。\n\n`include_comments` 参数默认值为 True，表示是否将网页中的评论区内容一并提取进来。许多文章页面底部会有读者评论，这些部分通常位于独立的 `<div>` 或类似容器中，Trafilatura 会尝试识别并包含它们（连同主文一起输出），这在需要完整线程讨论或用户生成内容时很有价值。但评论往往噪声大、质量参差不齐，还可能包含大量无关回复或垃圾信息，因此在追求主文纯净度的场景下，建议显式设置为 False 来排除它们。启用时，评论通常会出现在主文本的末尾部分，便于后续区分处理；禁用后提取结果更聚焦于文章主体本身。值得一提的是，这个选项与 `include_tables`、`include_links` 等类似，都属于对特定 HTML 元素的显式包含控制，默认开启评论和表格是为了覆盖更广的使用场景，但实际项目中经常需要根据需求关闭部分以优化结果。\n\n这两个参数可以独立或组合使用。例如，在需要极致干净的主文输出时，同时设置 `favor_precision=True` 和 `include_comments=False` 是常见搭配，能显著降低噪声比例，尤其适合处理论坛式或带大量用户互动的页面。库的底层实现基于树遍历、启发式规则和机器学习轻量模型的混合（包括链接密度、文本长度、标签语义等特征），这些参数会影响树剪枝和元素保留的阈值逻辑。最新版本（截至 2.0 系列）保持了向后兼容，同时优化了默认行为和速度，在大规模爬取中表现稳定。\n\n不过，这些调整并非万能：`favor_precision` 可能导致某些长文章的关键段落被意外截断（尤其是结构不标准的博客），而关闭 `include_comments` 会完全丢失有用讨论信息；另外，对于极度复杂的动态加载页面，Trafilatura 本身依赖静态 HTML，结合无头浏览器预渲染往往效果更好。总体而言，这两个参数体现了库在精度-召回权衡和内容范围控制上的灵活性，是实际调优中最常触碰的开关之一。"
+}

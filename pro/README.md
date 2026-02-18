@@ -9,9 +9,7 @@
 | 工具 | 说明 |
 |------|------|
 | `web_search` | AI 深度搜索 + Brave 搜索（并行执行），返回链接列表和 AI 总结 |
-| `fetch_html` | 抓取网页 HTML 内容 |
-| `fetch_text` | 抓取网页并提取纯文本 |
-| `fetch_metadata` | 抓取网页元数据（标题、描述、链接） |
+| `fetch` | 抓取网页并提取正文 Markdown（尽量去掉导航/按钮/广告等噪声） |
 
 ## 安装
 
@@ -123,7 +121,9 @@ AI 深度搜索 + Brave 搜索（并行执行）。
 
 参数：
 - `query`: 搜索关键词（必填）
-- `max_results`: 返回的最大结果数，默认 10
+  - 固定最多返回 25 条链接（不支持参数控制数量）
+  - 普通搜索：`browse_page` 链接 > 其它 AI 链接 > 浏览器结果（默认同域名最多 2 条，可通过环境变量 `SEARCH_MAX_PER_DOMAIN` 调整）
+  - `site:` 搜索：`browse_page` 链接 > 浏览器结果 > 其它 AI 链接（并关闭同域名上限）
 
 返回格式：
 
@@ -132,37 +132,31 @@ AI 深度搜索 + Brave 搜索（并行执行）。
   "success": true,
   "query": "搜索关键词",
   "links": [
-    {"title": "标题", "url": "链接", "description": "描述"}
+    {"title": "标题", "url": "链接"}
   ],
   "ai_summary": "AI 总结内容"
 }
 ```
 
-### fetch_html
+### fetch
 
-抓取网页的原始 HTML 内容。
-
-参数：
-- `url`: 目标网址（必填）
-- `headers`: 可选的请求头
-
-### fetch_text
-
-抓取网页并提取纯文本内容（去除 HTML 标签）。
+抓取网页并提取正文内容（Markdown），尽量去掉导航/按钮/广告等噪声。
 
 参数：
 - `url`: 目标网址（必填）
 - `headers`: 可选的请求头
 
-### fetch_metadata
+## 回归测试（集成 / Live）
 
-抓取网页的元数据信息。
+项目提供了一个集成回归脚本用于反复调试抓取与搜索质量：
 
-参数：
-- `url`: 目标网址（必填）
-- `headers`: 可选的请求头
+```bash
+python regression_suite.py --fetch
+python regression_suite.py --search
+python regression_suite.py --fetch --also-text
+```
 
-返回：标题、描述、页面链接列表
+用例文件位于 `cases/` 目录（可按需增删 URL/Query）。产物默认落盘到 `artifacts/` 目录，便于肉眼对比与迭代调参。
 
 ## 特性
 

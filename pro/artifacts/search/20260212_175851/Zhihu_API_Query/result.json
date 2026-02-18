@@ -1,0 +1,59 @@
+{
+  "success": true,
+  "query": "知乎 api v4 answers include content",
+  "links": [
+    {
+      "title": "知乎API v4整理：开发者指南与实战解析-百度开发者中心",
+      "url": "https://developer.baidu.com/article/detail.html?id=3674376",
+      "description": "知乎APIv4整理：开发者指南与实战解析 作者： JC 2025.09.18 22:43 浏览量：292 简介： 本文全面梳理知乎APIv4的核心功能、权限模型、调用方式及典型应用场景，提供代码示例与最佳实践，助力开发者高效集成并规避常见问题。 工信部教考中心大模型证书-初/中/高 特惠来袭! 官方权威认证，学习+证书 ..."
+    },
+    {
+      "title": "知乎 API v4 整理 - Yifei's Notes",
+      "url": "https://yifei.me/note/460",
+      "description": "知乎现在已经不用这套API了，但是还没有关闭访问，而且这套API个别端点是没有验证的，可以说是一个漏洞了。"
+    },
+    {
+      "title": "随手找到的知乎的api - 知乎 - 知乎专栏",
+      "url": "https://zhuanlan.zhihu.com/p/87029765",
+      "description": "更新时间2019/10/16 API返回结果均为Json，所以可以避免网页去解析各种元素啦~ 知乎最好的一点就是对于各种API基本没有限制，可以去爬~ 相关几个参数重要说明： 1.limit:当你使用搜索等功能的时候，需要设置一个每…"
+    },
+    {
+      "title": "知乎 API v4 整理 - 绝不原创的飞龙 - 博客园",
+      "url": "https://www.cnblogs.com/apachecn/p/17313135.html",
+      "description": "作者：姚泽源 问题的回答 URL：https://www.zhihu.com/api/v4/questions/{qid}/answers参数： limit：数量，最大 20offset：起始位置，从零开始 ..."
+    },
+    {
+      "title": "知乎api详解-csdn博客",
+      "url": "https://blog.csdn.net/weixin_30825581/article/details/94919672",
+      "description": "作者：姚泽源问题的回答URL：https://www.zhihu.com/api/v4/questions/ {qid}/answers参数：limit：数量，最大 20offset：起始位置，从零开始sort_by： {default, created}，表示默认排序或者时间排序include：额外信息，包括is_normal,is_sticky,collapsed_by,su..._知乎apiv4"
+    },
+    {
+      "title": "知乎 API v4 整理_51CTO博客_api8 bmyy",
+      "url": "https://blog.51cto.com/wizardforcel/6724260",
+      "description": "wizardforcel 2023-07-14 17:38:19 文章标签 ci sed知乎文章分类 Java 后端开发"
+    },
+    {
+      "title": "知乎API v4深度整理：功能解析、应用场景与开发实践指南",
+      "url": "https://developer.baidu.com/article/detail.html?id=3650495",
+      "description": "本文深度解析知乎APIv4的核心功能、应用场景及开发实践，为开发者提供从接口调用到异常处理的完整指南，助力高效构建 ..."
+    },
+    {
+      "title": "知乎 API v4 整理 | iBlog",
+      "url": "https://luckymrwang.github.io/2019/04/06/%E7%9F%A5%E4%B9%8E-API-v4-%E6%95%B4%E7%90%86/",
+      "description": "文章目录 1. 问题的答案 2. 指定作者的回答 3. 自身信息 4. 关注者信息 5. 粉丝信息 6. 收藏夹信息 7. 收藏夹中的回答摘要 8. 知 ..."
+    },
+    {
+      "title": "知乎api整理 · Issue #89 · YaoZeyuan/ZhihuHelp_archived - GitHub",
+      "url": "https://github.com/YaoZeyuan/ZhihuHelp_archived/issues/89",
+      "description": "opened on Jan 12, 2017 · edited by YaoZeyuan Edits Owner 用于集中记录一下目前发现的知乎v4版api #根据问题获取问题下答案，每次最多获取20个，sort_by参数为排序依据，include参数用于在基础返回值外添加扩展内容 https://www.zhihu.com/api/v4/questions/21241873/answers? limit=20&offset=0 &sort ..."
+    },
+    {
+      "title": "知乎API v4深度整理：功能解析、应用场景与开发实践指南",
+      "url": "https://cloud.baidu.com/article/3650495",
+      "description": "知乎APIv4深度整理：功能解析、应用场景与开发实践指南 作者：da吃一鲸886 2025.09.18 03:04 浏览量：96 简介： 本文深度解析知乎APIv4的核心功能、应用场景及开发实践，为开发者提供从接口调用到异常处理的完整指南，助力高效构建知识社区生态应用。"
+    }
+  ],
+  "ai_links": [],
+  "ai_content": "",
+  "ai_summary": ""
+}
