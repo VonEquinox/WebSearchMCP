@@ -1,9 +1,0 @@
-fastmcp
-beautifulsoup4
-lxml
-openai
-playwright
-playwright-stealth
-curl_cffi
-uvicorn
-python-dotenv
