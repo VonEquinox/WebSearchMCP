@@ -1,0 +1,4 @@
+interface:
+  display_name: "Iterative Web Research"
+  short_description: "Broad-to-deep sourced web research workflow"
+  default_prompt: "Use $iterative-web-research to run broad-to-deep web research, verify claims with primary sources, and produce a sourced Markdown report."

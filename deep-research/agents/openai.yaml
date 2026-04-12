@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Research"
+  short_description: "Open-ended deep research via repeated broadening/deepening loops"
+  default_prompt: "Use $deep-research to run open-ended deep research with repeated broadening/deepening, reframing, falsification, and a sourced research narrative."
