@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-search"
+version = "0.1.0"
+description = "Guide MCP plus local CLI for bash-driven web research"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.3.0",
+    "httpx[socks]>=0.28.0",
+    "mcp[cli]>=1.21.2",
+    "tenacity>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+web-search = "web_search.server:main"
+web-search-cli = "web_search.cli:main"
