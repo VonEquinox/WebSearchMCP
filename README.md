@@ -34,7 +34,7 @@ Model / Codex
        └─ uv run web-search-cli <subcommand>
             ├─ Grok (/chat/completions)
             ├─ Tavily (/search /extract /map)
-            ├─ Firecrawl (/search /scrape)
+            ├─ Firecrawl (/search)
             └─ GitHub REST API / shallow clone grep
 ```
 
