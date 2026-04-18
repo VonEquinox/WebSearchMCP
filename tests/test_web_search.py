@@ -93,16 +93,33 @@ async def test_search_web_with_summary_returns_sparse_fallback_for_empty_answer(
 
 
 @pytest.mark.asyncio
-async def test_fetch_url_reports_config_error_without_tavily_or_firecrawl(monkeypatch, tmp_path):
-    monkeypatch.delenv("TAVILY_API_KEY", raising=False)
-    monkeypatch.delenv("TAVILY_API_KEYS", raising=False)
-    monkeypatch.delenv("FIRECRAWL_API_KEY", raising=False)
-    monkeypatch.chdir(tmp_path)
-    monkeypatch.setenv("WEB_SEARCH_ENV_FILE", str(tmp_path / "missing.env"))
-    monkeypatch.setattr(config, "_config_file", tmp_path / "config.json")
-    config.reset_cache()
+async def test_fetch_url_falls_back_to_curl_cffi_when_tavily_returns_none(monkeypatch):
+    async def fake_tavily_extract(_: str):
+        return None
 
-    with pytest.raises(fetch_workflow.SearchExecutionError):
+    async def fake_curl_extract(_: str, ctx=None):
+        return "curl fallback content"
+
+    monkeypatch.setattr(fetch_workflow, "call_tavily_extract", fake_tavily_extract)
+    monkeypatch.setattr(fetch_workflow, "call_curl_cffi_extract", fake_curl_extract)
+
+    result = await fetch_workflow.fetch_url("https://example.com")
+
+    assert result == "curl fallback content"
+
+
+@pytest.mark.asyncio
+async def test_fetch_url_raises_when_tavily_and_curl_cffi_both_fail(monkeypatch):
+    async def fake_tavily_extract(_: str):
+        return None
+
+    async def fake_curl_extract(_: str, ctx=None):
+        return None
+
+    monkeypatch.setattr(fetch_workflow, "call_tavily_extract", fake_tavily_extract)
+    monkeypatch.setattr(fetch_workflow, "call_curl_cffi_extract", fake_curl_extract)
+
+    with pytest.raises(fetch_workflow.SearchExecutionError, match="提取失败: https://example.com"):
         await fetch_workflow.fetch_url("https://example.com")
 
 

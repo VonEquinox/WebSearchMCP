@@ -3,9 +3,10 @@ from __future__ import annotations
 from typing import Any
 
 from .config import config
+from .curl_fallback import call_curl_cffi_extract
 from .errors import SearchExecutionError
 from .logger import log_info
-from .service_support import call_firecrawl_scrape, call_tavily_extract, get_tavily_client
+from .service_support import call_tavily_extract, get_tavily_client
 
 
 async def fetch_url(url: str, ctx: Any = None) -> str:
@@ -14,13 +15,11 @@ async def fetch_url(url: str, ctx: Any = None) -> str:
     if result:
         await log_info(ctx, "Fetch Finished (Tavily)!", config.debug_enabled)
         return result
-    await log_info(ctx, "Tavily unavailable or failed, trying Firecrawl...", config.debug_enabled)
-    result = await call_firecrawl_scrape(url, ctx)
+    await log_info(ctx, "Tavily unavailable or failed, trying curl_cffi...", config.debug_enabled)
+    result = await call_curl_cffi_extract(url, ctx)
     if result:
-        await log_info(ctx, "Fetch Finished (Firecrawl)!", config.debug_enabled)
+        await log_info(ctx, "Fetch Finished (curl_cffi)!", config.debug_enabled)
         return result
-    if not config.tavily_api_keys and not config.firecrawl_api_key:
-        raise SearchExecutionError("配置错误: TAVILY_API_KEY / TAVILY_API_KEYS 和 FIRECRAWL_API_KEY 均未配置")
     raise SearchExecutionError(f"提取失败: {url}")
 
 

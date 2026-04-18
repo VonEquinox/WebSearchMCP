@@ -194,7 +194,7 @@ def build_parser() -> argparse.ArgumentParser:
     search_with_summary.add_argument("--json", action="store_true")
     search_with_summary.set_defaults(handler=_run_search_with_summary)
 
-    fetch = subparsers.add_parser("fetch", help="Fetch a known page through Tavily/Firecrawl.")
+    fetch = subparsers.add_parser("fetch", help="Fetch a known page through Tavily/curl_cffi fallback.")
     fetch.add_argument("url")
     fetch.set_defaults(handler=_run_fetch)
 

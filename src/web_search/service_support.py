@@ -9,7 +9,6 @@ from typing import Any
 import httpx
 
 from .config import build_openai_models_url, bundled_repo_root, config
-from .logger import log_info
 from .providers.tavily import TavilyClient
 
 _AVAILABLE_MODELS_CACHE: dict[tuple[str, str], list[str]] = {}
@@ -224,26 +223,3 @@ async def call_firecrawl_search(query: str, limit: int = 14) -> list[dict] | Non
         {"title": item.get("title", ""), "url": item.get("url", ""), "description": item.get("description", "")}
         for item in results
     ]
-
-
-async def call_firecrawl_scrape(url: str, ctx: Any = None) -> str | None:
-    api_key = config.firecrawl_api_key
-    if not api_key:
-        return None
-    endpoint = f"{config.firecrawl_api_url.rstrip('/')}/scrape"
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-    for attempt in range(config.retry_max_attempts):
-        body = {"url": url, "formats": ["markdown"], "timeout": 60000, "waitFor": (attempt + 1) * 1500}
-        try:
-            async with httpx.AsyncClient(timeout=90.0) as client:
-                response = await client.post(endpoint, headers=headers, json=body)
-                response.raise_for_status()
-                data = response.json()
-            markdown = data.get("data", {}).get("markdown", "")
-            if markdown and markdown.strip():
-                return markdown
-            await log_info(ctx, f"Firecrawl: markdown为空, 重试 {attempt + 1}/{config.retry_max_attempts}", config.debug_enabled)
-        except Exception as exc:
-            await log_info(ctx, f"Firecrawl error: {exc}", config.debug_enabled)
-            return None
-    return None
